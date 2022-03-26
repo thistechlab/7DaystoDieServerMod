@@ -36,10 +36,10 @@ Magazine Schematics Skill Point - https://7daystodiemods.com/magazine-skill-poin
 MaxDamage (20k hp steel) - https://7daystodiemods.com/maxdamage/
 Find Bicycles in the Dumpsters - https://7daystodiemods.com/find-bicycles-in-the-dumpsters/
 All Short Grass - https://7daystodiemods.com/all-short-grass/
-Sam’s Car and Truck Respawner - https://7daystodiemods.com/sams-car-and-truck-respawner/
-Sam’s Deco Stuff - https://7daystodiemods.com/sams-deco-stuff/
-Sam’s Storage Stuff - https://7daystodiemods.com/sams-storage-stuff/
-Sam’s Working Stuff - https://7daystodiemods.com/sams-working-stuff/
+Samâ€™s Car and Truck Respawner - https://7daystodiemods.com/sams-car-and-truck-respawner/
+Samâ€™s Deco Stuff - https://7daystodiemods.com/sams-deco-stuff/
+Samâ€™s Storage Stuff - https://7daystodiemods.com/sams-storage-stuff/
+Samâ€™s Working Stuff - https://7daystodiemods.com/sams-working-stuff/
 Falling Trees - https://7daystodiemods.com/falling-trees/
 Incendiary Rounds - https://7daystodiemods.com/incendiary-rounds/
 Trader Refresh 1 Day - https://7daystodiemods.com/trader-refresh-1-day/
