@@ -5,7 +5,7 @@ Instant Crafting 6.0 - https://www.nexusmods.com/7daystodie/mods/326<br/>
 Server Side Vehicles - https://github.com/arramus/A20-ServerSideVehicles-2022Jan20<br/>
 Additional Intellect Perk - Scrap Machine - https://www.nexusmods.com/7daystodie/mods/1744<br/>
 Skillbook Skillpoints - https://7daystodiemods.com/skillbook-skillpoints/<br/>
-Allocs Server Fixes<br/>
+Allocs Server Fixes - https://7dtd.illy.bz/wiki/Server%20fixes<br/>
 Arrow-Xbow Conversion - https://7daystodiemods.com/arrow-crossbow-bolt-conversion/<br/>
 Barbed Wire Recipe<br/>
 BluemaxDR's Anti-Destroy Area - https://www.nexusmods.com/7daystodie/mods/1961<br/>
