@@ -1,0 +1,25 @@
+Key,Source,Context,Changes,English
+<!-- 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+									THE A TEAMS DIRT DUSTER                                                                                             
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+vehicleDirtDuster,vehicles,vehicle,new, Dirt Duster Motorbike,,,,,
+vehicleDirtDusterPlaceable,vehicles,item,EnChanged, Dirt Duster Motorbike,,,,,
+vehicleDirtDusterPlaceableDesc,vehicles,item,EnChanged, Why walk with the dead when you can ride!,,,,,
+vehicleDirtDusterBaseChassis,items,Part,EnChanged, Dirt Duster Chassis base,,,,,
+vehicleDirtDusterBaseChassisDesc,items,Part,EnChanged,The beginning of something...awesome!,,,,,
+vehicleDirtDusterCompleteChassis,items,Part,EnChanged, Dirt Duster Completed Chassis,,,,,
+vehicleDirtDusterCompleteChassisDesc,items,Part,EnChanged, Nearly there !,,,,,
+vehicleDirtDusterbars,items,Part,EnChanged, Dirt Duster HandlebarAssy,,,,,
+vehicleDirtDusterbarsDesc,items,Part,EnChanged,You might need these.,,,,,
+vehicleDirtDusterSeat,items,Part,EnChanged, Dirt Duster BikeSeat,,,,,
+vehicleDirtDusterSeatDesc,items,Part,EnChanged,Ride in Comfort.,,,,,
+vehicleDirtDusterEngine,items,Part,EnChanged, Dirt Duster BikeEngine,,,,,
+vehicleDirtDusterEngineDesc,items,Part,EnChanged, For that extra power.,,,,,
+vehicleDirtDusterWheels,items,Part,EnChanged, Dirt Duster Bike Tires,,,,,
+vehicleDirtDusterWheelsDesc,items,Part,EnChanged, Needed to make Dirt Duster Bike.,,,,,
+vehicleDirtDusterFrontWheel,items,Part,EnChanged, Dirt Duster Bike Front Tire,,,,,
+vehicleDirtDusterFrontWheelDesc,items,Part,EnChanged, Needed to make Dirt Duster Bike.,,,,,
+vehicleDirtDusterBackWheel,items,Part,EnChanged, Dirt Duster Bike Back Tire,,,,,
+vehicleDirtDusterBackWheelDesc,items,Part,EnChanged, Needed to make Dirt Duster Bike.,,,,,

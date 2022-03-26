@@ -1,0 +1,170 @@
+<config>
+  <!-- Skill Books:
+  <item name="bookFiremansAlmanacHeat"> first book -->
+  <!--
+  <item name="bookFiremansAlmanacAxes"> fireman axe mod -->
+  <!--
+  <item name="bookFiremansAlmanacSpeed">
+  <item name="bookFiremansAlmanacMolotov">
+  <item name="bookFiremansAlmanacPrevention">
+  <item name="bookFiremansAlmanacHarvest">
+  <item name="bookFiremansAlmanacEquipment">
+  <item name="bookNightStalkerStealthDamage"> first book -->
+  <!--
+  <item name="bookNightStalkerSilentNight">
+  <item name="bookNightStalkerBlades">
+  <item name="bookNightStalkerThiefAdrenaline">
+  <item name="bookNightStalkerArchery">
+  <item name="bookNightStalkerTwilightThief">
+  <item name="bookNightStalkerSlumberParty">
+  <item name="bookLuckyLooterDukes"> first book -->
+  <!--
+  <item name="bookLuckyLooterAmmunition">
+  <item name="bookLuckyLooterBrass">
+  <item name="bookLuckyLooterLead">
+  <item name="bookLuckyLooterBooks">
+  <item name="bookLuckyLooterFood">
+  <item name="bookLuckyLooterMedical">
+  <item name="bookEnforcerDamage"> first book -->
+  <!--
+  <item name="bookEnforcerApparel">
+  <item name="bookEnforcerPunks">
+  <item name="bookEnforcerIntimidation">
+  <item name="bookEnforcerAPAmmo">
+  <item name="bookEnforcerHPAmmo">
+  <item name="bookEnforcerCriminalPursuit">
+  <item name="bookBatterUpBigHits"> first book -->
+  <!--
+  <item name="bookBatterUpMetalChain">
+  <item name="bookBatterUpGear">
+  <item name="bookBatterUpSlowPitch">
+  <item name="bookBatterUpKnockdown">
+  <item name="bookBatterUpMaintenance">
+  <item name="bookBatterUpBaseballBats">
+  <item name="bookGreatHeistSafes"> first book -->
+  <!--
+  <item name="bookGreatHeistGems">
+  <item name="bookGreatHeistTimedCharge">
+  <item name="bookGreatHeistClaimed">
+  <item name="bookGreatHeistAdrenalineFall">
+  <item name="bookGreatHeistSprintSneak">
+  <item name="bookGreatHeistMotionDetection">
+  <item name="bookWasteTreasuresHoney"> first book -->
+  <!--
+  <item name="bookWasteTreasuresCoffins">
+  <item name="bookWasteTreasuresAcid">
+  <item name="bookWasteTreasuresWater">
+  <item name="bookWasteTreasuresDoors">
+  <item name="bookWasteTreasuresCloth">
+  <item name="bookWasteTreasuresSinks">
+  <item name="bookNeedleAndThreadWinterWear"> first book -->
+  <!--
+  <item name="bookNeedleAndThreadLegwear">
+  <item name="bookNeedleAndThreadFootwear">
+  <item name="bookNeedleAndThreadDesertWear">
+  <item name="bookNeedleAndThreadDusters">
+  <item name="bookNeedleAndThreadPufferCoats">
+  <item name="bookNeedleAndThreadPockets">
+  <item name="bookHuntingJournalBears"> first book -->
+  <!--
+  <item name="bookHuntingJournalWolves">
+  <item name="bookHuntingJournalCoyotes">
+  <item name="bookHuntingJournalMountainLions">
+  <item name="bookHuntingJournalDeer">
+  <item name="bookHuntingJournalVultures">
+  <item name="bookHuntingJournalSelfDefense">
+  <item name="bookArtOfMiningLuckyStrike"> first book -->
+  <!--
+  <item name="bookArtOfMiningDiamondTools">
+  <item name="bookArtOfMiningPallets">
+  <item name="bookArtOfMiningCoffee">
+  <item name="bookArtOfMiningBlackStrap">
+  <item name="bookArtOfMiningAvalanche">
+  <item name="bookArtOfMiningLantern">
+  <item name="bookRangersArrowRecovery"> first book -->
+  <!--
+  <item name="bookRangersExplodingBolts">
+  <item name="bookRangersCripplingShot">
+  <item name="bookRangersAPAmmo">
+  <item name="bookRangersFlamingArrows">
+  <item name="bookRangersForestGuide">
+  <item name="bookRangersKnockdown">
+  <item name="bookPistolPeteTakeAim"> first book -->
+  <!--
+  <item name="bookPistolPeteSwissKnees">
+  <item name="bookPistolPeteSteadyHand">
+  <item name="bookPistolPeteMaintenance">
+  <item name="bookPistolPeteHPAmmo">
+  <item name="bookPistolPeteAPAmmo">
+  <item name="bookPistolPeteDamage">
+  <item name="bookShotgunMessiahDamage"> first book -->
+  <!--
+  <item name="bookShotgunMessiahBreachingSlugs"> breaching vol 2 -->
+  <!--
+  <item name="bookShotgunMessiahLimbShot">
+  <item name="bookShotgunMessiahSlugs">
+  <item name="bookShotgunMessiahMaintenance"> vol 5 -->
+  <!--
+  <item name="bookShotgunMessiahMagazine"> vol 6 -->
+  <!--
+  <item name="bookShotgunMessiahPartyStarter">
+  <item name="bookSniperDamage"> first book -->
+  <!--
+  <item name="bookSniperCripplingShot">
+  <item name="bookSniperHeadShot">
+  <item name="bookSniperReload">
+  <item name="bookSniperControlledBreathing">
+  <item name="bookSniperAPAmmo">
+  <item name="bookSniperHPAmmo">
+  <item name="bookAutoWeaponsDamage"> first book vol 1 -->
+  <!--
+  <item name="bookAutoWeaponsUncontrolledBurst"> vol 2 -->
+  <!--
+  <item name="bookAutoWeaponsMaintenance">
+  <item name="bookAutoWeaponsDrumMag">
+  <item name="bookAutoWeaponsRecoil">
+  <item name="bookAutoWeaponsRagdoll"> vol 6 -->
+  <!--
+  <item name="bookAutoWeaponsMachineGuns">
+  <item name="bookUrbanCombatLanding"> first book -->
+  <!--
+  <item name="bookUrbanCombatCigar">
+  <item name="bookUrbanCombatSneaking">
+  <item name="bookUrbanCombatJumping">
+  <item name="bookUrbanCombatLandMines">
+  <item name="bookUrbanCombatAdrenalineRush">
+  <item name="bookUrbanCombatRoomClearing">
+  <item name="bookTechJunkie1Damage"> first book -->
+  <!--
+  <item name="bookTechJunkie2Maintenance">
+  <item name="bookTechJunkie3APAmmo">
+  <item name="bookTechJunkie4Shells">
+  <item name="bookTechJunkie5Repulsor">
+  <item name="bookTechJunkie6BatonCharge">
+  <item name="bookTechJunkie7Hydraulics">
+  <item name="bookBarBrawling1BasicMoves"> first book -->
+  <!--
+  <item name="bookBarBrawling2DropABomb">
+  <item name="bookBarBrawling3KillerInstinct">
+  <item name="bookBarBrawling4FinishingMoves">
+  <item name="bookBarBrawling5AdrenalineHealing">
+  <item name="bookBarBrawling6RageMode">
+  <item name="bookBarBrawling7BoozedUp">
+  <item name="bookSpearHunter1Damage"> first book -->
+  <!--
+  <item name="bookSpearHunter2Maintenance">
+  <item name="bookSpearHunter3SteelSpears">
+  <item name="bookSpearHunter4StrongArm">
+  <item name="bookSpearHunter5RapidStrike">
+  <item name="bookSpearHunter6PuncturedLung">
+  <item name="bookSpearHunter7QuickStrike">
+  -->
+
+  <append xpath="/items/item[starts-with(@name,'book')]">
+    <property class="Action1">
+      <property name="Class" value="Quest"/>
+      <property name="Delay" value="0"/>
+      <property name="QuestGiven" value="quest_Skillbook_Point_Reward2"/>
+    </property>
+  </append>
+</config>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="EpicSpire's Burnt Schematics"/>
+        <Description value="This modlet adds burnt schematics to loot. 5 or them make a full schematic."/>
+        <Author value="EpicSpire"/>
+        <Version value="1.0.A20"/>
+    </ModInfo>
+</xml>

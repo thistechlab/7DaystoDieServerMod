@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Clear Skies - Weather of the Apocalypse" />
+        <Description value="Game won't rain on you 5 times a day, and tame fog levels" />
+        <Author value="BluemaxDR" />
+  		<Version value="1.0" />
+    </ModInfo>
+</xml>

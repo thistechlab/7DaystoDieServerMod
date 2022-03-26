@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="crafting_tier_6 _A20" />
+        <Description value="Changes all perks to craft tier 6 items/gear at lvl 5/5." />
+        <Author value="Md420Reaper" />
+        <Version value="1.0" />
+    </ModInfo>
+</xml>

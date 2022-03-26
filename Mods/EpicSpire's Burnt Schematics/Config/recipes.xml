@@ -1,0 +1,25 @@
+<configs>
+	<append xpath="/recipes" >
+		<recipe name="workbenchSchematic" count="1">
+			<ingredient name="esBurntWorkbenchSchematic" count="5"/>
+		</recipe>		
+	</append>
+	
+	<append xpath="/recipes" >
+		<recipe name="forgeSchematic" count="1">
+			<ingredient name="esBurntForgeSchematic" count="5"/>
+		</recipe>		
+	</append>
+	
+	<append xpath="/recipes" >
+		<recipe name="cementMixerSchematic" count="1">
+			<ingredient name="esBurntCementMixerSchematic" count="5"/>
+		</recipe>		
+	</append>
+	
+	<append xpath="/recipes" >
+		<recipe name="chemistryStationSchematic" count="1">
+			<ingredient name="esBurntChemStationSchematic" count="5"/>
+		</recipe>		
+	</append>
+</configs>

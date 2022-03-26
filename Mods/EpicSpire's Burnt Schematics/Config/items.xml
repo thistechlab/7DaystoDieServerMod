@@ -1,0 +1,75 @@
+<configs>
+	<append xpath="/items">	
+		<item name="esBurntWorkbenchSchematic"> <!-- scrap material -->
+			<property name="CustomIcon" value="workbench"/>
+			<property name="CustomIconTint" value="16161d"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property name="Stacknumber" value="5"/> <!-- STK resource -->
+			<property name="FuelValue" value="1"/>
+			<property name="Weight" value="1"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+		</item>
+	</append>
+	
+	<append xpath="/items">	
+		<item name="esBurntForgeSchematic"> <!-- scrap material -->
+			<property name="CustomIcon" value="forge"/>
+			<property name="CustomIconTint" value="16161d"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property name="Stacknumber" value="5"/> <!-- STK resource -->
+			<property name="FuelValue" value="1"/>
+			<property name="Weight" value="1"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+		</item>
+	</append>	
+	
+	<append xpath="/items">	
+		<item name="esBurntCementMixerSchematic"> <!-- scrap material -->
+			<property name="CustomIcon" value="cementMixer"/>
+			<property name="CustomIconTint" value="16161d"/>
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property name="Stacknumber" value="5"/> <!-- STK resource -->
+			<property name="FuelValue" value="1"/>
+			<property name="Weight" value="1"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+		</item>
+	</append>	
+	
+	<append xpath="/items">	
+		<item name="esBurntChemStationSchematic"> <!-- scrap material -->
+			<property name="CustomIcon" value="chemistryStation"/>
+			<property name="CustomIconTint" value="16161d"/>		
+			<property name="HoldType" value="45"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourcePaper"/>
+			<property name="Stacknumber" value="5"/> <!-- STK resource -->
+			<property name="FuelValue" value="1"/>
+			<property name="Weight" value="1"/>
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Resources,Chemicals,CFChemicals"/>
+		</item>
+	</append>		
+		
+</configs>
+

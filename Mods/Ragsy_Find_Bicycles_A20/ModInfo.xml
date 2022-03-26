@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Ragsy_Find_Bicycles" />
+		<Description value="You can now find Bicycle's in Dumpster's and help your early game stage" />
+		<Author value="Ragsy2145"/>
+		<Version value="20.0.2.0" compat="A20e"/>
+		<Website value="https://community.7daystodie.com/topic/11266-ragsy-s-modlets/" />
+	</ModInfo>
+</xml>

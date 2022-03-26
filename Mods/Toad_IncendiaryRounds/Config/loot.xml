@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<!-- Add Incendiary Rounds to Loot -->
+	<insertAfter xpath="/lootcontainers/lootgroup/item[@name='modGunCrippleEm']">
+		<item name="modGunIncendiaryRounds"/>
+	</insertAfter>
+	<insertAfter xpath="/lootcontainers/lootgroup/item[@name='modGunCrippleEmSchematic']">
+		<item name="modGunIncendiaryRoundsSchematic"/>
+	</insertAfter>
+</configs>

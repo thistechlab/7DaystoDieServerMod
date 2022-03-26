@@ -1,0 +1,23 @@
+<configs>
+	<!-- 
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+											THE A TEAMS DIRT DUSTER                                                                                             
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	-->
+	<insertBefore xpath="/lootcontainers/lootgroup[@name='groupScrapCommon']">
+
+		<lootgroup name="DirtDustergroup">
+			<item name="vehicleDirtDusterBaseChassis"/>
+			<item name="vehicleDirtDusterbars"/>
+			<item name="vehicleDirtDusterSeat"/>
+			<item name="vehicleDirtDusterFrontWheel"/>
+			<item name="vehicleDirtDusterBackWheel"/>
+			<item name="vehicleDirtDusterWheels"/>
+		</lootgroup>
+	
+	</insertBefore>
+
+	<append xpath="/lootcontainers/lootgroup[@name='vehiclePartsTiered']">
+		<item group="DirtDustergroup" loot_prob_template="ProbT2"/>
+	</append>
+</configs>

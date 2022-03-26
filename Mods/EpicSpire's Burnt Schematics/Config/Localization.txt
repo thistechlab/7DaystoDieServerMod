@@ -1,0 +1,9 @@
+Key,File,Type,UsedInMainMenu,english
+esBurntWorkbenchSchematic,Items,Resource,,"Burnt Workbench Schematic"
+esBurntWorkbenchSchematicDesc,Items,Resource,,"Burnt pretty bad. You can barely make out the design of a Workbench and a few figures and components, maybe with a few more copies you'll make out the complete Schematic (you need 5 of these to make a complete Workbench Schematic). "
+esBurntForgeSchematic,Items,Resource,,"Burnt Forge Schematic"
+esBurntForgeSchematicDesc,Items,Resource,,"Burnt pretty bad. You can barely make out the design of a Forge and a few figures and components, maybe with a few more copies you'll make out the complete Schematic (you need 5 of these to make a complete Forge Schematic)."
+esBurntCementMixerSchematic,Items,Resource,,"Burnt Cement Mixer Schematic"
+esBurntCementMixerSchematicDesc,Items,Resource,,"Burnt pretty bad. You can barely make out the design of a Cement Mixer and a few figures and components, maybe with a few more copies you'll make out the complete Schematic (you need 5 of these to make a complete Cement Mixer Schematic)."
+esBurntChemStationSchematic,Items,Resource,,"Burnt Chem Station Schematic"
+esBurntChemStationSchematicDesc,Items,Resource,,"Burnt pretty bad. You can barely make out the design of a Chem Station and a few figures and components, maybe with a few more copies you'll make out the complete Schematic (you need 5 of these to make a complete Chem Station Schematic)."

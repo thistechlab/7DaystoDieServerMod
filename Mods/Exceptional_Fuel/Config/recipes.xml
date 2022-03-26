@@ -1,0 +1,9 @@
+<configs>
+<append xpath="/recipes">
+	<recipe name="exceptionalFuel" count="1" craft_time="2" craft_area="workbench">
+		<ingredient name="ammoGasCan" count="50"/>
+		<ingredient name="woodLogPillar100" count="1"/>
+		<ingredient name="resourceCloth" count="1"/>
+	</recipe>
+</append>
+</configs>

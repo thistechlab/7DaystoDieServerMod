@@ -1,0 +1,5 @@
+<configs>
+
+<set xpath="/materials/material[@id='Msteel_shapes']/property[@name='MaxDamage'][@value='10000']/@value">25000</set>
+
+</configs>

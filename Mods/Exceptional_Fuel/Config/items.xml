@@ -1,0 +1,28 @@
+<configs>
+	<append xpath="/items">
+		<item  name="exceptionalFuel">
+			<property name="Tags" value="exceptional,tool,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="driftwood"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<Property name="TintColor" value="255,160,160"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Plants/driftwood" param1="main_mesh"/>
+			<property name="Material" value="Mwood_weak"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="Degradation" value="99999" param1="true"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="SoundDestroy" value="metaldestroy1"/>
+			<property name="FuelValue" value="5000"/>
+			<property name="EconomicValue" value="500"/>
+	<property name="EconomicBundleSize" value="1"/>
+			<property name="ShowQuality" value="false"/>
+		</item>
+	</append>
+</configs>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<!--  Incendiary Rounds	-->
+	<append xpath="/items">
+		<item name="modGunIncendiaryRoundsSchematic">
+			<property name="Extends" value="schematicNoQualityMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="modGunCrippleEm"/><property name="CustomIconTint" value="ff9f9f"/>
+			<property name="Unlocks" value="modGunIncendiaryRounds"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunIncendiaryRounds" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+	</append>
+</configs>

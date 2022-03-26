@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<!-- Add Incendiary Rounds -->
+	<insertAfter xpath="/traders/trader_item_groups/trader_item_group/item[@name='modGunCrippleEm']">
+		<item name="modGunIncendiaryRounds"/>
+	</insertAfter>
+	<insertAfter xpath="/traders/trader_item_groups/trader_item_group/item[@name='modGunCrippleEmSchematic']">
+		<item name="modGunIncendiaryRoundsSchematic"/>
+	</insertAfter>
+</configs>

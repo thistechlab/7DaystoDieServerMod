@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+	<append xpath="/entity_classes/entity_class[@name='playerMale']/effect_group">
+		<passive_effect name="CraftingTime" operation="base_set" value="-1"/>
+	</append>
+
+</configs>

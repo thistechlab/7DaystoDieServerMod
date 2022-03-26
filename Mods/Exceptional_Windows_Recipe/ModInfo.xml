@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Craftable Windows" />
+		<Description value="Enables crafting of the windows."/>
+		<Author value="victorious512" />
+		<Version value="1.0" />
+		</ModInfo>
+</xml>

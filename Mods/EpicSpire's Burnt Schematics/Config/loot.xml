@@ -1,0 +1,89 @@
+<configs>
+
+<append xpath="//lootgroup[@name='groupScrapUncommon']">
+		<item name="esBurntWorkbenchSchematic" loot_prob_template="low" />
+		<item name="esBurntForgeSchematic" loot_prob_template="low" />
+		<item name="esBurntCementMixerSchematic" loot_prob_template="low" />
+		<item name="esBurntChemStationSchematic" loot_prob_template="low" />
+</append>
+
+<append xpath="//lootgroup[@name='groupScrapRare']">
+		<item name="esBurntWorkbenchSchematic" loot_prob_template="medLow" />
+		<item name="esBurntForgeSchematic" loot_prob_template="medLow" />
+		<item name="esBurntCementMixerSchematic" loot_prob_template="medLow" />
+		<item name="esBurntChemStationSchematic" loot_prob_template="medLow" />
+</append>
+
+<append xpath="//lootgroup[@name='groupWorkbenchLoot']">
+	<item name="esBurntWorkbenchSchematic" loot_prob_template="med" force_prob="true"/>
+</append>
+
+<append xpath="//lootgroup[@name='groupForge']">
+	<item name="esBurntForgeSchematic" loot_prob_template="med" force_prob="true"/>
+</append>
+
+<append xpath="//lootgroup[@name='groupCementMixerLoot']">
+	<item name="esBurntCementMixerSchematic" loot_prob_template="med" force_prob="true"/>
+</append>
+
+<append xpath="//lootgroup[@name='groupChemistryStationLoot']">
+	<item name="esBurntChemStationSchematic" loot_prob_template="med" force_prob="true"/>
+</append>
+
+<append xpath="//lootgroup[@name='groupConstructionCrate']">
+			<item name="esBurntWorkbenchSchematic" loot_prob_template="medLow" />
+		<item name="esBurntForgeSchematic" loot_prob_template="medLow" />
+		<item name="esBurntCementMixerSchematic" loot_prob_template="medLow" />
+		<item name="esBurntChemStationSchematic" loot_prob_template="medLow" />
+</append>
+
+<append xpath="//lootgroup[@name='twitch_books1']">
+			<item name="esBurntWorkbenchSchematic" loot_prob_template="low" />
+		<item name="esBurntForgeSchematic" loot_prob_template="low" />
+		<item name="esBurntCementMixerSchematic" loot_prob_template="low" />
+		<item name="esBurntChemStationSchematic" loot_prob_template="low" />
+</append>
+
+<append xpath="//lootgroup[@name='twitch_books2']">
+			<item name="esBurntWorkbenchSchematic" loot_prob_template="medLow" />
+		<item name="esBurntForgeSchematic" loot_prob_template="medLow" />
+		<item name="esBurntCementMixerSchematic" loot_prob_template="medLow" />
+		<item name="esBurntChemStationSchematic" loot_prob_template="medLow" />
+</append>
+
+<append xpath="//lootgroup[@name='twitch_books3']">
+			<item name="esBurntWorkbenchSchematic" loot_prob_template="med" />
+		<item name="esBurntForgeSchematic" loot_prob_template="med" />
+		<item name="esBurntCementMixerSchematic" loot_prob_template="med" />
+		<item name="esBurntChemStationSchematic" loot_prob_template="med" />
+</append>
+
+<append xpath="//lootgroup[@name='schematicsModsAndGeneralCommon']">
+			<item name="esBurntWorkbenchSchematic" loot_prob_template="medLow" />
+		<item name="esBurntForgeSchematic" loot_prob_template="medLow" />
+		<item name="esBurntCementMixerSchematic" loot_prob_template="medLow" />
+		<item name="esBurntChemStationSchematic" loot_prob_template="medLow" />
+</append>
+
+<append xpath="//lootgroup[@name='schematicsModsAndGeneralRare']">
+			<item name="esBurntWorkbenchSchematic" loot_prob_template="med" />
+		<item name="esBurntForgeSchematic" loot_prob_template="med" />
+		<item name="esBurntCementMixerSchematic" loot_prob_template="med" />
+		<item name="esBurntChemStationSchematic" loot_prob_template="med" />
+</append>
+
+<append xpath="//lootgroup[@name='schematicsToolsCommon']">
+			<item name="esBurntWorkbenchSchematic" loot_prob_template="medLow" />
+		<item name="esBurntForgeSchematic" loot_prob_template="medLow" />
+		<item name="esBurntCementMixerSchematic" loot_prob_template="medLow" />
+		<item name="esBurntChemStationSchematic" loot_prob_template="medLow" />
+</append>
+
+<append xpath="//lootgroup[@name='schematicsToolsRare']">
+			<item name="esBurntWorkbenchSchematic" loot_prob_template="med" />
+		<item name="esBurntForgeSchematic" loot_prob_template="med" />
+		<item name="esBurntCementMixerSchematic" loot_prob_template="med" />
+		<item name="esBurntChemStationSchematic" loot_prob_template="med" />
+</append>
+
+</configs>

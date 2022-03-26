@@ -1,0 +1,4 @@
+<configs>
+<!-- Changed Mod Slots on the Tier quality of Weapon/Tools -->
+<set xpath="/items/item/effect_group/passive_effect[@name='ModSlots'][@tier='1,2,3,4,5,6']/@value">1,2,3,4,5,6</set>
+</configs>

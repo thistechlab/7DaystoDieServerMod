@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<!--  Incendiary Rounds	-->
+	<append xpath="/item_modifiers">
+		<item_modifier name="modGunIncendiaryRounds" installable_tags="ranged" modifier_tags="fire" blocked_tags="noMods" type="attachment">
+			<property name="UnlockedBy" value="modGunIncendiaryRoundsSchematic"/>
+			<property name="CustomIcon" value="modGunCrippleEm"/><property name="CustomIconTint" value="ff9f9f"/>
+			<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>		
+			<effect_group name="new Fire Proc" tiered="false">
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+				<requirement name="RandomRoll" seed_type="Random" target="self" min_max="0,100" operation="LTE" value="30"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="10">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/></triggered_effect>
+			</effect_group>		
+			<effect_group name="always refresh existing Fire Proc" tiered="false">
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+				<requirement name="HasBuff" target="other" buff="buffBurningElement"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+				<!--default duration is 10-->
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/></triggered_effect>
+			</effect_group>
+			<property name="PickupJournalEntry" value="augmentGunsTip"/>
+		</item_modifier>
+	</append>
+</configs>

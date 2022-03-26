@@ -1,0 +1,59 @@
+<configs>
+  <append xpath="/recipes">
+    <recipe name="windowStoreCornerFull" count="1" craft_area="forge" craft_time="5" craft_exp_gain="10">
+      <ingredient name="resourceScrapIron" count="10"/>
+      <ingredient name="resourceClayLump" count="2"/>
+    </recipe>
+    <recipe name="windowStoreOneSidedFull" count="1" craft_area="forge" craft_time="5" craft_exp_gain="10">
+      <ingredient name="resourceScrapIron" count="10"/>
+      <ingredient name="resourceClayLump" count="2"/>
+    </recipe>
+    <recipe name="windowStoreTwoSidedFull" count="1" craft_area="forge" craft_time="5" craft_exp_gain="10">
+      <ingredient name="resourceScrapIron" count="10"/>
+      <ingredient name="resourceClayLump" count="2"/>
+    </recipe>
+    <recipe name="windowStoreThreeSidedFull" count="1" craft_area="forge" craft_time="5" craft_exp_gain="10">
+      <ingredient name="resourceScrapIron" count="10"/>
+      <ingredient name="resourceClayLump" count="2"/>
+    </recipe>
+    <recipe name="windowStoreFourSidedFull" count="1" craft_area="forge" craft_time="5" craft_exp_gain="10">
+      <ingredient name="resourceScrapIron" count="10"/>
+      <ingredient name="resourceClayLump" count="2"/>
+    </recipe>
+    <recipe name="windowStorePane" count="1" craft_area="forge" craft_time="5" craft_exp_gain="10">
+      <ingredient name="resourceScrapIron" count="10"/>
+      <ingredient name="resourceClayLump" count="2"/>
+    </recipe>
+	<!-- Bullet proof -->
+    <recipe name="windowStoreCornerBulletproof" count="1" craft_area="forge" craft_time="5" craft_exp_gain="10">
+      <ingredient name="resourceScrapIron" count="10"/>
+      <ingredient name="resourceClayLump" count="2"/>
+      <ingredient name="resourceScrapLead" count="2"/>
+    </recipe>
+    <recipe name="windowStoreOneSidedBulletproof" count="1" craft_area="forge" craft_time="5" craft_exp_gain="10">
+      <ingredient name="resourceScrapIron" count="10"/>
+      <ingredient name="resourceClayLump" count="2"/>
+      <ingredient name="resourceScrapLead" count="2"/>
+    </recipe>
+    <recipe name="windowStoreTwoSidedBulletproof" count="1" craft_area="forge" craft_time="5" craft_exp_gain="10">
+      <ingredient name="resourceScrapIron" count="10"/>
+      <ingredient name="resourceClayLump" count="2"/>
+      <ingredient name="resourceScrapLead" count="2"/>
+    </recipe>
+    <recipe name="windowStoreThreeSidedBulletproof" count="1" craft_area="forge" craft_time="5" craft_exp_gain="10">
+      <ingredient name="resourceScrapIron" count="10"/>
+      <ingredient name="resourceClayLump" count="2"/>
+      <ingredient name="resourceScrapLead" count="2"/>
+    </recipe>
+    <recipe name="windowStoreFourSidedBulletproof" count="1" craft_area="forge" craft_time="5" craft_exp_gain="10">
+      <ingredient name="resourceScrapIron" count="10"/>
+      <ingredient name="resourceClayLump" count="2"/>
+      <ingredient name="resourceScrapLead" count="2"/>
+    </recipe>
+    <recipe name="windowStorePaneBulletproof" count="1" craft_area="forge" craft_time="5" craft_exp_gain="10">
+      <ingredient name="resourceScrapIron" count="10"/>
+      <ingredient name="resourceClayLump" count="2"/>
+      <ingredient name="resourceScrapLead" count="2"/>
+    </recipe>
+  </append>
+</configs>

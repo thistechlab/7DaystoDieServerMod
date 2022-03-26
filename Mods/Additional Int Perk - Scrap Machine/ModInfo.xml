@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Additional Intellect Perk - Scrap Machine" />
+		<Description value="Adds a new perk to reduce scrap time for items" />
+		<Author value="Eonwalker/ddrwilly/Unequivocal" />
+		<Version value="1.0" compat="A20" />
+	</ModInfo>
+</xml>

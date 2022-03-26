@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="All_Skillbook_Skillpoints" />
+		<Description value="Give a skillpoint after reading all, some, or most skill books." />
+		<Author value="Shouden Kalferas"/>
+		<Version value="A20_1.0" />
+		<Website value="https://github.com/XelaNull/7DTD-Skillbook_Skillpoints.git" />
+	</ModInfo>
+</xml>

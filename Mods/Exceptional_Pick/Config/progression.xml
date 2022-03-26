@@ -1,0 +1,7 @@
+<configs>		
+							
+			<!-- STRENGHT !-->
+					
+			<set xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@operation='base_set'][@level='1,5']/@tags">,exceptionalPick</set>
+			
+</configs>

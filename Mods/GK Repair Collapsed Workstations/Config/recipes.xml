@@ -1,0 +1,15 @@
+<Gouki>
+
+    <append xpath="/recipes">
+	
+        <recipe name="resourceWorkstationRepairKit" count="1" craft_time="60" tags="learnable,perkAdvancedEngineering">
+	        <ingredient name="resourceForgedIron" count="12"/>
+	        <ingredient name="resourceMechanicalParts" count="10"/>
+	        <ingredient name="resourceWood" count="25"/>
+		    <ingredient name="resourceSpring" count="2"/>
+		    <ingredient name="resourceMetalPipe" count="15"/>
+        </recipe>
+	
+    </append>
+	
+</Gouki>

@@ -1,0 +1,4 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+modGunIncendiaryRounds,item_modifiers,mod,New,Incendiary Rounds,,,,,
+modGunIncendiaryRoundsDesc,item_modifiers,mod,New,Burn Mother@!#&er Burn!,,,,,
+modGunIncendiaryRoundsSchematic,item_modifiers,Mod,New,Incendiary Rounds Mod Schematic,,,,,

@@ -1,0 +1,7 @@
+<configs>
+
+<!-- change AI behavior, skip destroy area and continue with AI chain -->
+
+	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='AITask-2']/@value">Territorial</set>
+
+</configs>

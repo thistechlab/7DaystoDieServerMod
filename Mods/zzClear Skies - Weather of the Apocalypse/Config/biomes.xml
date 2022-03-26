@@ -1,0 +1,78 @@
+<Config>	
+
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='default']/@prob">78</set> <!-- default is 44 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='default']/Fog/@min">.2</set> <!-- default is 0 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='default']/Fog/@max">.32</set> <!-- default is 2 -->
+	
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='fog']/@prob">4</set> <!-- default is 8 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='fog']/Fog/@min">3</set> <!-- default is 7 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='fog']/Fog/@max">4</set> <!-- default is 18 -->
+	
+	
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='snow']/@prob">12</set> <!-- default is 40 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='snow']/Fog/@min">.29</set> <!-- default is 1 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='snow']/Fog/@max">.39</set> <!-- default is 5 -->
+	
+	<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='storm']/@prob">6</set> <!-- default is 8 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='storm']/Fog/@min">.45</set> <!--default is 5 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='storm']/Fog/@max">3</set> <!-- default is 15 -->
+	
+	<!-- ***** Pine Forest Biome ***** -->
+	
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='default']/@prob">95</set> <!-- default is 83 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='default']/Fog/@min">.08</set> <!-- default is 0 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='default']/Fog/@max">.22</set> <!-- default is 2 -->
+		
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='fog']/@prob">2</set> <!-- default is 7 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='fog']/Fog/@min">8</set> <!-- default is 16 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='fog']/Fog/@max">13</set> <!-- default is 27 -->
+		
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='rain']/@prob">2</set> <!-- default is 7 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='rain']/Fog/@min">.29</set> <!-- default is 1 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='rain']/Fog/@max">.59</set> <!-- default is 3 -->
+		
+	<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/@prob">1</set> <!-- default is 3 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/Fog/@min">.59</set> <!-- default is 2 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/Fog/@max">3</set> <!-- default is 8 -->
+		
+	<!-- ***** Desert Biome ***** -->
+	
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='default']/@prob">97</set> <!-- default is 87 -->
+		
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='rain']/@prob">2</set> <!-- default is 8 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='rain']/Fog/@min">.29</set> <!-- default is 1 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='rain']/Fog/@max">1</set> <!-- default is 4 -->
+		
+	<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='storm']/@prob">1</set> <!-- default is 5 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='storm']/Fog/@min">1</set> <!-- default is 3 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='storm']/Fog/@max">5</set> <!-- default is 15 -->
+		
+	<!-- ***** Wasteland Biome ***** -->
+	
+	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='default']/@prob">97</set> <!-- default is 80 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='default']/Fog/@min">.12</set> <!-- default is 0 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='default']/Fog/@max">.42</set> <!-- default is 5 -->
+		
+	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='rain']/@prob">2</set> <!-- default is 15 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='rain']/Fog/@min">.42</set> <!-- default is 2 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='rain']/Fog/@max">1</set> <!-- default is 5 -->
+		
+	<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='storm']/@prob">1</set> <!-- default is 5 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='storm']/Fog/@min">1</set> <!-- default is 3 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='storm']/Fog/@max">5</set> <!-- default is 15 -->
+		
+	<!-- ***** Burnt Forest Biome ***** -->
+	
+	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather[@name='default']/@prob">97</set> <!-- default is 75 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather[@name='default']/Fog/@min">.19</set> <!-- default is 0 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather[@name='default']/Fog/@max">.42</set> <!-- default is 5 -->
+		
+	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather[@name='rain']/@prob">2</set> <!-- default is 15 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather[@name='rain']/Fog/@min">.42</set> <!-- default is 2 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather[@name='rain']/Fog/@max">1</set> <!-- default is 5 -->
+		
+	<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather[@name='storm']/@prob">1</set> <!-- default is 10 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather[@name='storm']/Fog/@min">1</set> <!-- default is 2 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather[@name='storm']/Fog/@max">5</set> <!-- default is 15 -->
+	
+</Config>

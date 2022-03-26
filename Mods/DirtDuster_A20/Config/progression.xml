@@ -1,0 +1,10 @@
+<configs>
+	 <!-- 
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+											THE A TEAMS DIRT DUSTER                                                                                             
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	--> 
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='3,5']/@tags">,vehicleDirtDusterCompleteChassis,vehicleDirtDusterBaseChassis,vehicleDirtDusterbars,vehicleDirtDusterEngine,
+	vehicleDirtDusterSeat,vehicleDirtDusterWheels,vehicleDirtDusterFrontWheel,vehicleDirtDusterBackWheel</append>
+		
+ </configs>

@@ -1,0 +1,205 @@
+<configs>
+
+<!-- Removes redundant recipes  -->
+
+	<remove	xpath="//recipe[(starts-with (@name, 'planted'))]"/>
+	<remove	xpath="//recipe[@name='foodSteakAndPotato']"/>
+	<remove	xpath="//recipe[@name='foodTunaFishGravyToast']"/>
+	<remove	xpath="//recipe[@name='foodSpaghetti']"/>
+	<remove	xpath="//recipe[@name='foodShepardsPie']"/>
+	<remove	xpath="//recipe[@name='foodGumboStew']"/>
+	<remove	xpath="//recipe[@name='foodMeatStew']"/>
+	<remove	xpath="//recipe[@name='foodHoboStew']"/>
+	<remove	xpath="//recipe[@name='foodGrilledMeat']"/>
+
+	
+	<append xpath="/recipes">
+		<!-- Seed Changes -->
+
+<recipe name="plantedAloe1" count="1" craft_time="1" tags="learnable, perkLivingOffTheLandCrafting">
+	<ingredient name="resourceCropAloeLeaf" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="resourceCropAloeLeaf"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedBlueberry1" count="1" craft_time="1" tags="learnable, perkLivingOffTheLandCrafting">
+	<ingredient name="foodCropBlueberries" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="foodCropBlueberries"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedChrysanthemum1" count="1" craft_time="1" tags="learnable, perkLivingOffTheLandCrafting">
+	<ingredient name="resourceCropChrysanthemumPlant" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="resourceCropChrysanthemumPlant"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedCoffee1" count="1" craft_time="1" tags="learnable, perkLivingOffTheLandCrafting">
+	<ingredient name="resourceCropCoffeeBeans" count="5"/>
+	<ingredient name="foodCropBlueberries" count="5"/>	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="resourceCropCoffeeBeans"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedCorn1" count="1" craft_time="1" tags="learnable, perkLivingOffTheLandCrafting">
+	<ingredient name="foodCropCorn" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="foodCropCorn"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedCotton1" count="1" craft_time="1" tags="learnable, perkLivingOffTheLandCrafting">
+	<ingredient name="resourceCropCottonPlant" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="resourceCropCottonPlant"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedGoldenrod1" count="1" craft_time="1" tags="learnable, perkLivingOffTheLandCrafting">
+	<ingredient name="resourceCropGoldenrodPlant" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="resourceCropGoldenrodPlant"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedGraceCorn1" count="1" craft_time="1" tags="learnable, perkLivingOffTheLandCrafting">
+	<ingredient name="foodCropGraceCorn" count="5"/>
+			<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="foodCropGraceCorn"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedHop1" count="1" craft_time="1" tags="learnable, perkLivingOffTheLandCrafting">
+	<ingredient name="resourceCropHopsFlower" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="resourceCropHopsFlower"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedMushroom1" count="1" craft_time="2" tags="learnable, perkLivingOffTheLandCrafting">
+	<ingredient name="foodCropMushrooms" count="5"/>
+	<ingredient name="resourceClayLump" count="2"/>
+			<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="resourceClayLump, foodCropMushrooms"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedPotato1" count="1" craft_time="1" tags="learnable, perkLivingOffTheLandCrafting">
+	<ingredient name="foodCropPotato" count="5"/>
+			<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="foodCropPotato"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedYucca1" count="1" craft_time="1" tags="learnable, perkLivingOffTheLandCrafting">
+	<ingredient name="foodCropYuccaFruit" count="5"/>
+			<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="foodCropYuccaFruit"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedPumpkin1" count="1" craft_time="1" tags="learnable, perkLivingOffTheLandCrafting">
+	<ingredient name="foodCropPumpkin" count="5"/>
+			<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="foodCropPumpkin"/>
+	</effect_group>
+</recipe>
+
+<recipe name="plantedtreeGrassSeed1" count="1" craft_exp_gain="0" tags="perkLivingOffTheLandCrafting">
+	<ingredient name="resourceYuccaFibers" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="perc_add" value="-.3,-.5,-.5" tags="resourceYuccaFibers"/>
+	</effect_group>
+</recipe>
+
+<!-- Food Changes -->
+
+
+<recipe name="foodGrilledMeat" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+	<ingredient name="foodRawMeat" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="foodRawMeat"/>
+	</effect_group>
+</recipe>
+
+<recipe name="foodHoboStew" count="1"  craft_time="65" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	<ingredient name="foodRottingFlesh" count="10"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="foodRottingFlesh,foodCropCorn,foodCropPotato"/>
+	</effect_group>
+</recipe>
+
+<recipe name="foodMeatStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	<ingredient name="foodRawMeat" count="5"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropCorn" count="2"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="foodRawMeat,foodCropCorn,foodCropPotato"/>
+	</effect_group>
+</recipe>
+
+<recipe name="foodGumboStew" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	<ingredient name="foodCanBeef" count="1"/>
+	<ingredient name="foodCanPeas" count="1"/>
+	<ingredient name="foodCanStock" count="1"/>
+	<ingredient name="resourceAnimalFat" count="3"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="resourceAnimalFat"/>
+	</effect_group>
+</recipe>
+
+<recipe name="foodShepardsPie" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	<ingredient name="foodCanLamb" count="1"/>
+	<ingredient name="foodCanPeas" count="1"/>
+	<ingredient name="foodCropCorn" count="1"/>
+	<ingredient name="resourceAnimalFat" count="3"/>
+	<ingredient name="foodCropPotato" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="resourceAnimalFat"/>
+	</effect_group>
+</recipe>
+
+<recipe name="foodSpaghetti" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	<ingredient name="foodCanBeef" count="1"/>
+	<ingredient name="foodCanPasta" count="1"/>
+	<ingredient name="foodCropMushrooms" count="1"/>
+	<ingredient name="resourceAnimalFat" count="3"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="resourceAnimalFat"/>
+	</effect_group>
+</recipe>
+
+<recipe name="foodTunaFishGravyToast" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	<ingredient name="foodCanTuna" count="1"/>
+	<ingredient name="foodCornMeal" count="1"/>
+	<ingredient name="foodCornBread" count="2"/>
+	<ingredient name="resourceAnimalFat" count="3"/>
+	<ingredient name="foodCanPeas" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="resourceAnimalFat"/>
+	</effect_group>
+</recipe>
+
+<recipe name="foodSteakAndPotato" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
+	<ingredient name="foodRawMeat" count="5"/>
+	<ingredient name="foodCropPotato" count="2"/>
+	<ingredient name="foodCropMushrooms" count="2"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.1,-.2,-.3,-.4,-.5" tags="foodRawMeat, foodCropPotato, foodCropMushrooms"/>
+	</effect_group>
+</recipe>
+
+	</append>
+</configs>

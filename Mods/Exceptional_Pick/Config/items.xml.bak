@@ -1,0 +1,81 @@
+<configs>
+	<append xpath="/items">
+		<item  name="exceptionalPick">
+			<property name="Tags" value="exceptional,tool,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="HoldType" value="63"/>
+			<property name="CustomIcon" value="meleeToolPickT1IronPickaxe"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<Property name="TintColor" value="255,160,160"/>
+			<property name="Meshfile" value="#Other/Items?Tools/pickaxe_ironPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="Degradation" value="99999" param1="true"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="SoundDestroy" value="metaldestroy1"/>
+			<property name="FuelValue" value="250"/>
+			<property name="EconomicValue" value="500"/>
+			<property name="UnlockedBy" value="perkMiner69r,meleeToolIronSetSchematic"/>
+			<property name="ShowQuality" value="true"/>
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value="0.15"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="GrazeStart" value=".25"/>
+		<property name="GrazeEnd" value=".35"/>
+		<property name="SwingDegrees" value="65"/>
+		<property name="SwingAngle" value="180"/>
+		<property name="UseGrazingHits" value="true"/>
+	</property>
+	<property class="Action1">
+			<property name="Class" value="DynamicMelee"/>
+			<property name="Sphere" value=".15"/>
+			<property name="Sound_start" value="swoosh"/>
+			<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+			<property name="UsePowerAttackAnimation" value="true"/>
+			<property name="UseGrazingHits" value="true"/>
+			<property name="GrazeStart" value=".3"/>
+			<property name="GrazeEnd" value=".4"/>
+			<property name="SwingDegrees" value="70"/>
+			<property name="SwingAngle" value="130"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+		<effect_group name="exceptionalPick">
+		<passive_effect name="EntityDamage" operation="base_set" value="0.00"/> <!-- meleeToolPickaxeIron -->
+		<passive_effect name="BlockDamage" operation="base_set" value="300"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="90"/><!-- Gazz change 55 to 65 -->
+		<passive_effect name="StaminaLoss" operation="base_set" value="1.0" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="260,886" tier="1,6" tags="perkMiner69r"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkMiner69r"/>
+		<passive_effect name="MaxRange" operation="base_set" value="20"/>
+		<passive_effect name="BlockRange" operation="base_set" value="20"/>
+
+		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+
+		<passive_effect name="EntityDamage" operation="perc_add" value="0.00,0.00"/> <!-- random EntityDmg -->
+		<passive_effect name="EntityDamage" operation="perc_add" value="0.00,0.00" tier="2,6"/> <!-- tier bonus -->
+		<passive_effect name="BlockDamage" operation="perc_add" value="-.01,.01"/> <!-- random BlockDmg -->
+		<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6"/> <!-- tier bonus -->
+		<passive_effect name="DegradationMax" operation="perc_add" value="-.15,.15" tags="perkMiner69r"/> <!-- random DegMax -->
+		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.05,.05"/> <!-- random APM -->
+		<passive_effect name="StaminaLoss" operation="perc_add" value="-.05,.05"/> <!-- random StamLoss -->
+
+		<passive_effect name="DamageModifier" operation="perc_add" value=".1" tags="wood"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".1" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".1" tags="terrGravel"/>
+	</effect_group>
+		<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="0" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1.5" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_add" value="1" tags="secondary"/>
+	</effect_group>
+		<property name="PickupJournalEntry" value="miningTip"/>
+		<property name="RepairExpMultiplier" value="5.5"/>
+		</item>
+	</append>
+</configs>
+
