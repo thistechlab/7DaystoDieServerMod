@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="OP trader" />
+		<Description value="a modlet to allow you to change the amount of items a trader will trade the day and add any custom groups" />
+		<Author value="donorcap aka DEV GANG"/>
+		<Version value="A19.2" />
+	</ModInfo>
+</xml>

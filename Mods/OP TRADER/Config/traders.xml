@@ -1,0 +1,105 @@
+<config>
+	
+	<!-- CHANGE VALUES TO DECREASE OR INCREASE ITEMS OR DAYS -->
+  	<setattribute xpath="//trader_info[@id='1']" name="reset_interval">1</setattribute> <!-- change days 1 =  resets daily -->
+	<setattribute xpath="//trader_info[@id='1']" name="min_inventory">400</setattribute> <!-- change the least amount of stock in trader -->
+	<setattribute xpath="//trader_info[@id='1']" name="max_inventory">800</setattribute> <!-- change the most amount of stock in trader always double what mim inventory is -->
+	<setattribute xpath="//trader_info[@id='1']" name="min_items_swapped">400</setattribute> <!-- what items get swapped out when restocking eg: how many items minimum -->
+	<setattribute xpath="//trader_info[@id='1']" name="max_items_swapped">800</setattribute> <!-- what items get swapped out when restocking eg: how many items maximum -->
+	
+	
+	<setattribute xpath="//trader_info[@id='2']" name="reset_interval">1</setattribute> <!-- change restock days -->
+	<setattribute xpath="//trader_info[@id='2']" name="min_inventory">400</setattribute> <!-- change the least amount of stock in trader -->
+	<setattribute xpath="//trader_info[@id='2']" name="max_inventory">800</setattribute> <!-- change the most amount of stock in trader always double what mim inventory is -->
+	<setattribute xpath="//trader_info[@id='2']" name="min_items_swapped">400</setattribute> <!-- what items get swapped out when restocking eg: how many items minimum -->
+	<setattribute xpath="//trader_info[@id='2']" name="max_items_swapped">800</setattribute> <!-- what items get swapped out when restocking eg: how many items minimum -->
+	
+	<setattribute xpath="//trader_info[@id='3']" name="reset_interval">1</setattribute> <!-- change restock days -->
+	<setattribute xpath="//trader_info[@id='3']" name="min_inventory">400</setattribute> <!-- change the least amount of stock in trader -->
+	<setattribute xpath="//trader_info[@id='3']" name="max_inventory">800</setattribute> <!-- change the most amount of stock in trader always double what mim inventory is -->
+	<setattribute xpath="//trader_info[@id='3']" name="min_items_swapped">400</setattribute> <!-- what items get swapped out when restocking eg: how many items minimum -->
+	<setattribute xpath="//trader_info[@id='3']" name="max_items_swapped">800</setattribute> <!-- what items get swapped out when restocking eg: how many items minimum -->
+	
+	<setattribute xpath="//trader_info[@id='4']" name="reset_interval">1</setattribute> <!-- change restock days -->
+	<setattribute xpath="//trader_info[@id='4']" name="allow_sell">True</setattribute> <!-- allows the use of vending machines to have items sold to them -->
+	<setattribute xpath="//trader_info[@id='4']" name="min_inventory">400</setattribute> <!-- change the least amount of stock in trader -->
+	<setattribute xpath="//trader_info[@id='4']" name="max_inventory">800</setattribute> <!-- change the most amount of stock in trader always double what mim inventory is -->
+	<setattribute xpath="//trader_info[@id='4']" name="min_items_swapped">400</setattribute> <!-- what items get swapped out when restocking eg: how many items minimum -->
+	<setattribute xpath="//trader_info[@id='4']" name="max_items_swapped">800</setattribute> <!-- what items get swapped out when restocking eg: how many items minimum -->
+	
+	<setattribute xpath="//trader_info[@id='5']" name="reset_interval">1</setattribute> <!-- change restock days -->
+	<setattribute xpath="//trader_info[@id='5']" name="min_inventory">400</setattribute> <!-- change the least amount of stock in trader -->
+	<setattribute xpath="//trader_info[@id='5']" name="max_inventory">800</setattribute> <!-- change the most amount of stock in trader always double what mim inventory is -->
+	<setattribute xpath="//trader_info[@id='5']" name="min_items_swapped">400</setattribute> <!-- what items get swapped out when restocking eg: how many items minimum -->
+	<setattribute xpath="//trader_info[@id='5']" name="max_items_swapped">800</setattribute> <!-- what items get swapped out when restocking eg: how many items minimum -->
+	
+    <setattribute xpath="//trader_info[@id='6']" name="reset_interval">1</setattribute> <!-- change restock days -->
+	<setattribute xpath="//trader_info[@id='6']" name="min_inventory">400</setattribute> <!-- change the least amount of stock in trader -->
+	<setattribute xpath="//trader_info[@id='6']" name="max_inventory">800</setattribute> <!-- change the most amount of stock in trader always double what mim inventory is -->
+	<setattribute xpath="//trader_info[@id='6']" name="min_items_swapped">400</setattribute> <!-- what items get swapped out when restocking eg: how many items minimum -->
+	<setattribute xpath="//trader_info[@id='6']" name="max_items_swapped">800</setattribute> <!-- what items get swapped out when restocking eg: how many items minimum -->
+	
+    <setattribute xpath="//trader_info[@id='7']" name="reset_interval">1</setattribute> <!-- change restock days -->
+	<setattribute xpath="//trader_info[@id='7']" name="min_inventory">400</setattribute> <!-- change the least amount of stock in trader -->
+	<setattribute xpath="//trader_info[@id='7']" name="max_inventory">800</setattribute> <!-- change the most amount of stock in trader always double what mim inventory is -->
+	<setattribute xpath="//trader_info[@id='7']" name="min_items_swapped">400</setattribute> <!-- what items get swapped out when restocking eg: how many items minimum -->
+	<setattribute xpath="//trader_info[@id='7']" name="max_items_swapped">800</setattribute> <!-- what items get swapped out when restocking eg: how many items minimum -->
+	
+    <setattribute xpath="//trader_info[@id='8']" name="reset_interval">1</setattribute> <!-- change restock days -->
+	<setattribute xpath="//trader_info[@id='8']" name="min_inventory">400</setattribute> <!-- change the least amount of stock in trader --> 
+	<setattribute xpath="//trader_info[@id='8']" name="max_inventory">800</setattribute> <!-- change the most amount of stock in trader always double what mim inventory is -->
+	<setattribute xpath="//trader_info[@id='8']" name="min_items_swapped">400</setattribute> <!-- what items get swapped out when restocking eg: how many items minimum -->
+	<setattribute xpath="//trader_info[@id='8']" name="max_items_swapped">800</setattribute> <!-- what items get swapped out when restocking eg: how many items minimum -->
+		
+<!-- GROUPS FOR TRADERS -->
+<insertBefore xpath="/traders/trader_item_groups/trader_item_group[@name='modMeleeT1']"> <!-- create groups for this location in insertBefore -->
+
+<trader_item_group name="SEEDSFORALL">
+<item name="plantedCoffee1" count="10"/>
+<item name="treePlantedOak1m" count="10"/>
+<item name="treePlantedMountainPine1m" count="10"/>
+<item name="plantedYucca1" count="10"/>
+<item name="plantedSnowberry1" count="10"/>
+<item name="plantedPotato1" count="10"/>
+<item name="plantedMushroom1" count="10"/>
+<item name="plantedHop1" count="10"/>
+<item name="plantedGoldenrod1" count="10"/>
+<item name="plantedCotton1" count="10"/>
+<item name="plantedCorn1" count="10"/>
+<item name="plantedChrysanthemum1" count="10"/>
+<item name="plantedBlueberry1" count="10"/>
+<item name="plantedAloe1" count="10"/>
+</trader_item_group>
+
+</insertBefore>
+
+<!-- CODE TO ADD TO TRADERS -->
+<append xpath="//trader_info[@id='1']/trader_items"> <!-- how to add groups created above to a trader so the trader will sell said items -->
+<item group="SEEDSFORALL" count="1,2"/> <!-- EG: GROUP MADE ABOVE -->
+</append>
+<append xpath="//trader_info[@id='2']/trader_items">
+<item group="SEEDSFORALL" count="1,2"/>
+</append>
+<append xpath="//trader_info[@id='3']/trader_items">
+<item group="SEEDSFORALL" count="1,2"/> 
+</append>
+<append xpath="//trader_info[@id='4']/trader_items">
+<item group="SEEDSFORALL" count="1,2"/>
+</append>
+<append xpath="//trader_info[@id='5']/trader_items">
+<item group="SEEDSFORALL" count="1,2"/>
+</append>
+<append xpath="//trader_info[@id='6']/trader_items">
+<item group="SEEDSFORALL" count="1,2"/>
+</append>
+<append xpath="//trader_info[@id='7']/trader_items">
+<item group="SEEDSFORALL" count="1,2"/>
+</append>
+<append xpath="//trader_info[@id='8']/trader_items">
+<item group="SEEDSFORALL" count="1,2"/>
+</append>
+<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderAlways']"> <!-- add a group here that the trader will always sell -->
+<item group="SEEDSFORALL" count="5,6"/>
+</append>
+	
+</config>
