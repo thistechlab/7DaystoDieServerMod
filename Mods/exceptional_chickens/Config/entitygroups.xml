@@ -1,0 +1,1 @@
+	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'animalZombieVulture')]/@name">animalChicken</set>
