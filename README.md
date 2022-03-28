@@ -47,4 +47,6 @@ Trader Refresh 1 Day - https://7daystodiemods.com/trader-refresh-1-day/<br/>
 Zombie Loot Bag Increase - https://7daystodiemods.com/zombie-loot-bag-increase/ </br>
 Craftable Solar - https://www.nexusmods.com/7daystodie/mods/692</br>
 Valmars Buffed Supply Crate Drops - https://7daystodiemods.com/buffed-supply-crate-drops/</br>
+OP Trader - https://www.nexusmods.com/7daystodie/mods/1215?tab=files&file_id=7206</br>
+
 
