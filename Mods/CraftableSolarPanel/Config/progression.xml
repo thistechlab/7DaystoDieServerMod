@@ -1,0 +1,6 @@
+<CraftableSolarPanel>
+<!-- Value changes -->
+  <append xpath="/progression/perks/perk[@name='perkYeahScience']/effect_group/passive_effect[@level='4,5']/@tags">,solarCell,solarbank</append>
+</CraftableSolarPanel>
+
+

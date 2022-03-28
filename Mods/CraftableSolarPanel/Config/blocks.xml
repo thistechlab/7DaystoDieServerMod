@@ -1,0 +1,7 @@
+<CraftableSolarPanel>
+  <!--erweitern um Unlock by-->
+  <append xpath="/blocks/block[@name='solarbank']">
+    <property name="UnlockedBy" value="solarbankSchematic,perkYeahScience"/>
+  </append>
+
+</CraftableSolarPanel>
