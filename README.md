@@ -11,7 +11,6 @@ Barbed Wire Recipe<br/>
 BluemaxDR's Anti-Destroy Area - https://www.nexusmods.com/7daystodie/mods/1961<br/>
 Tier 6 Crafting - https://www.nexusmods.com/7daystodie/mods/1718<br/>
 Dirtbike - https://7daystodiemods.com/dirt-duster-dirt-bike/<br/>
-Windmills - https://www.nexusmods.com/7daystodie/mods/1840<br/>
 EpicSpire's Burnt Schematics - https://www.nexusmods.com/7daystodie/mods/2079<br/>
 EpicSpire's Food and Farming - https://www.nexusmods.com/7daystodie/mods/2058<br/>
 EpicSpire's Quality ModSlot Boost - https://www.nexusmods.com/7daystodie/mods/2057<br/>
@@ -44,4 +43,5 @@ Falling Trees - https://7daystodiemods.com/falling-trees/<br/>
 Incendiary Rounds - https://7daystodiemods.com/incendiary-rounds/<br/>
 Trader Refresh 1 Day - https://7daystodiemods.com/trader-refresh-1-day/<br/>
 30K Item Stacks - https://7daystodiemods.com/30k-item-stacks/<br/>
-Zombie Loot Bag Increase - https://7daystodiemods.com/zombie-loot-bag-increase/
+Zombie Loot Bag Increase - https://7daystodiemods.com/zombie-loot-bag-increase/ </br>
+Craftable Solar - https://www.nexusmods.com/7daystodie/mods/692
