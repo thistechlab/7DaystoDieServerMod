@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Valmars Buffed Supply Crate Drops" />
+        <Description value="Buffs the Supply Crate Drops that are dropped in game." />
+        <Author value="Valmar" />
+        <Version value="A20" />
+    </ModInfo>
+</xml>
