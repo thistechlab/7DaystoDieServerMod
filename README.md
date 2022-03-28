@@ -20,6 +20,7 @@ Exceptional_Crush<br/>
 Exceptional_Drone_Storage<br/>
 Exceptional_Fuel<br/>
 Exceptional_Pick<br/>
+Exceptional_Chickens</br>
 Exceptional_Windows_Recipe<br/>
 Faster_Bellows_Anvil - https://github.com/XelaNull/7DTD-Bag_Bellows_Headshot/tree/master/Faster_Bellows (modified to include anvil speeds)<br/>
 GK Repair Collapsed Workstations - https://7daystodiemods.com/gk-repair-collapsed-workstations/<br/>
