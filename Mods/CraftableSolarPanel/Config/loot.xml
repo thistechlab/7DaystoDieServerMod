@@ -1,6 +1,0 @@
-<CraftableSolarPanel>
-	<append xpath="/lootcontainers/lootgroup[@name='schematicsElectrical']">
-    <item name="solarbankschematic"/>
-    <item name="solarcellschematic"/>
-	</append>
-</CraftableSolarPanel> 
