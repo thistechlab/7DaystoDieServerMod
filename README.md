@@ -54,5 +54,6 @@ Improved Hordes (w/Bigger Hordes Add-on) - https://7daystodiemods.com/improved-h
 Extra Mods by Zeruel87 - https://7daystodiemods.com/extra-mods-by-zeruel87/ </br>
 Better Dyes - https://7daystodiemods.com/better-dyes/</br>
 Combine Window - https://7daystodiemods.com/combine-window/</br>
+Fast Nailgun A20 - https://www.nexusmods.com/7daystodie/mods/1135 </br>
 
 
