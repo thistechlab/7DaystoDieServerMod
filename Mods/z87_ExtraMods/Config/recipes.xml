@@ -1,0 +1,195 @@
+<config>
+	<append xpath="/recipes">
+
+<recipe name="z87_modMagazineFunnel" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="10"/>
+	<ingredient name="resourceGlue" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceSpring" count="5"/>
+</recipe>
+
+<recipe name="z87_modMagazineClips" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="5"/>
+	<ingredient name="resourceGlue" count="5"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceSpring" count="5"/>
+</recipe>
+
+<recipe name="z87_modColtSpeedLoader" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="5"/>
+	<ingredient name="resourceGlue" count="5"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceSpring" count="5"/>
+</recipe>
+
+<recipe name="z87_modShotgunSpeedLoader" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="5"/>
+	<ingredient name="resourceGlue" count="5"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceSpring" count="5"/>
+</recipe>
+
+<recipe name="z87_modLongShells" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceScrapPolymers" count="10"/>
+	<ingredient name="resourceOil" count="1"/>
+	<ingredient name="resourceMetalPipe" count="1"/>
+	<ingredient name="resourceSpring" count="1"/>
+</recipe>
+
+<recipe name="z87_modDragonBreath" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceScrapPolymers" count="10"/>
+	<ingredient name="resourceOil" count="2"/>
+	<ingredient name="resourceCoal" count="20"/>
+	<ingredient name="resourcePotassiumNitratePowder" count="20"/>
+</recipe>
+
+<recipe name="z87_modCleaningCord" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceYuccaFibers" count="50"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+</recipe>
+
+<recipe name="z87_modGunOiler" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceScrapPolymers" count="20"/>
+	<ingredient name="resourceOil" count="1"/>
+	<ingredient name="resourceMetalPipe" count="1"/>
+	<ingredient name="resourceSpring" count="1"/>
+</recipe>
+
+<recipe name="z87_modCleaningKit" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceCloth" count="10"/>
+	<ingredient name="z87_modCleaningCord" count="1"/>
+	<ingredient name="z87_modGunOiler" count="1"/>
+</recipe>
+
+<recipe name="z87_modDragonBreathKit" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="5"/>
+	<ingredient name="z87_modShotgunSpeedLoader" count="1"/>
+	<ingredient name="z87_modLongShells" count="1"/>
+	<ingredient name="z87_modDragonBreath" count="1"/>
+</recipe>
+
+<recipe name="z87_modUzi" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="5"/>
+	<ingredient name="modGunMagazineExtender" count="1"/>
+	<ingredient name="modGunTriggerGroupAutomatic" count="1"/>
+	<ingredient name="modGunRetractingStock" count="1"/>
+</recipe>
+
+<recipe name="z87_modHeadHunter" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="5"/>
+	<ingredient name="modGunCrippleEm" count="1"/>
+	<ingredient name="modGunTriggerGroupSemi" count="1"/>
+	<ingredient name="z87_modMagazineFunnel" count="1"/>
+</recipe>
+
+<recipe name="z87_modAntiTankRifle" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="5"/>
+	<ingredient name="modGunBarrelExtender" count="1"/>
+	<ingredient name="modGunBipod" count="1"/>
+	<ingredient name="modGunScopeLarge" count="1"/>
+</recipe>
+
+<recipe name="z87_modTommyGun" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="5"/>
+	<ingredient name="modGunMuzzleBrake" count="1"/>
+	<ingredient name="modGunForegrip" count="1"/>
+	<ingredient name="modGunDrumMagazineExtender" count="1"/>
+</recipe>
+
+<recipe name="z87_modGoldenGun" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceGoldNugget" count="4"/>
+	<ingredient name="gunHandgunT1PistolParts" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="6"/>
+</recipe>
+
+<recipe name="z87_modSharpeningKit" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="5"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+	<ingredient name="resourceRockSmall" count="5"/>
+</recipe>
+
+<recipe name="z87_modDiamondSharpeningKit" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceRawDiamond" count="1"/>
+	<ingredient name="z87_modSharpeningKit" count="1"/>
+</recipe>
+
+<recipe name="z87_modFiberglassHandle" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceScrapPolymers" count="10"/>
+	<ingredient name="resourceGlue" count="5"/>
+	<ingredient name="resourceDuctTape" count="5"/>
+	<ingredient name="resourceCloth" count="5"/>
+</recipe>
+
+<recipe name="z87_modDualHead" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="10"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="modMeleeBunkerBuster" count="1"/>
+	<ingredient name="modMeleeIronBreaker" count="1"/>
+</recipe>
+
+<recipe name="z87_modDiamondPickaxeHead" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceRawDiamond" count="3"/>
+	<ingredient name="resourceWood" count="2"/>
+</recipe>
+
+<recipe name="z87_modToolHandlebarCover" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="5"/>
+	<ingredient name="resourceCloth" count="5"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+	<ingredient name="resourceDuctTape" count="5"/>
+</recipe>
+
+<recipe name="z87_modToolExtender" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="5"/>
+	<ingredient name="resourceMechanicalParts" count="4"/>
+	<ingredient name="resourceMetalPipe" count="2"/>
+	<ingredient name="resourceSpring" count="2"/>
+</recipe>
+
+<recipe name="z87_modToolMotortuning" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="10"/>
+	<ingredient name="resourceScrapPolymers" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="5"/>
+	<ingredient name="resourceSpring" count="5"/>
+</recipe>
+
+<recipe name="z87_modToolOilFunnel" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceScrapPolymers" count="10"/>
+	<ingredient name="resourceGlue" count="2"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="ammoGasCan" count="10"/>
+</recipe>
+
+<recipe name="z87_modComboFunnelSmall" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceYuccaFibers" count="50"/>
+	<ingredient name="z87_modToolOilFunnel" count="1"/>
+	<ingredient name="modFuelTankSmall" count="1"/>
+</recipe>
+
+<recipe name="z87_modComboFunnelLarge" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceYuccaFibers" count="50"/>
+	<ingredient name="z87_modToolOilFunnel" count="1"/>
+	<ingredient name="modFuelTankLarge" count="1"/>
+</recipe>
+
+<recipe name="z87_modMotortoolPerformanceKit" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="10"/>
+	<ingredient name="z87_modToolHandlebarCover" count="1"/>
+	<ingredient name="z87_modToolExtender" count="1"/>
+	<ingredient name="z87_modToolMotortuning" count="1"/>
+</recipe>
+
+<recipe name="z87_modShoeInsoles" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceCloth" count="10"/>
+	<ingredient name="resourceScrapPolymers" count="10"/>
+	<ingredient name="resourceDuctTape" count="2"/>
+	<ingredient name="resourceOil" count="1"/>
+</recipe>
+
+<recipe name="z87_modClothPatch" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceCloth" count="10"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+	</append>
+</config>

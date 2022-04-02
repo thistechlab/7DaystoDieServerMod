@@ -1,0 +1,445 @@
+<config>
+	<append xpath="/item_modifiers">
+
+	<!-- weapons -->
+
+	<item_modifier name="z87_modArrowBoltMagazine" installable_tags="gunBowT1WoodenBow,gunBowT1IronCrossbow" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="EconomicValue" value="1000"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="5"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".2"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="-.5"/>
+		</effect_group>
+	<effect_group tiered="false" name="sneak damage bonus">
+		<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+		<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+			<passive_effect name="DamageBonus" operation="base_add" value="-.5"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="-.5"/>
+			<display_value name="dEntityDamageSneak" value="-.5"/>
+	</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modMagazineFunnel" installable_tags="magazine,turretRanged" modifier_tags="magazineFunnel" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modMagazineFunnelSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".10"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modMagazineClips" installable_tags="magazine,turretRanged" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modMagazineClipsSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".25"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modColtSpeedLoader" installable_tags="revolver" modifier_tags="magazine" blocked_tags="noMods,pistol" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modColtSpeedLoaderSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".25"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modShotgunSpeedLoader" installable_tags="dbarrel" modifier_tags="magazine" blocked_tags="noMods,pistol" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modShotgunSpeedLoaderSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".25"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modLongShells" installable_tags="shotgun" modifier_tags="shells" blocked_tags="noMods,pistol" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modLongShellsSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="RoundRayCount" operation="perc_add" value=".4" tags="perkBoomstick"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="-.2"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modDragonBreath" installable_tags="gunShotgunT0PipeShotgun,dBarrel,modGunShotgunTubeExtenderMagazine" modifier_tags="dragonBreath" blocked_tags="noMods,noSilencer" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modDragonBreathSchematic"/>
+		<effect_group name="new Fire Proc" tiered="false">
+			<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="10">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/></triggered_effect>
+		</effect_group>
+		<effect_group name="always refresh existing Fire Proc" tiered="false">
+			<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+			<requirement name="HasBuff" target="other" buff="buffBurningElement"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+				<!--default duration is 10-->
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/></triggered_effect>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modCleaningCord" installable_tags="gun" modifier_tags="cleaningCord" blocked_tags="noMods,noSilencer" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modCleaningCordSchematic"/>
+		<effect_group tiered="false" name="sneak damage bonus">
+			<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+			<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+				<passive_effect name="DamageBonus" operation="base_add" value=".5"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5"/>
+				<display_value name="dEntityDamageSneak" value=".5"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modGunOiler" installable_tags="gun" modifier_tags="gunOiler" blocked_tags="noMods,noSilencer" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modGunOilerSchematic"/>
+		<effect_group tiered="false" name="sneak damage bonus">
+			<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+			<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+				<passive_effect name="DamageBonus" operation="base_add" value=".5"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".5"/>
+				<display_value name="dEntityDamageSneak" value=".5"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modCleaningKit" installable_tags="gun" modifier_tags="cleaningCord,gunOiler" blocked_tags="noMods,noSilencer" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modCleaningKitSchematic"/>
+		<effect_group tiered="false" name="sneak damage bonus">
+			<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+			<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+				<passive_effect name="DamageBonus" operation="base_add" value="1"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="1"/>
+				<display_value name="dEntityDamageSneak" value="1"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modDragonBreathKit" installable_tags="dbarrel" modifier_tags="magazine,shells,dragonBreath" blocked_tags="noMods,pistol" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modDragonBreathKitSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".30"/>
+			<passive_effect name="RoundRayCount" operation="perc_add" value=".8" tags="perkBoomstick"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="-.25"/>
+		</effect_group>
+		<effect_group name="new Fire Proc" tiered="false">
+			<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="10">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/></triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/></triggered_effect>
+		</effect_group>
+		<effect_group name="always refresh existing Fire Proc" tiered="false">
+			<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".93"/>
+			<requirement name="HasBuff" target="other" buff="buffBurningElement"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+				<!--default duration is 10-->
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="$buffBurningElementDuration" operation="set" value="11">
+					<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/></triggered_effect>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modUzi" installable_tags="pistol" modifier_tags="magazine,trigger,stocks" blocked_tags="noMods,revolver" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modUziSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="perc_add" value="1"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value="2"/>
+			<passive_effect name="BurstRoundCount" operation="base_set" value="999"/>
+			<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2"/>
+			<passive_effect name="MaxRange" operation="perc_add" value="-.2"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modHeadHunter" installable_tags="pistol" modifier_tags="crippling,firingMode,magazineFunnel" blocked_tags="noMods,revolver" type="attachment">
+		<item_property_overrides name="*">
+			<property name="TintColor" value="152,172,192"/>
+			<property name="CustomIconTint" value="152,172,192"/>
+			<property name="UMA.Overlay0Tint" value="152,172,192"/>
+		</item_property_overrides>
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modHeadHunterSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".50" tags="head"/> <!-- +100% weapon base Damage, i testet it. !-->
+			<passive_effect name="DismemberChance" operation="base_add" value=".25"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".1"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.2"/>
+			<passive_effect name="MagazineSize" operation="perc_add" value="-.5"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modAntiTankRifle" installable_tags="gunRifleT1HuntingRifle" modifier_tags="barrelAttachment,accuracy,scope" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modAntiTankRifleSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="EntityDamage" operation="perc_add" value=".809"/>
+			<passive_effect name="TargetArmor" operation="perc_add" value="-.5"/>
+			<passive_effect name="EntityPenetrationCount" operation="base_set" value="2"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="-.3"/>
+		</effect_group>
+		<!--DamageFalloffRange increased by x meters-->
+		<effect_group tiered="false">
+			<passive_effect name="DamageFalloffRange" operation="perc_add" value=".2"/>
+			<passive_effect name="MaxRange" operation="perc_add" value=".2"/>
+			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value=".1"/>
+			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.05"/>
+			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.05">
+				<requirement name="ItemHasTags" tags="perkDeadEye,crossbow"/></passive_effect>
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value=".1"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value=".1"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value=".05"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value=".05"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value="-.08">
+				<requirement name="NotHasBuff" buff="buffHoldBreathAiming01"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.08"/>
+			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.09">
+				<requirement name="ItemHasTags" tags="perkDeadEye,crossbow"/></passive_effect>
+			<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value=".05"/>
+			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value=".05"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value="-.05"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".35">
+				<requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
+			</passive_effect>
+		</effect_group>
+		<item_property_overrides name="*">
+			<property name="TintColor" value="41,55,175"/>
+			<property name="CustomIconTint" value="41,55,175"/>
+			<property name="UMA.Overlay0Tint" value="41,55,175"/>
+			<property name="CrosshairOnAim" value="true"/>
+			<property name="Zoom_overlay" value="#Other/Items?Weapons/HUD/sniper_zoom_overlay.tga"/>
+			<property name="Zoom_max_out" value="20"/>
+			<property name="Zoom_max_in" value="10"/>
+		</item_property_overrides>
+		<item_property_overrides name="gunRifleT1HuntingRifle">
+			<property name="ScopeOffset" value="-.0006,0,.14"/>
+			<property name="ScopeScale" value="1.2,1.2,1.2"/>
+			<property name="ScopeCameraOffset" value="0,-.022,0"/>
+		</item_property_overrides>
+		<!--Add scope overlay, increase zoom x amount-->
+		<!-- visible attachment: scope x8 -->
+		<effect_group tiered="false" name="external attachment prefab (old way)">
+			<requirement name="!HoldingItemHasTags" tags="attachmentsIncluded"/>
+				<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="#Other/Items?Mods/Scopes/scope_8xPrefab.prefab" parent_transform="Attachments/Scope"/>
+		</effect_group>
+		<effect_group tiered="false" name="internal attachment prefab (A19)">
+			<requirement name="HoldingItemHasTags" tags="attachmentsIncluded"/>
+				<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="scope"/>
+		</effect_group>
+
+		<effect_group tiered="false" name="mod effects">
+			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.25" tags="perkGunslinger,perkDeadEye,perkMachineGunner,perkArchery,admin"/>
+			<passive_effect name="SpreadMultiplierAiming" operation="perc_add" value="-.25" tags="perkDeadEye,perkArchery,admin">
+				<requirement name="ItemHasTags" tags="perkDeadEye,crossbow"/></passive_effect>
+			<passive_effect name="EntityDamage" operation="perc_add" value=".1">
+				<requirement name="ProgressionLevel" progression_name="perkSniperDamage" operation="Equals" value="1"/>
+				<requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
+			</passive_effect>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modTommyGun" installable_tags="gunMGT1AK47" modifier_tags="grips,barrelAttachment,magazine" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modTommyGunSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.25"/>
+			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.25"/>
+			<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value="-.25"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".13"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value="-.08">
+				<requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
+			</passive_effect>
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.75"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.75"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.75"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.75"/>
+			<passive_effect name="MagazineSize" operation="perc_add" value="2"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.3"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="-.3"/>
+			<passive_effect name="DamageFalloffRange" operation="perc_add" value="-.2"/>
+			<passive_effect name="MaxRange" operation="perc_add" value="-.2"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modGoldenGun" installable_tags="pistol" modifier_tags="magazine,magazineFunnel,scope" blocked_tags="noMods,9mmGun" type="attachment">
+		<item_property_overrides name="*">
+			<property name="TintColor" value="255,215,0"/>
+			<property name="CustomIconTint" value="255,215,0"/>
+			<property name="UMA.Overlay0Tint" value="255,215,0"/>
+		</item_property_overrides>
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modGoldenGunSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="DismemberChance" operation="base_set" value="100"/>
+			<passive_effect name="MagazineSize" operation="base_set" value="1.5"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.2"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="-.2"/>
+		</effect_group>
+	</item_modifier>
+
+	<!-- tools -->
+
+	<item_modifier name="z87_modSharpeningKit" installable_tags="miningTool,axe,shovel,perkTheHuntsman,chainsaw" modifier_tags="sharpeningkit" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modSharpeningKitSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="HarvestCount" operation="perc_add" value=".1"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modDiamondSharpeningKit" installable_tags="miningTool,axe,shovel,perkTheHuntsman,chainsaw" modifier_tags="sharpeningkit" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modDiamondSharpeningKitSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="HarvestCount" operation="perc_add" value=".2"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modFiberglassHandle" installable_tags="miningTool,axe,shovel" modifier_tags="handle" blocked_tags="noMods,motorTool" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modFiberglassHandleSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="AttacksPerMinute" operation="perc_add" value=".1"/>
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.1"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modDualHead" installable_tags="melee" modifier_tags="damageStone,damageIron" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modDualHeadSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".15" tags="stone"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value=".15" tags="metal"/>
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffHarvestXPBalance"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffHarvestXPBalance"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modDiamondPickaxeHead" installable_tags="meleeToolPickT2SteelPickaxe" modifier_tags="damageStone,durability" blocked_tags="noMods" type="attachment">
+		<item_property_overrides name="*">
+			<property name="TintColor" value="77,176,205"/>
+			<property name="CustomIconTint" value="77,176,205"/>
+			<property name="UMA.Overlay0Tint" value="77,176,205"/>
+		</item_property_overrides>
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modDiamondPickaxeHeadSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="base_add" value="500" tags="stone"/>
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.4"/>
+			<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.4"/>
+		</effect_group>
+	</item_modifier>
+
+	<!-- auger and chainsaw -->
+
+	<item_modifier name="z87_modToolHandlebarCover" installable_tags="motorTool" modifier_tags="toolStabilizer" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modToolHandlebarCoverSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.9"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.9"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.9"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.9"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modToolExtender" installable_tags="motorTool" modifier_tags="toolExtender" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modToolExtenderSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageFalloffRange" operation="perc_add" value=".5"/>
+			<passive_effect name="MaxRange" operation="perc_add" value=".5"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modToolMotortuning" installable_tags="motorTool" modifier_tags="toolMotortuning" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modToolMotortuningSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".15"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modToolOilFunnel" installable_tags="motorTool" modifier_tags="toolOilFunnel" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modToolOilFunnelSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".25"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modComboFunnelSmall" installable_tags="motorTool" modifier_tags="toolOilFunnel,fuel" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modComboFunnelSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".25"/>
+			<passive_effect name="MagazineSize" operation="perc_add" value=".5"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modComboFunnelLarge" installable_tags="motorTool" modifier_tags="toolOilFunnel,fuel" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modComboFunnelSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".25"/>
+			<passive_effect name="MagazineSize" operation="perc_add" value="1"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modMotortoolPerformanceKit" installable_tags="motorTool" modifier_tags="toolExtender,toolStabilizer,toolMotortuning" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modMotortoolPerformanceKitSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".15"/>
+			<passive_effect name="DamageFalloffRange" operation="perc_add" value=".5"/>
+			<passive_effect name="MaxRange" operation="perc_add" value=".5"/>
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.9"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.9"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.9"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.9"/>
+		</effect_group>
+	</item_modifier>
+
+	<!-- armor -->
+
+	<item_modifier name="z87_modShoeInsoles" installable_tags="armorFeet" modifier_tags="movementspeed" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modShoeInsolesSchematic"/>
+		<effect_group tiered="false">
+			<passive_effect name="WalkSpeed" operation="perc_add" value=".05"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value=".05"/>
+		</effect_group>
+	</item_modifier>
+
+	<item_modifier name="z87_modArmorSilkLiner" installable_tags="armor" modifier_tags="thermal,temperature" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="EconomicValue" value="1100"/>
+		<property name="DisplayType" value="modTempResist"/>
+		<effect_group tiered="false">
+			<passive_effect name="HypothermalResist" operation="base_add" value="5"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="5"/>
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="1" tags="heat,electrical"/>
+		</effect_group>
+	</item_modifier>
+
+	<!-- clothing -->
+
+	<item_modifier name="z87_modClothPatch" installable_tags="pocketMod" modifier_tags="thermal,temperature" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="z87_modClothPatchSchematic"/>
+		<property name="DisplayType" value="modTempResist"/>
+		<effect_group tiered="false">
+			<passive_effect name="HypothermalResist" operation="base_add" value="1"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="1"/>
+		</effect_group>
+	</item_modifier>
+
+	</append>
+</config>

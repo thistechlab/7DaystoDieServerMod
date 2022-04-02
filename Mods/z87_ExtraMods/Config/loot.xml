@@ -1,0 +1,82 @@
+<configs>
+
+	<append xpath="/lootcontainers/lootgroup[@name='modGunT1']">
+		<item name="z87_modMagazineFunnel"/>
+		<item name="z87_modCleaningCord"/>
+		<item name="z87_modGunOiler"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='modGunT2']">
+		<item name="z87_modMagazineClips"/>
+		<item name="z87_modColtSpeedLoader"/>
+		<item name="z87_modDragonBreath"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='modGunT3']">
+		<item name="z87_modArrowBoltMagazine"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='modMeleeT1']">
+		<item name="z87_modToolExtender"/>
+		<item name="z87_modToolHandlebarCover"/>
+		<item name="z87_modToolOilFunnel"/>
+		<item name="z87_modSharpeningKit"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='modMeleeT2']">
+		<item name="z87_modToolMotortuning"/>
+		<item name="z87_modFiberglassHandle"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='modArmorT1']">
+		<item name="z87_modClothPatch"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='modArmorT2']">
+		<item name="z87_modShoeInsoles"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='modArmorT3']">
+		<item name="z87_modArmorSilkLiner"/>
+	</append>
+
+	<!-- Schematics -->
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT0']">
+		<item name="z87_modMagazineFunnelSchematic"/>
+		<item name="z87_modCleaningCordSchematic"/>
+		<item name="z87_modGunOilerSchematic"/>
+		<item name="z87_modLongShellsSchematic"/>
+		<item name="z87_modSharpeningKitSchematic"/>
+		<item name="z87_modToolHandlebarCoverSchematic"/>
+		<item name="z87_modToolExtenderSchematic"/>
+		<item name="z87_modToolOilFunnelSchematic"/>
+		<item name="z87_modClothPatchSchematic"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT1']">
+		<item name="z87_modMagazineClipsSchematic"/>
+		<item name="z87_modColtSpeedLoaderSchematic"/>
+		<item name="z87_modShotgunSpeedLoaderSchematic"/>
+		<item name="z87_modDragonBreathSchematic"/>
+		<item name="z87_modDiamondSharpeningKitSchematic"/>
+		<item name="z87_modFiberglassHandleSchematic"/>
+		<item name="z87_modToolMotortuningSchematic"/>
+		<item name="z87_modShoeInsolesSchematic"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']">
+		<item name="z87_modCleaningKitSchematic"/>
+		<item name="z87_modDragonBreathKitSchematic"/>
+		<item name="z87_modUziSchematic"/>
+		<item name="z87_modHeadHunterSchematic"/>
+		<item name="z87_modAntiTankRifleSchematic"/>
+		<item name="z87_modTommyGunSchematic"/>
+		<item name="z87_modGoldenGunSchematic"/>
+		<item name="z87_modDualHeadSchematic"/>
+		<item name="z87_modDiamondPickaxeHeadSchematic"/>
+		<item name="z87_modComboFunnelSchematic"/>
+		<item name="z87_modMotortoolPerformanceKitSchematic"/>
+	</append>
+
+</configs>

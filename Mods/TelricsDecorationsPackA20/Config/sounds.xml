@@ -1,0 +1,37 @@
+<configs>
+<append xpath="/Sounds">
+<!-- utility -->
+<SoundDataNode name="SoundEffectDecorativeSilence">
+<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<AudioClip ClipName="#@modfolder:Resources/TelricsDecorationsPackA20.unity3d?SoundEffectDecorativeSilencePrefab"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="10"/>
+  <LowestPitch name="0.95"/>
+  <HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value=".1"/> 
+</SoundDataNode>
+
+<!-- specific -->
+<SoundDataNode name="SoundEffectBlindsOpenShort">
+<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<AudioClip ClipName="#@modfolder:Resources/TelricsDecorationsPackA20.unity3d?SoundEffectBlindsOpeningShort"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="10"/>
+  <LowestPitch name="0.95"/>
+  <HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value=".1"/> 
+</SoundDataNode>
+<SoundDataNode name="SoundEffectMetalSqueakShort">
+<AudioSource name="Sounds/AudioSource_WeaponFire"/>
+<NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
+	<AudioClip ClipName="#@modfolder:Resources/TelricsDecorationsPackA20.unity3d?SoundEffectMetalSqueakShort"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="10"/>
+  <LowestPitch name="0.95"/>
+  <HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value=".1"/> 
+</SoundDataNode>
+</append>
+</configs>

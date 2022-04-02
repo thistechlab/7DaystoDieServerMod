@@ -1,0 +1,65 @@
+<config>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='commonBooks']">
+		<item group="z87_modsSchematics" count="1,2"/>
+	</append>
+
+	<insertBefore xpath="/traders/trader_item_groups/trader_item_group[@name='modMeleeT1']">
+		<trader_item_group name="z87_modsSchematics" count="1">
+			<item name="z87_modMagazineFunnelSchematic"/>
+			<item name="z87_modMagazineClipsSchematic"/>
+			<item name="z87_modColtSpeedLoaderSchematic"/>
+			<item name="z87_modShotgunSpeedLoaderSchematic"/>
+			<item name="z87_modLongShellsSchematic"/>
+			<item name="z87_modDragonBreathSchematic"/>
+			<item name="z87_modCleaningCordSchematic"/>
+			<item name="z87_modGunOilerSchematic"/>
+			<item name="z87_modCleaningKitSchematic"/>
+			<item name="z87_modDragonBreathKitSchematic"/>
+			<item name="z87_modUziSchematic"/>
+			<item name="z87_modHeadHunterSchematic"/>
+			<item name="z87_modAntiTankRifleSchematic"/>
+			<item name="z87_modTommyGunSchematic"/>
+			<item name="z87_modGoldenGunSchematic"/>
+			<item name="z87_modSharpeningKitSchematic"/>
+			<item name="z87_modDiamondSharpeningKitSchematic"/>
+			<item name="z87_modFiberglassHandleSchematic"/>
+			<item name="z87_modDualHeadSchematic"/>
+			<item name="z87_modDiamondPickaxeHeadSchematic"/>
+			<item name="z87_modToolHandlebarCoverSchematic"/>
+			<item name="z87_modToolExtenderSchematic"/>
+			<item name="z87_modToolMotortuningSchematic"/>
+			<item name="z87_modToolOilFunnelSchematic"/>
+			<item name="z87_modComboFunnelSchematic"/>
+			<item name="z87_modMotortoolPerformanceKitSchematic"/>
+			<item name="z87_modShoeInsolesSchematic"/>
+			<item name="z87_modClothPatchSchematic"/>
+		</trader_item_group>
+	</insertBefore>
+
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='traderGeneral']">
+		<item group="z87_mods" count="1,2"/>
+	</append>
+
+	<insertBefore xpath="/traders/trader_item_groups/trader_item_group[@name='modMeleeT1']">
+		<trader_item_group name="z87_mods" count="1">
+			<item name="z87_modArrowBoltMagazine"/>
+			<item name="z87_modMagazineFunnel"/>
+			<item name="z87_modMagazineClips"/>
+			<item name="z87_modColtSpeedLoader"/>
+			<item name="z87_modCleaningCord"/>
+			<item name="z87_modGunOiler"/>
+			<item name="z87_modDragonBreath"/>
+			<item name="z87_modToolMotortuning"/>
+			<item name="z87_modToolExtender"/>
+			<item name="z87_modToolHandlebarCover"/>
+			<item name="z87_modToolOilFunnel"/>
+			<item name="z87_modFiberglassHandle"/>
+			<item name="z87_modSharpeningKit"/>
+			<item name="z87_modArmorSilkLiner"/>
+			<item name="z87_modShoeInsoles"/>
+			<item name="z87_modClothPatch"/>
+		</trader_item_group>
+	</insertBefore>
+
+</config>

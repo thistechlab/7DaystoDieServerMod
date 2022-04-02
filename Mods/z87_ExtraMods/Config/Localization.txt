@@ -1,0 +1,91 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german
+z87_modArrowBoltMagazine,item_modifiers,mod,,,Arrow/Bolt Magazine Mod,,Pfeil/Bolzen-Magazin-Mod
+z87_modArrowBoltMagazineDesc,item_modifiers,mod,,,A unique device made of plywood that is attachable to a 'Wooden Bow' or 'Iron Crossbow'.\nYou can read the initials J.S.\n\n+ 5 magazine size\n+ 20% rate of fire\n - 50% reload speed\n - 50% sneak damage,,Ein einzigartiges Gerät aus Sperrholz das an einem 'Holzbogen' oder 'Eiserne Armbrust' angebracht werden kann.\nDu kannst die Initialien J.S. lesen.\n\n+ 5 Magazingröße\n+ 20% Feuerrate\n - 50% Nachladegeschwindigkeit\n - 50% Schleich-Schaden
+z87_modMagazineFunnel,item_modifiers,mod,,,Magazine Funnel Mod,,Magazin-Trichter-Mod
+z87_modMagazineFunnelDesc,item_modifiers,mod,,,A funnel to insert magazines faster.\n\n+ 10% reload speed,,Ein Trichter zum schnelleren Einlegen von Magazinen.\n\n+ 10% Nachladegeschwindigkeit
+z87_modMagazineFunnelSchematic,item_modifiers,mod,,,Magazine Funnel Mod Schematic,,Bauplan – Magazin-Trichter-Mod
+z87_modMagazineClips,item_modifiers,mod,,,Magazine Clip Mod,,Magazin-Klemmen-Mod
+z87_modMagazineClipsDesc,item_modifiers,mod,,,Clip magazines together to reduce reload time.\n\n+ 25% reload speed,,Klemmt Magazine zusammen um die Nachladegeschwindigkeit zu verringern.\n\n+ 25% Nachladegeschwindigkeit
+z87_modMagazineClipsSchematic,item_modifiers,mod,,,Magazine Clip Mod Schematic,,Bauplan – Magazin-Klemmen-Mod
+z87_modColtSpeedLoader,item_modifiers,mod,,,Colt Speedloader Mod,,Colt-Schnelllader-Mod
+z87_modColtSpeedLoaderDesc,item_modifiers,mod,,,Keeps bullets in place for faster reloading of colt type weapons.\n\n+ 25% reload speed,,Hält Patronen an Ort und Stelle für ein schnelleres Nachladen von Colt-typ-Waffen.\n\n+ 25% Nachladegeschwindigkeit
+z87_modColtSpeedLoaderSchematic,item_modifiers,mod,,,Colt Speedloader Mod Schematic,,Bauplan – Colt-Schnelllader-Mod
+z87_modShotgunSpeedLoader,item_modifiers,mod,,,Double Barrel Speedloader Mod,,Doppelläufige-Schrotflinte-Schnelllader-Mod
+z87_modShotgunSpeedLoaderDesc,item_modifiers,mod,,,Keeps shells in place to faster reload double barrel shotguns.\n\n+ 25% reload speed,,Hält Patronen an Ort und Stelle für ein schnelleres Nachladen von Doppelläufigen-Schrotflinten.\n\n+ 25% Nachladegeschwindigkeit
+z87_modShotgunSpeedLoaderSchematic,item_modifiers,mod,,,Double Barrel Speedloader Mod Schematic,,Bauplan – Doppelläufige-Schrotflinte-Schnelllader-Mod
+z87_modLongShells,item_modifiers,mod,,,Long Shells Mod,,Lange-Schrotpatronen-Mod
+z87_modLongShellsDesc,item_modifiers,mod,,,Longer shotgun shells with more pellets but less power per shell.\n\n+ 4 pellets\n - 20% damage,,Längere Schrotpatronen mit mehr Kugeln aber weniger schaden pro Kugel.\n\n+ 4 Kugeln\n - 20% Schaden
+z87_modLongShellsSchematic,item_modifiers,mod,,,Long Shells Mod Schematic,,Bauplan – Lange-Schrotpatronen-Mod
+z87_modDragonBreath,item_modifiers,mod,,,Dragon Breath Mod,,Drachenatem-Mod
+z87_modDragonBreathDesc,item_modifiers,mod,,,Every hit sets enemies on fire.\nNot usable for Auto Shotguns.\n\n! 100% chance to set enemies on fire,,Jeder Treffer lässt gegner brennen.\n\n! 100% chance gegner brennen zu lassen
+z87_modDragonBreathSchematic,item_modifiers,mod,,,Dragon Breath Mod Schematic,,Bauplan – Drachenatem-Mod
+z87_modCleaningCord,item_modifiers,mod,,,Cleaning Cord Mod,,Reinigungsschnur-Mod
+z87_modCleaningCordDesc,item_modifiers,mod,,,Keep your firearm clean and functioning.\n\n+ 50% sneak damage,,Halte deine Schusswaffe sauber und funktionsfähig.\n\n+ 50% Schleich-Schaden
+z87_modCleaningCordSchematic,item_modifiers,mod,,,Cleaning Cord Mod Schematic,,Bauplan – Reinigungsschnur-Mod
+z87_modGunOiler,item_modifiers,mod,,,Gun Oiler Mod,,Waffen-Öhler-Mod
+z87_modGunOilerDesc,item_modifiers,mod,,,Keep your firearm oiled and functioning.\n\n+ 50% sneak damage,,Halte deine Schusswaffe geöhlt und funktionsfähig.\n\n+ 50% Schleich-Schaden
+z87_modGunOilerSchematic,item_modifiers,mod,,,Gun Oiler Mod Schematic,,Bauplan – Waffen-Öhler-Mod
+z87_modCleaningKit,item_modifiers,mod,,,Cleaning Kit Mod,,Waffen-Reinigungs-Kit-Mod
+z87_modCleaningKitDesc,item_modifiers,mod,,,Combines the effect of 'Cleaning Cord Mod' and 'Gun Oiler Mod'.\n\n+ 100% sneak damage,,Kombiniert die effekte von 'Reinigungsschnur-Mod' und 'Waffen-Öhler-Mod'.\n\n+ 100% Schleich-Schaden
+z87_modCleaningKitSchematic,item_modifiers,mod,,,Cleaning Kit Mod Schematic,,Bauplan – Waffen-Reinigungs-Kit-Mod
+z87_modDragonBreathKit,item_modifiers,mod,,,Dragon Breath Kit,,Drachen-Atem-Kit-Mod
+z87_modDragonBreathKitDesc,item_modifiers,mod,,,For Double Barrel Shotgun only.\nCombines multiple mods to heavily alter its properties.\n\n! 100% chance to set enemies on fire\n+ 8 pellets\n+ 30% reload speed\n - 25% damage,,Nur für Doppelläufige Schrotflinten.\nKombiniert mehrere Mods um die Eigenschaften stark zu verändern.\n\n! 100% chance gegner brennen zu lassen\n+ 8 Kugeln\n+ 30% Nachladegeschwindigkeit\n - 25% Schaden
+z87_modDragonBreathKitSchematic,item_modifiers,mod,,,Dragon Breath Kit Schematic,,Bauplan – Drachen-Atem-Kit-Mod
+z87_modUzi,item_modifiers,mod,,,Uzi Mod,,Uzi-Mod
+z87_modUziDesc,item_modifiers,mod,,,For Pistol only.\nCombines multiple mods to imitate the properties of an UZI.\n\n+ 100% magazine size\n+ 200% rate of fire\n+ full autofire\n - 20% range,,Nur für Pistole.\nKombiniert mehrere Mods um die Eigenschaften einer UZI zu imitieren.\n\n+ 100% Magazingröße\n+ 200% Feuerrate\n+ Vollautomatisches feuern\n - 20% Reichweite
+z87_modUziSchematic,item_modifiers,mod,,,Uzi Mod Schematic,,Bauplan – Uzi-Mod
+z87_modHeadHunter,item_modifiers,mod,,,Head Hunter Mod,,Kopf-Jäger-Mod
+z87_modHeadHunterDesc,item_modifiers,mod,,,For Pistol only.\nCombines multiple mods to heavily alter its properties\n\n+ 100% base damage on headshots\n+ 25% dismember chance\n+ 10% reload speed\n - 20% rate of fire\n - 50% magazine size,,Nur für Pistole.\nKombiniert mehrere Mods um die Eigenschaften stark zu verändern.\n\n+ 100% Basisschaden bei Kopfschüssen\n+ 25% Zerstückelungs-chance\n+ 10% Nachladegeschwindigkeit\n - 20% Feuerrate\n - 50% Magazingröße
+z87_modHeadHunterSchematic,item_modifiers,mod,,,Head Hunter Mod Schematic,,Bauplan – Kopf-Jäger-Mod
+z87_modAntiTankRifle,item_modifiers,mod,,,Anti Tank Rifle Mod,,Anti-Panzer-Gewehr-Mod
+z87_modAntiTankRifleDesc,item_modifiers,mod,,,For Hunting Rifle only.\nCombines multiple mods to imitate the properties of an Anti-Tank-Rifle.\n\n+ Increases accuracy when aiming\n+ 8x scope\n+ 50 damage\n+ 50% armor penetration\n+ 2 penetration\n - 30% reload speed,,Nur für Jagdgewehr.\nKombiniert mehrere Mods um die Eigenschaften eines Anti-Panzer-Gewehrs zu imitieren.\n\n+ Verbesserte Genauigkeit beim Zielen\n+ 8x Visier\n+ 50 Schaden\n+ 50% Rüstungsdurchschlag\n+ 2 Durchschlag\n - 30% Nachladegeschwindigkeit
+z87_modAntiTankRifleSchematic,item_modifiers,mod,,,Anti Tank Rifle Mod Schematic,,Bauplan – Anti-Panzer-Gewehr-Mod
+z87_modTommyGun,item_modifiers,mod,,,Tommy Gun Mod,,Tommy-Gun-Mod
+z87_modTommyGunDesc,item_modifiers,mod,,,For AK-47 Machine Gun only.\nCombines multiple mods to imitate the properties of an Tommy-Gun.\n\n+ Improves accuracy from the hip\n+ 200% magazine size\n - 30% rate of fire\n - 30% reload speed\n - 20% range,,Nur für AK-47-Maschinengewehr.\nKombiniert mehrere Mods um die Eigenschaften einer Tommy-Gun zu imitieren.\n\n+ Verbesserte Genauigkeit aus der Hüfte\n+ 200% magazingröße\n - 30% Feuerrate\n - 30% Nachladegeschwindigkeit\n - 20% Reichweite
+z87_modTommyGunSchematic,item_modifiers,mod,,,Tommy Gun Mod Schematic,,Bauplan – Tommy-Gun-Mod
+z87_modGoldenGun,item_modifiers,mod,,,Golden Gun Mod,,Golden-Gun-Mod
+z87_modGoldenGunDesc,item_modifiers,mod,,,For Desert Vulture only.\nSlow but deadly single shots with guaranted dismemberment.\n\n! 100% dismemberment chance\n - 20% reload speed\n - magazine size set to 1,,Nur für Desert Vulture.\nLangsame aber tödliche Einzelschüsse mit garantierter Zerstückelung.\n\n! 100% Zerstückelungs-chance\n - 20% Nachladegeschwindigkeit\n - Magazingröße ist gesetzt auf 1
+z87_modGoldenGunSchematic,item_modifiers,mod,,,Golden Gun Mod Schematic,,Bauplan – Golden-Gun-Mod
+z87_modSharpeningKit,item_modifiers,mod,,,Sharpening Kit Mod,,Schärf-Set-Mod
+z87_modSharpeningKitDesc,item_modifiers,mod,,,Gain more resources by sharpening your tools.\n\n+ 10% harvested resources,,Gewinne mehr Ressourcen indem du dein Werkzeug schärfst.\n\n+ 10% Gewonnene Ressourcen
+z87_modSharpeningKitSchematic,item_modifiers,mod,,,Sharpening Kit Mod Schematic,,Bauplan – Schärf-Set-Mod
+z87_modDiamondSharpeningKit,item_modifiers,mod,,,Diamond Sharpening Kit Mod,,Diamant-Schärf-Set-Mod
+z87_modDiamondSharpeningKitDesc,item_modifiers,mod,,,Gain even more resources by sharpening your tools.\n\n+ 20% harvested resources,,Gewinne noch mehr Ressourcen indem du dein Werkzeug schärfst.\n\n+ 20% Gewonnene Ressourcen
+z87_modDiamondSharpeningKitSchematic,item_modifiers,mod,,,Diamond Sharpening Kit Mod Schematic,,Bauplan – Diamant-Schärf-Set-Mod
+z87_modFiberglassHandle,item_modifiers,mod,,,Fiberglass Handle Mod,,Fiberglas-Stiel-Mod
+z87_modFiberglassHandleDesc,item_modifiers,mod,,,A long tool handle suitable for axes pickaxes or shovel.\nLighter and more durable than wood.\n\n+ 10% attack speed\n+ 10% lower durability degration,,Ein langer Werkzeugstiel geeignet für Äxte Spitzhacken oder Schaufeln.\nLeichter und Widerstandsfähiger als Holz.\n\n+ 10% Angriffsgeschwindigkeit\n+ 10% langsamerer Haltbarkeitsverlust
+z87_modFiberglassHandleSchematic,item_modifiers,mod,,,Fiberglass Handle Mod Schematic,,Bauplan – Fiberglas-Stiel-Mod
+z87_modDualHead,item_modifiers,mod,,,Dual Head Mod,,Doppelkopf-Mod
+z87_modDualHeadDesc,item_modifiers,mod,,,Combines the effect of 'Bunker Buster' and 'Iron Breaker'.\n\n+ 15% more damage against stone\n+ 15% more damage against iron,,Kombiniert die effekte von 'Bunkerknacker-Mod' und 'Eisenbrecher-Mod'.\n\n+ 15% mehr Schaden gegen Stein\n+ 15% mehr Schaden gegen Eisen
+z87_modDualHeadSchematic,item_modifiers,mod,,,Dual Head Mod Schematic,,Bauplan – Doppelkopf-Mod
+z87_modDiamondPickaxeHead,item_modifiers,mod,,,Diamond Pickaxe Head Mod,,Diamant-Spitzhackenkopf-Mod
+z87_modDiamondPickaxeHeadDesc,item_modifiers,mod,,,A double headed pickaxe head made solely of diamond.\nIt is so hard it can mine stone with one swing.\n\n+ 500 damage against stone\n+ 40% lower durability degration\n - 40% attack speed,,Ein doppelköpfiger Spitzhackenkopf der ausschließlich aus Diamant besteht.\nEr ist so hart dass er mit nur einem Schwung Stein abbauen kann.\n\n+ 500 Schaden gegen Stein\n+ 40% langsamerer Haltbarkeitsverlust\n - 40% Angriffsgeschwindigkeit
+z87_modDiamondPickaxeHeadSchematic,item_modifiers,mod,,,Diamond Pickaxe Head Mod Schematic,,Bauplan – Diamant-Spitzhackenkopf-Mod
+z87_modToolHandlebarCover,item_modifiers,mod,,,Handlebar Cover Mod,,Lenkerbezug-Mod
+z87_modToolHandlebarCoverDesc,item_modifiers,mod,,,Better grip for Auger or Chainsaws reducing vibration.\n\n+ 90% vibration reduction,,Besserer Grip für Erdbohrer oder Kettensägen zur Reduzierung von Vibrationen.\n\n+ 90% Vibrationsreduzierung
+z87_modToolHandlebarCoverSchematic,item_modifiers,mod,,,Handlebar Cover Mod Schematic,,Bauplan – Lenkerbezug-Mod
+z87_modToolExtender,item_modifiers,mod,,,Motor Tool Extender Mod,,Motorwerkzeug-Verlängerer-Mod
+z87_modToolExtenderDesc,item_modifiers,mod,,,Increase the operating range of an Auger or Chainsaw.\n\n+ 50% range,,Erhöht die Reichweite eines Erdbohrers oder einer Kettensäge.\n\n+ 50% Reichweite
+z87_modToolExtenderSchematic,item_modifiers,mod,,,Motor Tool Extender Mod Schematic,,Bauplan – Motorwerkzeug-Verlängerer-Mod
+z87_modToolMotortuning,item_modifiers,mod,,,Motor Tuning Mod,,Motortuning-Mod
+z87_modToolMotortuningDesc,item_modifiers,mod,,,Finetuning for Auger or Chainsaws increasing its RPM.\n\n+ 15% attack speed,,Finetuning für Erdbohrer oder Kettensägen um die Drehzahl zu erhöhen.\n\n+ 15% Feuerrate
+z87_modToolMotortuningSchematic,item_modifiers,mod,,,Motor Tuning Mod Schematic,,Bauplan – Motortuning-Mod
+z87_modToolOilFunnel,item_modifiers,mod,,,Oil Funnel Mod,,Öl-Trichter-Mod
+z87_modToolOilFunnelDesc,item_modifiers,mod,,,You don't need to be careful filling tanks again.\n\n+ 25% reload speed,,Du musst beim Betanken nicht mehr vorsichtig sein.\n\n+ 25% Nachladegeschwindigkeit
+z87_modToolOilFunnelSchematic,item_modifiers,mod,,,Oil Funnel Mod Schematic,,Bauplan – Öl-Trichter-Mod
+z87_modComboFunnelSmall,item_modifiers,mod,,,Combo Funnel Small Mod,,Kleiner-Trichter-Combo-Mod
+z87_modComboFunnelSmallDesc,item_modifiers,mod,,,Attach your funnel to your tank to never lose it again.\n\n+ 25% reload speed\n+ 50% increased tank size for chainsaws and augers.,,Befestige den Trichter an dem Tank damit er nie wieder verloren geht.\n\n+ 25% Nachladegeschwindigkeit\n+ 50% Vergrößerter Tank für Kettensägen und Erdbohrer
+z87_modComboFunnelLarge,item_modifiers,mod,,,Combo Funnel Large Mod,,Grosser-Trichter-Combo-Mod
+z87_modComboFunnelLargeDesc,item_modifiers,mod,,,Attach your funnel to your tank to never lose it again.\n\n+ 25% reload speed\n+ 100% increased tank size for chainsaws and augers.,,Befestige den Trichter an dem Tank damit er nie wieder verloren geht.\n\n+ 25% Nachladegeschwindigkeit\n+ 100% Vergrößerter Tank für Kettensägen und Erdbohrer
+z87_modComboFunnelSchematic,item_modifiers,mod,,,Combo Funnel Mod Schematic,,Bauplan – Trichter-Combo-Mod
+z87_modMotortoolPerformanceKit,item_modifiers,mod,,,Motortool Performance Kit Mod,,Motorwerkzeug-Leistungs-Kit-Mod
+z87_modMotortoolPerformanceKitDesc,item_modifiers,mod,,,Combines the effect of 'Handlebar Cover Mod' 'Motor Tool Extender Mod' and 'Motor Tuning Mod'.\n\n+ 90% vibration reduction\n+ 50% range\n+ 15% attack speed,,Kombiniert die effekte von 'Lenkerbezug-Mod' 'Motorwerkzeug-Verlängerer-Mod' und 'Motortuning-Mod'.\n\n+ 90% Vibrationsreduzierung\n+ 50% Reichweite\n+ 15% Feuerrate
+z87_modMotortoolPerformanceKitSchematic,item_modifiers,mod,,,Motortool Performance Kit Mod Schematic,,Bauplan – Motorwerkzeug-Leistungs-Kit-Mod
+z87_modShoeInsoles,item_modifiers,mod,,,Shoe Insoles Mod,,Schuheinlagen-Mod
+z87_modShoeInsolesDesc,item_modifiers,mod,,,Finding your correct shoesize in the apocalypse is a difficult but you can make them more comfortable with these insoles.\n\n+ 5% speed while walking & running,,In der Apokalypse die richtige Schuhgröße zu finden ist schwierig aber mit diesen Einlegesohlen kannst du sie bequemer machen.\n\n+ 5% Geschwindigkeit beim gehen & rennen
+z87_modShoeInsolesSchematic,item_modifiers,mod,,,Shoe Insoles Mod Schematic,,Bauplan – Schuheinlagen-Mod
+z87_modArmorSilkLiner,item_modifiers,mod,,,Silk Liner Mod,,Seidenfutter-Mod
+z87_modArmorSilkLinerDesc,item_modifiers,mod,,,Silk is still rare and expensive even in the apocalypse but also still does its job protecting from heat and cold.\n\n+ 5 cold resist\n+ 5 heat resist,,Seide ist auch in der Apokalypse noch selten und teuer aber schützt nach wie vor vor Hitze und Kälte.\n\n+ 5 Kältewiderstand\n+ 5 Hitzewiderstand
+z87_modClothPatch,item_modifiers,mod,,,Cloth Patch Mod,,Stoff-Aufnäher-Mod
+z87_modClothPatchDesc,item_modifiers,mod,,,Patch holes in your clothing to protect your skin from direct heat and cold.\n\n+ 1 cold resist\n+ 1 heat resist,,Flicke Löcher in der Kleidung um die Haut vor direkter Hitze und Kälte zu schützen.\n\n+ 1 Kältewiderstand\n+ 1 Hitzewiderstand
+z87_modClothPatchSchematic,item_modifiers,mod,,,Cloth Patch Mod Schematic,,Bauplan – Stoff-Aufnäher-Mod

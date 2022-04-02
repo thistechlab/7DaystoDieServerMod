@@ -1,3 +1,4 @@
+<configs>
 <append xpath="/recipes" >
 <recipe name="solarbank" count="1">
 	<ingredient name="resourceDuctTape" count="5"/>
@@ -11,3 +12,4 @@
 	<ingredient name="resourceElectricParts" count="40"/>
 </recipe>
 </append>
+</configs>
