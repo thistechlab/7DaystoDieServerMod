@@ -48,12 +48,15 @@ Zombie Loot Bag Increase - https://7daystodiemods.com/zombie-loot-bag-increase/ 
 Craftable Solar - https://www.nexusmods.com/7daystodie/mods/692</br>
 Valmars Buffed Supply Crate Drops - https://7daystodiemods.com/buffed-supply-crate-drops/</br>
 OP Trader - https://www.nexusmods.com/7daystodie/mods/1215?tab=files&file_id=7206</br>
-Telric’s Decoration Pack - https://7daystodiemods.com/telrics-decoration-pack/</br>
 Better Bridges - https://7daystodiemods.com/better-bridges/</br>
 Improved Hordes (w/Bigger Hordes Add-on) - https://7daystodiemods.com/improved-hordes/ </br>
 Extra Mods by Zeruel87 - https://7daystodiemods.com/extra-mods-by-zeruel87/ </br>
 Better Dyes - https://7daystodiemods.com/better-dyes/</br>
 Combine Window - https://7daystodiemods.com/combine-window/</br>
 Fast Nailgun A20 - https://www.nexusmods.com/7daystodie/mods/1135 </br>
-
+Craft Jail Door & Bars - https://7daystodiemods.com/craft-jail-door-bars/ </br>
+DBock’s Fences and Gates - https://7daystodiemods.com/dbocks-fences-and-gates/</br>
+Better Homes and Worlds - Complete Collection - https://www.nexusmods.com/7daystodie/mods/703 </br>
+DW420 - Dyes Expanded - https://www.nexusmods.com/7daystodie/mods/1471 </br>
+Assorted QOL Tweaks A20 v1.1 - https://7daystodiemods.com/assorted-qol-tweaks-a20/ </br>
 
