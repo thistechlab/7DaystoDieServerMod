@@ -1,0 +1,19 @@
+<configs>
+
+	<!-- Increases the amount of feathers and eggs you find in bird nests -->
+	<set xpath="/lootcontainers/lootgroup[@name='groupBirdNest']/item[@name='resourceFeather']/@count">1,10</set>
+	<set xpath="/lootcontainers/lootgroup[@name='groupBirdNest']/item[@name='foodEgg']/@prob">0.75</set>
+	<set xpath="/lootcontainers/lootgroup[@name='groupBirdNest']/item[@name='foodEgg']/@count">1,6</set>
+
+	<!-- Adds acid bottles to cupboards -->
+	<append xpath="/lootcontainers/lootgroup[@name='cupboard']">
+		<item name="resourceAcid" count="1,2" prob="0.1" />
+	</append>
+
+	<!-- Increases number of eggs in lootable refrigerator machines -->
+	<set xpath="/lootcontainers/lootgroup[@name='coldfood']/item[@name='foodEgg']/@count">1,12</set>
+
+	<!-- Increases the number of lockpicks found in lootgroups -->
+	<set xpath="/lootcontainers/lootgroup/item[@name='resourceLockPick']/@count">1,10</set>
+
+</configs>

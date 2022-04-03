@@ -1,0 +1,322 @@
+<bhwCompleteCollection>
+
+<!-- bhwFashionista Edits Start -->
+	<!-- Adds dyes to clothing loot and other loot drops that contain dyes -->
+	<append xpath="/lootcontainers/lootgroup[@name='dyes']">
+		<item name="modDyeHotPink"/>
+		<item name="modDyeFireEngineRed"/>
+		<item name="modDyeOrange"/>
+		<item name="modDyeGold"/>
+		<item name="modDyeBronze"/>
+		<item name="modDyeLimeGreen"/>
+		<item name="modDyeSpringGreen"/>
+		<item name="modDyeCyan"/>
+		<item name="modDyeTurquoise"/>
+		<item name="modDyeBrightSkyBlue"/>
+		<item name="modDyeFuchsia"/>
+		<item name="modDyeRoyalPurple"/>
+		<item name="modDyeBubblegum"/>
+		<item name="modDyeLightCoral"/>
+		<item name="modDyePaleOrange"/>
+		<item name="modDyeKhaki"/>
+		<item name="modDyeSienna"/>
+		<item name="modDyePaleGreen"/>
+		<item name="modDyeBabyBlue"/>
+		<item name="modDyeSteelBlue"/>
+		<item name="modDyePlum"/>
+		<item name="modDyeGray"/>	
+	</append>
+
+<!-- bhwFashionista Edits End -->
+
+<!-- bhwHoarder Edits Start -->
+
+	<!-- wallSafe / deskSafe -->
+	<set xpath="/lootcontainers/lootcontainer[@id='6']/@size">8,8</set>
+	<!-- kitchen sink, cupboards (lower), cleaning chemicals, plates, silverware, pots and pans -->
+	<set xpath="/lootcontainers/lootcontainer[@id='8']/@size">7,5</set>
+	<!-- garbage, cntTrashPile -->
+	<set xpath="/lootcontainers/lootcontainer[@id='10']/@size">8,4</set>
+	<!-- stove/oven, cooking pots and pans rotten food -->
+	<set xpath="/lootcontainers/lootcontainer[@id='11']/@size">8,6</set>
+	<!-- laundry basket (Helper) -->
+	<set xpath="/lootcontainers/lootcontainer[@id='13']/@size">7,5</set>
+	<!-- misc metal container mailbox-->
+	<set xpath="/lootcontainers/lootcontainer[@id='14']/@size">10,9</set>
+	<!-- metal garbage can-->
+	<set xpath="/lootcontainers/lootcontainer[@id='16']/@size">6,6</set>
+	<!-- canned or dry food cupboard door open sound-->
+	<set xpath="/lootcontainers/lootcontainer[@id='17']/@size">8,6</set>
+	<!-- washing machine, clothes in good condition -->
+	<set xpath="/lootcontainers/lootcontainer[@id='18']/@size">8,6</set>
+	<!-- metal desk -->
+	<set xpath="/lootcontainers/lootcontainer[@id='24']/@size">8,6</set>
+	<!-- suitcase / luggage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='36']/@size">6,6</set>
+	<!-- military munitions ammo box -->
+	<set xpath="/lootcontainers/lootcontainer[@id='40']/@size">10,9</set>
+	<!-- cntNightstandClosed and dressers, wooden desk: pistol, ammo, magazines, books -->
+	<set xpath="/lootcontainers/lootcontainer[@id='42']/@size">10,9</set>
+	<!-- lockers -->
+	<set xpath="/lootcontainers/lootcontainer[@id='43']/@size">7,5</set>
+	<!-- file cabinet -->
+	<set xpath="/lootcontainers/lootcontainer[@id='44']/@size">6,6</set>
+	<!-- trash compactor, trash deluxe! -->
+	<set xpath="/lootcontainers/lootcontainer[@id='46']/@size">8,6</set>
+	<!-- frozen or refridgerated food, spoiled food (Helper) -->
+	<set xpath="/lootcontainers/lootcontainer[@id='47']/@size">9,9</set>
+	<!-- bookcase -->
+	<set xpath="/lootcontainers/lootcontainer[@id='49']/@size">7,5</set>
+	<!-- beer cooler -->
+	<set xpath="/lootcontainers/lootcontainer[@id='52']/@size">8,6</set>
+	<!-- shopping cart-->
+	<set xpath="/lootcontainers/lootcontainer[@id='54']/@size">8,6</set>
+	<!-- cash register-->
+	<set xpath="/lootcontainers/lootcontainer[@id='55']/@size">6,3</set>
+	<!-- shopping basket -->
+	<set xpath="/lootcontainers/lootcontainer[@id='58']/@size">6,4</set>
+	<!-- Bookstore bookcase -->
+	<set xpath="/lootcontainers/lootcontainer[@id='60']/@size">7,5</set>
+	<!-- gas pump loot -->
+	<set xpath="/lootcontainers/lootcontainer[@id='64']/@size">9,8</set>
+	<!-- vehicleBicycle storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='76']/@size">10,2</set>
+	<!-- vehicleMinibike storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='77']/@size">10,4</set>
+	<!-- vehicleMotorcycle storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='78']/@size">10,7</set>
+	<!-- vehicle4x4Truck storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='79']/@size">10,9</set>
+	<!-- vehicleGyrocopter storage -->
+	<set xpath="/lootcontainers/lootcontainer[@id='80']/@size">10,6</set>
+	<!-- metal clothes rack, pants -->
+	<set xpath="/lootcontainers/lootcontainer[@id='83']/@size">10,8</set>
+	<!-- metal clothes rack, shirts -->	
+	<set xpath="/lootcontainers/lootcontainer[@id='84']/@size">10,8</set>
+	<!-- store shelves, food -->
+	<set xpath="/lootcontainers/lootcontainer[@id='85']/@size">8,6</set>
+	<!-- food store crate -->
+	<set xpath="/lootcontainers/lootcontainer[@id='86']/@size">8,6</set>
+	<!-- cntWaterCoolerFull -->
+	<set xpath="/lootcontainers/lootcontainer[@id='99']/@size">7,4</set>
+	<!-- cntWeaponsBagSmall -->
+	<set xpath="/lootcontainers/lootcontainer[@id='100']/@size">8,4</set>
+	<!-- cntWeaponsBagLarge -->
+	<set xpath="/lootcontainers/lootcontainer[@id='101']/@size">8,6</set>
+	<!-- cntPillCase -->
+	<set xpath="/lootcontainers/lootcontainer[@id='106']/@size">9,9</set>
+	<!-- cntUtilityCartFull-->
+	<set xpath="/lootcontainers/lootcontainer[@id='117']/@size">8,4</set>
+	<!-- cntSodaFountain -->
+	<set xpath="/lootcontainers/lootcontainer[@id='119']/@size">7,4</set>
+	<!-- closet hanger, cntModularClosetClosed -->
+	<set xpath="/lootcontainers/lootcontainer[@id='123']/@size">7,4</set>
+	<!-- cntRollingToolBoxClosed -->
+	<set xpath="/lootcontainers/lootcontainer[@id='124']/@size">8,6</set>
+	<!-- cntToolBoxClosed -->
+	<set xpath="/lootcontainers/lootcontainer[@id='125']/@size">8,6</set>
+	<!-- store shelves, hardware -->
+	<set xpath="/lootcontainers/lootcontainer[@id='126']/@size">8,6</set>
+	<!-- cntFreezerGroceriesMiddleFullClosed -->
+	<set xpath="/lootcontainers/lootcontainer[@id='128']/@size">10,8</set>
+	<!-- cntFreezerBeveragesMiddleFullClosed -->
+	<set xpath="/lootcontainers/lootcontainer[@id='129']/@size">10,8</set>
+	<!-- cntClothesShelfJeans01 -->
+	<set xpath="/lootcontainers/lootcontainer[@id='130']/@size">8,6</set>
+	<!-- medicine cabinets -->
+	<set xpath="/lootcontainers/lootcontainer[@id='131']/@size">7,5</set>
+	<!-- cntDisplayCaseAmmoLeftBroken, copy of cntAmmoPileMedium -->
+	<set xpath="/lootcontainers/lootcontainer[@id='132']/@size">8,6</set>
+	<!-- cntShoesPileSneakers etc. -->
+	<set xpath="/lootcontainers/lootcontainer[@id='133']/@size">8,5</set>
+	<!-- cntShoesPileSneakers etc. -->
+	<set xpath="/lootcontainers/lootcontainer[@id='134']/@size">7,4</set>
+	<!-- cntBookShelfSingleBottomFull01 etc. -->
+	<set xpath="/lootcontainers/lootcontainer[@id='136']/@size">7,5</set>
+	<!-- cntGunRackWallArmor -->
+	<set xpath="/lootcontainers/lootcontainer[@id='137']/@size">8,9</set>
+	<!-- cntGunRackWallGuns01 -->
+	<set xpath="/lootcontainers/lootcontainer[@id='138']/@size">10,9</set>
+	<!-- cntStoreShelfElectronicsSingle etc. -->
+	<set xpath="/lootcontainers/lootcontainer[@id='140']/@size">8,6</set>
+	<!-- clothes shelf, shirts -->
+	<set xpath="/lootcontainers/lootcontainer[@id='141']/@size">8,6</set>
+	<!-- metal clothes rack, pants -->
+	<set xpath="/lootcontainers/lootcontainer[@id='142']/@size">10,9</set>
+
+<!-- bhwHoarder Edits End -->
+
+<!-- bhwPowerPlant Edits Start -->
+
+	<!-- Add Schematics to Loot Tables -->
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsElectrical']">
+		<item name="solarbankSchematic"/>
+		<item name="solarCellSchematic"/>
+		<item name="smallEngineSchematic"/>
+	</append>
+
+<!-- bhwPowerPlant Edits End -->
+
+<!-- bhwDownOnTheFarm Edits Start -->
+
+	<!-- Add Seeds and Recipe Schematics -->
+	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT0']">
+		<item name="plantedTomato1Schematic"/>
+		<item name="plantedPea1Schematic"/>
+		<item name="foodTomatoSauceSchematic"/>
+	</append>
+
+	<!-- Add Tomato Sauce -->
+	<append xpath="/lootcontainers/lootgroup[@name='cannedfood']">
+		<item name="foodTomatoSauce"/>
+	</append>
+
+	<!-- Add Seeds -->
+	<append xpath="/lootcontainers/lootgroup[@name='seeds']">
+		<item name="plantedTomato1" count="1,2" prob="2"/>
+		<item name="plantedPea1" count="1,2" prob="2"/>
+	</append>
+
+	<!-- Add Crops -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupIngredientsCommon']">
+		<item name="foodCropTomato" count="2,4" prob="2"/>
+		<item name="foodCropPea" count="2,4" prob="2"/>
+	</append>
+
+	<!-- Adds Crop Harvester -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupToolsT0']">
+		<item name="meleeToolBladeT1CropHarvester"/>
+	</append>
+
+	<!-- Add Compost -->
+	<append xpath="/lootcontainers/lootgroup[@name='groupFoodTrash']">
+		<item name="resourceCompost"/>
+	</append>
+
+<!-- bhwDownOnTheFarm Edits End -->
+
+<!-- bhwArmySurplus Edits Start -->
+
+	<!-- Add Weapon and Armor Schematics -->
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT0']">
+		<item name="meleeWpnSpearT3SteelSpearPartsSchematic"/>
+		<item name="meleeWpnClubT3SteelClubPartsSchematic"/>
+		<item name="meleeWpnSledgeT3SteelSledgehammerPartsSchematic"/>
+		<item name="meleeWpnKnucklesT3SteelKnucklesPartsSchematic"/>
+		<item name="meleeWpnBladeT3MachetePartsSchematic"/>
+		<item name="meleeWpnBatonT2StunBatonPartsSchematic"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT1']">
+		<item name="gunRifleT1HuntingRiflePartsSchematic"/>
+		<item name="gunShotgunT1DoubleBarrelPartsSchematic"/>
+		<item name="gunMGT1AK47PartsSchematic"/>
+		<item name="gunBowT1WoodenBowPartsSchematic"/>
+		<item name="gunHandgunT1PistolPartsSchematic"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT2']">
+		<item name="gunBotRoboticsPartsSchematic"/>
+		<item name="gunExplosivesT3RocketLauncherPartsSchematic"/>
+		<item name="armorSteelSetPartsSchematic"/>
+		<item name="armorMilitarySetPartsSchematic"/>
+	</append>
+
+<!-- bhwArmySurplus Edits End -->
+
+<!-- bhwEncyclopedia Edits Start -->
+	<append xpath="/lootcontainers/lootgroup[@name='perkBooks']">
+		<item name="bookFirefightersManual" prob=".5"/>
+		<item name="bookNightStalkerCollectersEdition" prob=".5"/>
+		<item name="bookTheCharmedLife" prob=".5"/>
+		<item name="bookSoYouBoughtAHandCannon" prob=".5"/>
+		<item name="bookBabeRuthsAutobiography" prob=".5"/>
+		<item name="bookUnofficialThievesGuide" prob=".5"/>
+		<item name="bookUltimateWastelandAdventures" prob=".5"/>
+		<item name="bookSupremeSeamstress" prob=".5"/>
+		<item name="bookDaveyCrocketsJournal" prob=".5"/>
+		<item name="bookADiggersGuideToDirt" prob=".5"/>
+		<item name="bookRangersParadise" prob=".5"/>
+		<item name="book9mmArmy" prob=".5"/>
+		<item name="bookTheLegacyOfAshsBoomstick" prob=".5"/>
+		<item name="bookOneShotOneKill" prob=".5"/>
+		<item name="bookTheSprayAndPrayBible" prob=".5"/>
+		<item name="bookGuerrillaWarfare" prob=".5"/>
+		<item name="bookAHackersGuideToEverything" prob=".5"/>
+		<item name="bookGreenStreetHooligans" prob=".5"/>
+		<item name="bookSpartanTraining" prob=".5"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT1']">
+		<item name="bookEncyclopediaVolOneWeaponMods" prob=".25"/>
+		<item name="bookEncyclopediaVolOneArmorMods" prob=".25"/>
+		<item name="bookEncyclopediaVolTwoCarMods" prob=".25"/>
+		<item name="bookEncyclopediaVolThreeToolMods" prob=".25"/>
+		<item name="bookEncyclopediaVolThreeMedical" prob=".25"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']">
+		<item name="bookEncyclopediaVolOneWeaponMods" prob=".5"/>
+		<item name="bookEncyclopediaVolOneArmorMods" prob=".5"/>
+		<item name="bookEncyclopediaVolTwoDroneMods" prob=".25"/>
+		<item name="bookEncyclopediaVolThreeToolMods" prob=".5"/>
+		<item name="bookEncyclopediaVolThreeMedical" prob=".5"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsT1']">
+		<item name="bookEncyclopediaVolThreeTools" prob=".25"/>
+		<item name="bookEncyclopediaVolThreeWorkstations" prob=".25"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsT2']">
+		<item name="bookEncyclopediaVolThreeTools" prob=".5"/>
+		<item name="bookEncyclopediaVolThreeWorkstations" prob=".5"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT1']">
+		<item name="bookEncyclopediaVolOneMelee" prob=".25"/>
+		<item name="bookEncyclopediaVolOneGuns" prob=".25"/>
+		<item name="bookEncyclopediaVolOneExplosives" prob=".25"/>
+		<item name="bookEncyclopediaVolOneArmor" prob=".25"/>
+		<item name="bookEncyclopediaVolOneTraps" prob=".25"/>
+	<!-- FOR BETTER HOMES AND WORLDS COMPLETE COLLECTION ONLY -->
+		<item name="bookEncyclopediaVolThreeWeaponParts" prob=".25"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT2']">
+		<item name="bookEncyclopediaVolOneMelee" prob=".5"/>
+		<item name="bookEncyclopediaVolOneGuns" prob=".5"/>
+		<item name="bookEncyclopediaVolOneExplosives" prob=".5"/>
+		<item name="bookEncyclopediaVolOneArmor" prob=".5"/>
+		<item name="bookEncyclopediaVolOneTraps" prob=".5"/>
+	<!-- FOR BETTER HOMES AND WORLDS COMPLETE COLLECTION ONLY -->
+		<item name="bookEncyclopediaVolThreeWeaponParts" prob=".25"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT1']">
+		<item name="bookEncyclopediaVolThreeCars" prob=".25"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsVehiclesT2']">
+		<item name="bookEncyclopediaVolThreeCars" prob=".5"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT1']">
+		<item name="bookEncyclopediaVolTwoSeeds" prob=".25"/>
+		<item name="bookEncyclopediaVolTwoFood" prob=".25"/>
+		<item name="bookEncyclopediaVolTwoDrinks" prob=".25"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT2']">
+		<item name="bookEncyclopediaVolTwoSeeds" prob=".5"/>
+		<item name="bookEncyclopediaVolTwoFood" prob=".5"/>
+		<item name="bookEncyclopediaVolTwoDrinks" prob=".5"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsElectrical']">
+		<item name="bookEncyclopediaVolThreeElectronics" prob=".5"/>
+	</append>
+
+<!-- bhwEncyclopedia Edits End -->
+
+</bhwCompleteCollection>

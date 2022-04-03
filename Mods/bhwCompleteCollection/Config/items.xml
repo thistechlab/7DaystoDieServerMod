@@ -1,0 +1,1508 @@
+<bhwCompleteCollection>
+
+<!-- bhwIndoorPlumbing Edits Start -->
+	<!-- Allows you to collect water from faucets including the broken medicine cabinet that has a faucet. DOES NOT WORK WITH LOOTABLE CLOSED MEDICINE CABINET. -->
+	<insertAfter xpath="/items/item[@name='drinkJarEmpty']/property[@class='Action1']/property[@name='Focused_blockname_5']">
+		<property name="Focused_blockname_6" value="faucet02"/>
+		<property name="Focused_blockname_7" value="faucet04"/>
+		<property name="Focused_blockname_8" value="faucetBrass02"/>
+		<property name="Focused_blockname_9" value="faucetBrass04"/>
+		<property name="Focused_blockname_10" value="cntMedicineCabinetFaucetOpen"/>
+	</insertAfter>
+
+<!-- bhwIndoorPlumbing Edits End -->
+
+<!-- bhwFashionista Edits Start -->
+
+		<!-- Add UnlockBy Info to Clothing for Needle and Thread - Vol. 1 -->
+		<insertAfter xpath="/items/item[@name='apparelHoodySweatshirt']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadWinterWear"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelLongShirt']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadWinterWear"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelSuitJacket']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadWinterWear"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelSkiGoggles']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadWinterWear"/>
+		</insertAfter>
+
+		<!-- Add UnlockBy Info to Clothing for Needle and Thread - Vol. 2 -->
+		<insertAfter xpath="/items/item[@name='apparelGothPants']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadLegwear"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelSuitPants']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadLegwear"/>
+		</insertAfter>
+
+		<!-- Add UnlockBy Info to Clothing for Needle and Thread - Vol. 3 -->
+		<insertAfter xpath="/items/item[@name='apparelGothBoots']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadFootwear"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelRunningShoesHP']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadFootwear"/>
+		</insertAfter>
+
+		<!-- Add UnlockBy Info to Clothing for Needle and Thread - Vol. 4 -->
+		<insertAfter xpath="/items/item[@name='apparelPressboyCap']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelTShirtZU']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelShades']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelToughGuySunglasses']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelNerdGlasses']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadDesertWear"/>
+		</insertAfter>
+
+		<!-- Add UnlockBy Info to Clothing for Needle and Thread - Vol. 6 -->
+		<insertAfter xpath="/items/item[@name='apparelCoatJacketGeneric']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadPufferCoats"/>
+		</insertAfter>
+
+		<!-- Add UnlockBy Info to Clothing for Needle and Thread - Completed Collection -->
+		<insertAfter xpath="/items/item[@name='apparelHazmatBoots']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadComplete"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelHazmatPants']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadComplete"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelHazmatJacket']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadComplete"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelHazmatGloves']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadComplete"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='apparelHazmatMask']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkNeedleAndThreadComplete"/>
+		</insertAfter>
+
+		<!-- Add UnlockBy Info to Night Vision Goggles for Art of Mining - Vol. 7 -->
+		<insertAfter xpath="/items/item[@name='apparelNightvisionGoggles']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkArtOfMiningLantern"/>
+		</insertAfter>
+
+		<!-- Add UnlockBy Info to Lucky Goggles for Lucky Looter Perk - Level 1 -->
+		<insertAfter xpath="/items/item[@name='apparelAviatorGoggles']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkLuckyLooter"/>
+		</insertAfter>
+
+<!-- bhwFashionista Edits End -->
+
+<!-- bhwNutsAndBolts Edits Start -->
+
+		<insertAfter xpath="/items/item[@name='meleeToolAxeT3ChainsawParts']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkMiner69r"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='meleeToolAllSteelParts']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkMiner69r"/>
+		</insertAfter>
+
+<!-- bhwNutsAndBolts Edits End -->
+
+<!-- bhwPowerPlant Edits Start -->
+
+	<append xpath="/items">
+
+		<!-- Add New Schematics -->
+		<item name="solarbankSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="solarbank"/>
+			<property name="Unlocks" value="solarbank"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="solarbank" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="solarCellSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="solarCell"/>
+			<property name="Unlocks" value="solarCell"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="solarCell" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="smallEngineSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="smallEngine"/>
+			<property name="Unlocks" value="smallEngine"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="smallEngine" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+
+	</append>
+
+		<!-- Add UnlockBy Info to Solor Cells -->
+		<insertAfter xpath="/items/item[@name='solarCell']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkAdvancedEngineering,solarCellSchematic"/>
+		</insertAfter>
+
+		<!-- Add UnlockBy Info to Engines -->
+		<insertAfter xpath="/items/item[@name='smallEngine']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkGreaseMonkey,smallEngineSchematic"/>
+		</insertAfter>
+
+		<!-- Add Unlock for Wireless Fuse Box to Basics of Electricity -->
+		<insertAfter xpath="/items/item[@name='generatorbankSchematic']/effect_group/triggered_effect[last()-1]">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="electricWirelessFuseBox" operation="set" value="1"/>
+		</insertAfter>
+
+<!-- bhwPowerPlant Edits End -->
+
+<!-- bhwDownOnTheFarm Edits Start -->
+
+	<append xpath="/items">
+		
+		<!-- Add Crop Harvester Tool -->
+		<item name="meleeToolBladeT1CropHarvester">
+			<property name="Tags" value="melee,medium,tool,attStrength,perkMiner69r,canHaveCosmetic,learnable"/>
+			<property name="DisplayType" value="meleeKnife"/>
+			<property name="HoldType" value="36"/>
+			<property name="CustomIcon" value="meleeWpnBladeT1HuntingKnife"/>
+			<property name="TintColor" value="51b500"/>
+			<property name="CustomIconTint" value="00bf30"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Melee/Knives/hunting_knifePrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="RepairTools" value="resourceRepairKit"/>
+			<property name="DegradationBreaksAfter" value="false"/>
+			<property name="SoundJammed" value="ItemNeedsRepair"/>
+			<property name="SoundDestroy" value="wooddestroy1"/>
+			<property name="DescriptionKey" value="meleeToolBladeT1CropHarvesterDesc"/>
+			<property name="FuelValue" value="250"/>
+			<property name="EconomicValue" value="350"/>
+			<property name="UnlockedBy" value="perkMiner69r"/>
+			<property name="ShowQuality" value="true"/>
+		
+			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Sphere" value=".1"/>
+				<property name="Sound_start" value="swoosh"/>
+				<property name="ToolCategory.cropHarvest" value="1" param1="1"/>
+
+				<property name="UseGrazingHits" value="true"/>
+				<property name="GrazeStart" value=".25"/>
+				<property name="GrazeEnd" value=".35"/>
+				<property name="SwingDegrees" value="90"/>
+				<property name="SwingAngle" value="90"/>
+			</property>
+			<property class="Action1"> <!-- UseAction -->
+				<property name="Class" value="Repair"/>
+				<property name="Repair_amount" value="50"/>
+				<property name="Upgrade_hit_offset" value="-4"/>
+				<property name="Sound_start" value="repair_block"/>
+				<property name="Delay" value="1.3"/> <!-- Repair actions still need the delay amount -->
+				<property name="Upgrade_action_sound" value="ImpactSurface/metalhitearth"/>
+				<property name="Allowed_upgrade_items" value="resourceClayLump"/>
+			</property>
+
+			<effect_group name="meleeToolBladeT1CropHarvester">
+				<passive_effect name="EntityDamage" operation="base_set" value="4.3" tags="perkMiner69r"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="2" tags="perkMiner69r"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="180"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="2" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="924,2308" tier="1,6"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.0"/>
+				<passive_effect name="BlockRange" operation="base_set" value="2.5"/>
+
+				<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/> <!-- tier bonus -->
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="-.9" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_set" value="-.9" tags="metal"/>
+			</effect_group>
+			<property name="Group" value="Tools/Traps"/>
+			<property name="PickupJournalEntry" value="farmingTip"/>
+			<property name="RepairExpMultiplier" value="5.5"/>
+		</item>
+
+
+		<!-- Adds Custom Crops -->
+		<item name="foodCropTomato">
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="CustomIcon" value="foodEggBoiled"/>
+			<property name="CustomIconTint" value="bf1600"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="DescriptionKey" value="foodCropTomatoDesc"/>
+			<property name="Stacknumber" value="125"/> <!-- STK resource -->
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="CraftingIngredientTime" value="8"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="2"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+
+		<item name="foodCropPea">
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="foodRaw"/>
+			<property name="CustomIcon" value="foodCropYuccaFruit"/>
+			<property name="CustomIconTint" value="66e300"/>
+			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceCrop"/>
+			<property name="DescriptionKey" value="foodCropPeaDesc"/>
+			<property name="Stacknumber" value="125"/> <!-- STK resource -->
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="5"/>
+			<property name="CraftingIngredientTime" value="8"/>
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+
+		<item name="foodTomatoSauce">
+			<property name="Tags" value="food"/>
+			<property name="HoldType" value="31"/>
+			<property name="DisplayType" value="food"/>
+			<property name="CustomIcon" value="drinkJarRiverWater"/>
+			<property name="CustomIconTint" value="bf0000"/>
+			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="DescriptionKey" value="foodTomatoSauceDesc"/>
+			<property name="Weight" value="5"/>
+			<property name="EconomicValue" value="60"/>
+			<property name="UnlockedBy" value="perkMasterChef,foodTomatoSauceSchematic"/>
+			<property name="Stacknumber" value="10"/> <!-- STK food -->
+			<property class="Action0">
+				<property name="Class" value="Eat"/>
+				<property name="Delay" value="1.0"/>
+				<property name="Use_time" value="..."/>
+				<property name="Sound_start" value="player_eating"/>
+				<property name="Create_item" value="drinkJarEmpty"/>
+			</property>
+			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+			<effect_group tiered="false" name="Food Tier 0">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+			</effect_group>
+		</item>
+
+		<!-- Add Compost -->
+		<item name="resourceCompost">
+			<property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="resourceCement"/>
+			<property name="CustomIconTint" value="844D04"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceFertilizer"/>
+			<property name="DescriptionKey" value="resourceCompostDesc"/>
+			<property name="Stacknumber" value="250"/> <!-- STK resource -->
+			<property name="FuelValue" value="0"/>
+			<property name="Weight" value="0"/>
+			<property name="Group" value="Resources"/>
+			<property name="EconomicValue" value="30"/>
+			<property name="UnlockedBy" value="perkLivingOffTheLand"/>
+		</item>
+
+		<!-- Add New Schematics -->
+		<item name="plantedTomato1Schematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="plantedBlueberry1"/>
+			<property name="CustomIconTint" value="bf1600"/>
+			<property name="Unlocks" value="plantedTomato1"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedTomato1" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="plantedPea1Schematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="plantedCorn1"/>
+			<property name="CustomIconTint" value="66e300"/>
+			<property name="Unlocks" value="plantedPea1"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="plantedPea1" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="foodTomatoSauceSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="drinkJarRiverWater"/>
+			<property name="CustomIconTint" value="bf0000"/>
+			<property name="Unlocks" value="foodTomatoSauce"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodTomatoSauce" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+	</append>
+
+		<!-- Add UnlockBy Info to Canned Food -->
+		<insertAfter xpath="/items/item[@name='foodCanBeef']/property[@name='Material']">
+			<property name="UnlockedBy" value="perkMasterChef"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='foodCanLamb']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkMasterChef"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='foodCanPeas']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkMasterChef"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='foodCanPasta']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkMasterChef"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='foodCanChili']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkMasterChef"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='foodCanStock']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkMasterChef"/>
+		</insertAfter>
+
+
+<!-- bhwDownOnTheFarm Edits End -->
+
+<!-- bhwArmySurplus Edits Start -->
+
+	<append xpath="/items">
+		
+		<!-- Add New Schematics -->
+		<item name="gunRifleT1HuntingRiflePartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="gunRifleT1HuntingRifleParts"/>
+			<property name="Unlocks" value="gunRifleT1HuntingRifleParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunRifleT1HuntingRifleParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="meleeWpnSpearT3SteelSpearPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="meleeWpnSpearT3SteelSpearParts"/>
+			<property name="Unlocks" value="meleeWpnSpearT3SteelSpearParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnSpearT3SteelSpearParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="gunShotgunT1DoubleBarrelPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="gunShotgunT1DoubleBarrelParts"/>
+			<property name="Unlocks" value="gunShotgunT1DoubleBarrelParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunShotgunT1DoubleBarrelParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="meleeWpnClubT3SteelClubPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="meleeWpnClubT3SteelClubParts"/>
+			<property name="Unlocks" value="meleeWpnClubT3SteelClubParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnClubT3SteelClubParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="meleeWpnSledgeT3SteelSledgehammerPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="meleeWpnSledgeT3SteelSledgehammerParts"/>
+			<property name="Unlocks" value="meleeWpnSledgeT3SteelSledgehammerParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnSledgeT3SteelSledgehammerParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="meleeWpnKnucklesT3SteelKnucklesPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="meleeWpnKnucklesT3SteelKnucklesParts"/>
+			<property name="Unlocks" value="meleeWpnKnucklesT3SteelKnucklesParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnKnucklesT3SteelKnucklesParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="gunMGT1AK47PartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="gunMGT1AK47Parts"/>
+			<property name="Unlocks" value="gunMGT1AK47Parts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunMGT1AK47Parts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="gunBowT1WoodenBowPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="gunBowT1WoodenBowParts"/>
+			<property name="Unlocks" value="gunBowT1WoodenBowParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBowT1WoodenBowParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="gunHandgunT1PistolPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="gunHandgunT1PistolParts"/>
+			<property name="Unlocks" value="gunHandgunT1PistolParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunHandgunT1PistolParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="meleeWpnBladeT3MachetePartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="meleeWpnBladeT3MacheteParts"/>
+			<property name="Unlocks" value="meleeWpnBladeT3MacheteParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnBladeT3MacheteParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="meleeWpnBatonT2StunBatonPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="meleeWpnBatonT2StunBatonParts"/>
+			<property name="Unlocks" value="meleeWpnBatonT2StunBatonParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="meleeWpnBatonT2StunBatonParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="gunBotRoboticsPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="gunBotRoboticsParts"/>
+			<property name="Unlocks" value="gunBotRoboticsParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunBotRoboticsParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="gunExplosivesT3RocketLauncherPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="gunExplosivesT3RocketLauncherParts"/>
+			<property name="Unlocks" value="gunExplosivesT3RocketLauncherParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="gunExplosivesT3RocketLauncherParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="armorSteelSetPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="armorSteelSetParts"/>
+			<property name="Unlocks" value="armorSteelSetParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorSteelSetParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+		<item name="armorMilitarySetPartsSchematic">
+			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="armorMilitarySetParts"/>
+			<property name="Unlocks" value="armorMilitarySetParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="armorMilitarySetParts" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>
+
+	</append>
+
+	<!-- Add UnlockBy Info to Weapon Parts -->
+		<insertAfter xpath="/items/item[@name='gunRifleT1HuntingRifleParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkDeadEye,gunRifleT1HuntingRiflePartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='meleeWpnSpearT3SteelSpearParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkJavelinMaster,meleeWpnSpearT3SteelSpearPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='gunShotgunT1DoubleBarrelParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkBoomstick,gunShotgunT1DoubleBarrelPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='meleeWpnClubT3SteelClubParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkPummelPete,meleeWpnClubT3SteelClubPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammerParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkSkullCrusher,meleeWpnSledgeT3SteelSledgehammerPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnucklesParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkBrawler,meleeWpnKnucklesT3SteelKnucklesPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='gunMGT1AK47Parts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkMachineGunner,gunMGT1AK47PartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='gunBowT1WoodenBowParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkArchery,gunBowT1WoodenBowPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='gunHandgunT1PistolParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkGunslinger,gunHandgunT1PistolPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='meleeWpnBladeT3MacheteParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkDeepCuts,meleeWpnBladeT3MachetePartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='meleeWpnBatonT2StunBatonParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkElectrocutioner,meleeWpnBatonT2StunBatonPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='gunBotRoboticsParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkTurrets,gunBotRoboticsPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='gunExplosivesT3RocketLauncherParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkTurrets,gunExplosivesT3RocketLauncherPartsSchematic"/>
+		</insertAfter>
+		
+	<!-- Add UnlockBy Info to Armor Parts -->
+		<insertAfter xpath="/items/item[@name='armorSteelSetParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkHeavyArmor,armorSteelSetPartsSchematic"/>
+		</insertAfter>
+		<insertAfter xpath="/items/item[@name='armorMilitarySetParts']/property[@name='Extends']">
+			<property name="UnlockedBy" value="perkLightArmor,armorMilitarySetPartsSchematic"/>
+		</insertAfter>
+
+<!-- bhwArmySurplus Edits End -->
+
+<!-- bhwEncyclopedia Edits Start -->
+
+	<append xpath="/items">
+	
+		<!-- Start Books -->
+			<!-- EconomicValue is 700 * Number of Books in set -->
+			<!-- Exp is 40 * Number of Books in Set -->
+		<item name="bookFirefightersManual">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookFiremansAlmanacHeat"/>
+			<property name="DescriptionKey" value="bookFirefightersManualLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkFiremansAlmanacComplete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacHeat" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacAxes" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacSpeed" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacMolotov" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacPrevention" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacHarvest" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacEquipment" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkFiremansAlmanacComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillFiremansAlmanac" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillFiremansAlmanac" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<item name="bookNightStalkerCollectersEdition">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookNightStalkerStealthDamage"/>
+			<property name="DescriptionKey" value="bookNightStalkerCollectersEditionLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkNightStalkerComplete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerStealthDamage" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerSilentNight" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerBlades" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerThiefAdrenaline" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerArchery" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerTwilightThief" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerSlumberParty" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNightStalkerComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillNightStalker" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillNightStalker" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<item name="bookTheCharmedLife">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookLuckyLooterDukes"/>
+			<property name="DescriptionKey" value="bookTheCharmedLifeLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkLuckyLooterComplete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterDukes" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterAmmunition" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterBrass" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterLead" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterBooks" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterFood" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterMedical" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkLuckyLooterComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillLuckyLooter" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillLuckyLooter" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<item name="bookSoYouBoughtAHandCannon">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookEnforcerDamage"/>
+			<property name="DescriptionKey" value="bookSoYouBoughtAHandCannonLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkEnforcerComplete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerDamage" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerApparel" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerPunks" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerIntimidation" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerAPAmmo" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerHPAmmo" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerCriminalPursuit" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEnforcerComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEnforcer" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<item name="bookBabeRuthsAutobiography">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookBatterUpBigHits"/>
+			<property name="DescriptionKey" value="bookBabeRuthsAutobiographyLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkBatterUpComplete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpBigHits" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpGear" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpSlowPitch" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpKnockdown" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpMaintenance" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpBaseballBats" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpMetalChain" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBatterUpComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillBatterUp" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillBatterUp" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<item name="bookUnofficialThievesGuide">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookTheGreatHeistSafes"/>
+			<property name="DescriptionKey" value="bookUnofficialThievesGuideLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkGreatHeistComplete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistSafes" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistGems" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistTimedCharge" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistClaimed" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistAdrenalineFall" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistSprintSneak" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistMotionDetection" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkGreatHeistComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillGreatHeist" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillGreatHeist" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<item name="bookUltimateWastelandAdventures">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookWasteTreasuresHoney"/>
+			<property name="DescriptionKey" value="bookUltimateWastelandAdventuresLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkWasteTreasuresComplete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresHoney" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresCoffins" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresAcid" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresWater" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresDoors" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresCloth" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresSinks" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkWasteTreasuresComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillWasteTreasures" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillWasteTreasures" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<item name="bookSupremeSeamstress">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookNeedleAndThreadWinterWear"/>
+			<property name="DescriptionKey" value="bookSupremeSeamstressLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkNeedleAndThreadComplete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadWinterWear" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadLegwear" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadFootwear" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadDesertWear" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadDusters" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadPufferCoats" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadPockets" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkNeedleAndThreadComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillNeedleAndThread" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillNeedleAndThread" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<item name="bookDaveyCrocketsJournal">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookHuntingJournalBears"/>
+			<property name="DescriptionKey" value="bookDaveyCrocketsJournalLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkHuntingJournalComplete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalBears" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalWolves" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalCoyotes" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalMountainLions" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalDeer" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalVultures" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalSelfDefense" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHuntingJournalComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillHuntingJournal" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillHuntingJournal" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<item name="bookADiggersGuideToDirt">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookArtOfMiningLuckyStrike"/>
+			<property name="DescriptionKey" value="bookADiggersGuideToDirtLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkArtOfMiningComplete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningLuckyStrike" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningDiamondTools" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningCoffee" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningBlackStrap" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningPallets" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningAvalanche" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningLantern" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkArtOfMiningComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillArtOfMining" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillArtOfMining" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<item name="bookRangersParadise">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookRangersArrowRecovery"/>
+			<property name="DescriptionKey" value="bookRangersParadiseLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkRangersComplete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersArrowRecovery" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersExplodingBolts" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersCripplingShot" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersAPAmmo" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersFlamingArrows" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersForestGuide" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersKnockdown" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkRangersComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillArchery" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillArchery" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<item name="book9mmArmy">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookPistolPeteTakeAim"/>
+			<property name="DescriptionKey" value="book9mmArmyLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkPistolPeteComplete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteTakeAim" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteSwissKnees" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteSteadyHand" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteMaintenance" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteHPAmmo" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteAPAmmo" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteDamage" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkPistolPeteComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillPistolPete" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillPistolPete" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<item name="bookTheLegacyOfAshsBoomstick">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookShotgunMessiahDamage"/>
+			<property name="DescriptionKey" value="bookTheLegacyOfAshsBoomstickLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkShotgunMessiahComplete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahDamage" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahBreachingSlugs" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahLimbShot" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahSlugs" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahMaintenance" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahMagazine" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahPartyStarter" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkShotgunMessiahComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillShotguns" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillShotguns" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<item name="bookOneShotOneKill">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookSniperDamage"/>
+			<property name="DescriptionKey" value="bookOneShotOneKillLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkSniperComplete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperDamage" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperCripplingShot" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperHeadShot" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperReload" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperControlledBreathing" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperAPAmmo" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperHPAmmo" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSniperComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillSniper" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillSniper" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<item name="bookTheSprayAndPrayBible">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookAutoWeaponsDamage"/>
+			<property name="DescriptionKey" value="bookTheSprayAndPrayBibleLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkAutoWeaponsComplete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsDamage" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsUncontrolledBurst" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsMaintenance" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsDrumMag" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsRecoil" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsRagdoll" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsMachineGuns" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkAutoWeaponsComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillAutoWeapons" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillAutoWeapons" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<item name="bookGuerrillaWarfare">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookUrbanCombatLanding"/>
+			<property name="DescriptionKey" value="bookGuerrillaWarfareLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkUrbanCombatComplete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatLanding" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatCigar" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatSneaking" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatJumping" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatLandMines" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatAdrenalineRush" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatRoomClearing" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkUrbanCombatComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillUrbanCombat" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillUrbanCombat" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<item name="bookAHackersGuideToEverything">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookTechJunkie1Damage"/>
+			<property name="DescriptionKey" value="bookAHackersGuideToEverythingLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkTechJunkie8Complete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie1Damage" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie2Maintenance" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie3APAmmo" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie4Shells" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie5Repulsor" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie6BatonCharge" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie7Hydraulics" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTechJunkie8Complete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillTechJunkie" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillTechJunkie" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<item name="bookGreenStreetHooligans">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookBarBrawling1BasicMoves"/>
+			<property name="DescriptionKey" value="bookGreenStreetHooligansLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkBarBrawling8Complete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling1BasicMoves" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling2DropABomb" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling3KillerInstinct" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling4FinishingMoves" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling5AdrenalineHealing" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling6RageMode" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling7BoozedUp" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkBarBrawling8Complete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillBarBrawling" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillBarBrawling" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<item name="bookSpartanTraining">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="bookSpearHunter1Damage"/>
+			<property name="DescriptionKey" value="bookSpartanTrainingLongDesc"/>
+			<property name="EconomicValue" value="4900"/>
+			<property name="Unlocks" value="perkSpearHunter8Complete"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter1Damage" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter2Maintenance" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter3SteelSpears" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter4StrongArm" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter5RapidStrike" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter6PuncturedLung" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter7QuickStrike" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="300"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkSpearHunter8Complete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillSpearHunter" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillSpearHunter" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		
+	<!-- Start Combined Schematics Books -->
+			<!-- EconomicValue is 400 * Number of Schematics in set -->
+			<!-- Exp is 40 * Number of Schematics in Set -->
+
+		<!-- Encyclopedia Vol One Books -->
+		<!-- Hand to Hand Combat -->
+		<item name="bookEncyclopediaVolOneMelee">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="meleeWpnKnucklesT0LeatherKnuckles"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolOneMeleeLongDesc"/>
+			<property name="EconomicValue" value="3200"/>
+			<property name="Unlocks" value="perkEncyclopediaVolOneMelee"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolOneMelee" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="320"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolOneComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolOne" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolOne" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<!-- Sabbath's Ultimate Weapon Manual -->
+		<item name="bookEncyclopediaVolOneGuns">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="gunHandgunT0PipePistol"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolOneGunsLongDesc"/>
+			<property name="EconomicValue" value="6800"/>
+			<property name="Unlocks" value="perkEncyclopediaVolOneGuns"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolOneGuns" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="680"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolOneComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolOne" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolOne" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<!-- Kundrav's Weapon Modification Lexicon -->
+		<item name="bookEncyclopediaVolOneWeaponMods">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="modMeleeClubMetalChain"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolOneWeaponModsLongDesc"/>
+			<property name="EconomicValue" value="11600"/>
+			<property name="Unlocks" value="perkEncyclopediaVolOneWeaponMods"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolOneWeaponMods" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="1160"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolOneComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolOne" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolOne" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<!-- Wabbiit's Weapons of Mass Destruction -->
+		<item name="bookEncyclopediaVolOneExplosives">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="questCassadoreSupplies"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolOneExplosivesLongDesc"/>
+			<property name="EconomicValue" value="2000"/>
+			<property name="Unlocks" value="perkEncyclopediaVolOneExplosives"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolOneExplosives" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="200"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolOneComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolOne" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolOne" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<!-- Frreya's Armor of the Gods -->
+		<item name="bookEncyclopediaVolOneArmor">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="apparelGasMask"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolOneArmorLongDesc"/>
+			<property name="EconomicValue" value="2000"/>
+			<property name="Unlocks" value="perkEncyclopediaVolOneArmor"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolOneArmor" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="200"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolOneComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolOne" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolOne" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<!-- Mexi's Manual to Armor Utilization -->
+		<item name="bookEncyclopediaVolOneArmorMods">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="armorSwatHelmet"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolOneArmorModsLongDesc"/>
+			<property name="CustomIconTint" value="14bcd2"/>
+			<property name="EconomicValue" value="6000"/>
+			<property name="Unlocks" value="perkEncyclopediaVolOneArmorMods"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolOneArmorMods" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="600"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolOneComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolOne" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolOne" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<!-- McNinja's Compendium of Turrets and Traps -->
+		<item name="bookEncyclopediaVolOneTraps">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="flamethrowerTrap"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolOneTrapsLongDesc"/>
+			<property name="EconomicValue" value="2800"/>
+			<property name="Unlocks" value="perkEncyclopediaVolOneTraps"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolOneTraps" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="280"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolOneComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolOne" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolOne" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+
+		<!-- Encyclopedia Vol Two Books -->
+		<!-- Farmer's Almanac -->
+		<item name="bookEncyclopediaVolTwoSeeds">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="meleeToolFarmT1IronHoe"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolTwoSeedsLongDesc"/>
+			<property name="EconomicValue" value="5200"/>
+			<property name="Unlocks" value="perkEncyclopediaVolTwoSeeds"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolTwoSeeds" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="520"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolTwoComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolTwo" operation="GTE" value="5"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolTwo" operation="GTE" value="5"/></triggered_effect>
+			</effect_group>
+		</item>
+		<!-- Grandma's Secret Recipes -->
+		<item name="bookEncyclopediaVolTwoFood">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="schematicMaster"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolTwoFoodLongDesc"/>
+			<property name="EconomicValue" value="8800"/>
+			<property name="Unlocks" value="perkEncyclopediaVolTwoFood"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolTwoFood" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="880"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolTwoComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolTwo" operation="GTE" value="5"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolTwo" operation="GTE" value="5"/></triggered_effect>
+			</effect_group>
+		</item>
+		<!-- Bartender's Friend -->
+		<item name="bookEncyclopediaVolTwoDrinks">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="drinkJarYuccaCocktail"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolTwoDrinksLongDesc"/>
+			<property name="EconomicValue" value="3200"/>
+			<property name="Unlocks" value="perkEncyclopediaVolTwoDrinks"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolTwoDrinks" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="320"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolTwoComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolTwo" operation="GTE" value="5"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolTwo" operation="GTE" value="5"/></triggered_effect>
+			</effect_group>
+		</item>
+		<!-- After Market Parts -->
+		<item name="bookEncyclopediaVolTwoCarMods">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="modVehicleSuperCharger"/>
+			<property name="CustomIconTint" value="14bcd2"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolTwoCarModsLongDesc"/>
+			<property name="EconomicValue" value="2000"/>
+			<property name="Unlocks" value="perkEncyclopediaVolTwoCarMods"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolTwoCarMods" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="200"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolTwoComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolTwo" operation="GTE" value="5"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolTwo" operation="GTE" value="5"/></triggered_effect>
+			</effect_group>
+		</item>
+		<!-- Eye in the Sky -->
+		<item name="bookEncyclopediaVolTwoDroneMods">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="gunBotT3JunkDrone"/>
+			<property name="CustomIconTint" value="14bcd2"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolTwoDroneModsLongDesc"/>
+			<property name="EconomicValue" value="2400"/>
+			<property name="Unlocks" value="perkEncyclopediaVolTwoDroneMods"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolTwoDroneMods" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="240"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolTwoComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolTwo" operation="GTE" value="5"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolTwo" operation="GTE" value="5"/></triggered_effect>
+			</effect_group>
+		</item>
+
+		<!-- Encyclopedia Vol Three Books -->
+<!-- For Complete Collection, change PerksUnlocked value to 7 -->
+		<!-- Crafter's Guide -->
+		<item name="bookEncyclopediaVolThreeWorkstations">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="tableSaw"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolThreeWorkstationsLongDesc"/>
+			<property name="EconomicValue" value="2800"/>
+			<property name="Unlocks" value="perkEncyclopediaVolThreeWorkstations"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolThreeWorkstations" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="280"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolThreeComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolThree" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolThree" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<!-- Mac Tool's Catalog -->
+		<item name="bookEncyclopediaVolThreeTools">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="decoHandTruck"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolThreeToolsLongDesc"/>
+			<property name="EconomicValue" value="3600"/>
+			<property name="Unlocks" value="perkEncyclopediaVolThreeTools"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolThreeTools" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="360"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolThreeComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolThree" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolThree" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<!-- Handyman's Special -->
+		<item name="bookEncyclopediaVolThreeToolMods">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="toolAndDieSet"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolThreeToolModsLongDesc"/>
+			<property name="EconomicValue" value="4000"/>
+			<property name="Unlocks" value="perkEncyclopediaVolThreeToolMods"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolThreeToolMods" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="400"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolThreeComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolThree" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolThree" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<!-- Dr. Death Defy's Medical Dictionary -->
+		<item name="bookEncyclopediaVolThreeMedical">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="drugSteroids"/>
+			<property name="CustomIconTint" value="14bcd2"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolThreeMedicalLongDesc"/>
+			<property name="EconomicValue" value="2000"/>
+			<property name="Unlocks" value="perkEncyclopediaVolThreeMedical"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolThreeMedical" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="200"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolThreeComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolThree" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolThree" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<!-- Electrical for Dummies -->
+		<item name="bookEncyclopediaVolThreeElectronics">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="electricalBox01"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolThreeElectronicsLongDesc"/>
+			<property name="EconomicValue" value="3200"/>
+			<property name="Unlocks" value="perkEncyclopediaVolThreeElectronics"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolThreeElectronics" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="320"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolThreeComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolThree" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolThree" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+		<!-- Hayes' Vehicle Repair Guide -->
+		<item name="bookEncyclopediaVolThreeCars">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="cntBusCity"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolThreeCarsLongDesc"/>
+			<property name="EconomicValue" value="6800"/>
+			<property name="Unlocks" value="perkEncyclopediaVolThreeCars"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolThreeCars" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="680"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolThreeComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolThree" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolThree" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+
+		<!-- FOR BETTER HOMES AND WORLDS COMPLETE COLLECTION ONLY -->
+		<!-- Weapon Smithing for Beginners -->
+		<item name="bookEncyclopediaVolThreeWeaponParts">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="gunHandgunT1PistolParts "/>
+			<property name="CustomIconTint" value="14bcd2"/>
+			<property name="DescriptionKey" value="perkEncyclopediaVolThreeWeaponPartsLongDesc"/>
+			<property name="EconomicValue" value="5200"/>
+			<property name="Unlocks" value="perkEncyclopediaVolThreeWeaponParts"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="bookEncyclopediaVolThreeWeaponParts" level="-1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="520"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkEncyclopediaVolThreeComplete" level="-1">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolThree" operation="GTE" value="7"/></triggered_effect>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+					<requirement name="PerksUnlocked" skill_name="skillEncyclopediaVolThree" operation="GTE" value="7"/></triggered_effect>
+			</effect_group>
+		</item>
+
+	</append>
+
+	<!-- Add Unlocked By Info to Items -->
+	<!-- Encyclopedia Vol 1 Books -->
+		<!-- Melee -->
+	<append xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneMelee</append>
+	<append xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneMelee</append>
+	<append xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneMelee</append>
+	<append xpath="/items/item[@name='meleeWpnSpearT1IronSpear']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneMelee</append>
+	<append xpath="/items/item[@name='meleeWpnBladeT3Machete']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneMelee</append>
+	<append xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneMelee</append>
+	<append xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneMelee</append>
+	<append xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneMelee</append>
+		<!-- Guns -->
+	<append xpath="/items/item[@name='gunBowT1WoodenBow']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneGuns</append>
+	<append xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneGuns</append>
+	<append xpath="/items/item[@name='gunBowT3CompoundBow']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneGuns</append>
+	<append xpath="/items/item[@name='gunBowT3CompoundCrossbow']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneGuns</append>
+	<append xpath="/items/item[@name='gunHandgunT1Pistol']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneGuns</append>
+	<append xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneGuns</append>
+	<append xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneGuns</append>
+	<append xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneGuns</append>
+	<append xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneGuns</append>
+	<append xpath="/items/item[@name='gunShotgunT3AutoShotgun']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneGuns</append>
+	<append xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneGuns</append>
+	<append xpath="/items/item[@name='gunRifleT2LeverActionRifle']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneGuns</append>
+	<append xpath="/items/item[@name='gunMGT2TacticalAR']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneGuns</append>
+	<append xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneGuns</append>
+	<append xpath="/items/item[@name='gunHandgunT3SMG5']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneGuns</append>
+	<append xpath="/items/item[@name='gunMGT1AK47']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneGuns</append>
+	<append xpath="/items/item[@name='gunMGT3M60']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneGuns</append>
+		<!-- Explosives -->
+	<append xpath="/items/item[@name='gunExplosivesT3RocketLauncher']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneExplosives</append>
+	<append xpath="/items/item[@name='ammoRocketHE']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneExplosives</append>
+	<append xpath="/items/item[@name='resourceRocketTip']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneExplosives</append>
+	<append xpath="/items/item[@name='resourceRocketCasing']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneExplosives</append>
+	<append xpath="/items/item[@name='thrownDynamite']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneExplosives</append>
+	<append xpath="/items/item[@name='thrownGrenade']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneExplosives</append>
+	<append xpath="/items/item[@name='thrownGrenadeContact']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneExplosives</append>
+	<append xpath="/items/item[@name='thrownAmmoPipeBomb']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneExplosives</append>
+		<!-- Armor -->
+	<append xpath="/items/item[@name='armorLeatherMaster']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneArmor</append>
+	<append xpath="/items/item[@name='armorIronMaster']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneArmor</append>
+	<append xpath="/items/item[@name='armorSteelMaster']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneArmor</append>
+	<append xpath="/items/item[@name='armorMilitaryMaster']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneArmor</append>
+	<append xpath="/items/item[@name='resourceMilitaryFiber']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneArmor</append>
+		<!-- Traps -->
+	<append xpath="/items/item[@name='gunBotT2JunkTurret']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneTraps</append>
+	<append xpath="/items/item[@name='gunBotT1JunkSledge']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneTraps</append>
+
+	<!-- Encyclopedia Vol 2 Books -->
+		<!-- Food -->
+	<append xpath="/items/item[@name='foodCanSham']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodBaconAndEggs']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodBakedPotato']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodBlueberryPie']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodPumpkinPie']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodPumpkinCheesecake']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodPumpkinBread']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodGumboStew']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodShepardsPie']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodSpaghetti']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodTunaFishGravyToast']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodBoiledMeat']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodChiliDog']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodCornBread']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodCornOnTheCob']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodFishTacos']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodGrilledMeat']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodHoboStew']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodMeatStew']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodShamChowder']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodSteakAndPotato']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+	<append xpath="/items/item[@name='foodVegetableStew']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoFood</append>
+		<!-- Drinks -->
+	<append xpath="/items/item[@name='drinkJarBeer']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoDrinks</append>
+	<append xpath="/items/item[@name='drinkJarCoffee']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoDrinks</append>
+	<append xpath="/items/item[@name='drinkJarGoldenRodTea']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoDrinks</append>
+	<append xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoDrinks</append>
+	<append xpath="/items/item[@name='drinkJarRedTea']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoDrinks</append>
+	<append xpath="/items/item[@name='drinkJarGrandpasAwesomeSauce']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoDrinks</append>
+	<append xpath="/items/item[@name='drinkJarGrandpasLearningElixir']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoDrinks</append>
+	<append xpath="/items/item[@name='drinkJarGrandpasMoonshine']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoDrinks</append>
+		<!-- Drone -->
+	<append xpath="/items/item[@name='gunBotT3JunkDrone']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoDroneMods</append>
+
+	<!-- Encyclopedia Vol 3 Books -->
+		<!-- Workstations -->
+	<append xpath="/items/item[@name='toolBellows']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWorkstations</append>
+	<append xpath="/items/item[@name='toolAnvil']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWorkstations</append>
+	<append xpath="/items/item[@name='toolForgeCrucible']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWorkstations</append>
+		<!-- Tools -->
+	<append xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeTools</append>
+	<append xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeTools</append>
+	<append xpath="/items/item[@name='meleeToolPickT1IronPickaxe']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeTools</append>
+	<append xpath="/items/item[@name='meleeToolShovelT1IronShovel']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeTools</append>
+	<append xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeTools</append>
+	<append xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeTools</append>
+	<append xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeTools</append>
+	<append xpath="/items/item[@name='meleeToolSalvageT1Wrench']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeTools</append>
+	<append xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeTools</append>
+	<append xpath="/items/item[@name='meleeToolSalvageT2Ratchet']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeTools</append>
+	<append xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeTools</append>
+	<append xpath="/items/item[@name='meleeToolPickT3Auger']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeTools</append>
+	<append xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeTools</append>
+	<append xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeTools</append>
+		<!-- Medical -->
+	<append xpath="/items/item[@name='medicalFirstAidBandage']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeMedical</append>
+	<append xpath="/items/item[@name='medicalFirstAidKit']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeMedical</append>
+	<append xpath="/items/item[@name='medicalPlasterCast']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeMedical</append>
+	<append xpath="/items/item[@name='drugAntibiotics']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeMedical</append>
+	<append xpath="/items/item[@name='drugHerbalAntibiotics']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeMedical</append>
+		<!-- Cars -->
+	<append xpath="/items/item[@name='vehicleBicycleChassis']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeCars</append>
+	<append xpath="/items/item[@name='vehicleBicycleHandlebars']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeCars</append>
+	<append xpath="/items/item[@name='vehicleMinibikeChassis']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeCars</append>
+	<append xpath="/items/item[@name='vehicleMinibikeHandlebars']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeCars</append>
+	<append xpath="/items/item[@name='vehicleMotorcycleChassis']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeCars</append>
+	<append xpath="/items/item[@name='vehicleMotorcycleHandlebars']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeCars</append>
+	<append xpath="/items/item[@name='vehicle4x4TruckChassis']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeCars</append>
+	<append xpath="/items/item[@name='vehicle4x4TruckAccessories']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeCars</append>
+	<append xpath="/items/item[@name='vehicleGyroCopterChassis']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeCars</append>
+	<append xpath="/items/item[@name='vehicleGyroCopterAccessories']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeCars</append>
+	<append xpath="/items/item[@name='vehicleWheels']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeCars</append>
+	<append xpath="/items/item[@name='carBattery']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeCars</append>
+	<append xpath="/items/item[@name='resourceOil']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeCars</append>
+	<append xpath="/items/item[@name='ammoGasCan']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeCars</append>
+
+	<!-- FOR BETTER HOMES AND WORLDS COMPLETE COLLECTION ONLY -->
+	<append xpath="/items/item[@name='armorSteelSetParts']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneArmor</append>
+	<append xpath="/items/item[@name='armorMilitarySetParts']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneArmor</append>
+
+	<append xpath="/items/item[@name='solarCell']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeCars</append>
+	<append xpath="/items/item[@name='smallEngine']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeCars</append>
+	<append xpath="/items/item[@name='gunRifleT1HuntingRifleParts']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWeaponParts</append>
+	<append xpath="/items/item[@name='meleeWpnSpearT3SteelSpearParts']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWeaponParts</append>
+	<append xpath="/items/item[@name='gunShotgunT1DoubleBarrelParts']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWeaponParts</append>
+	<append xpath="/items/item[@name='meleeWpnClubT3SteelClubParts']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWeaponParts</append>
+	<append xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammerParts']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWeaponParts</append>
+	<append xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnucklesParts']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWeaponParts</append>
+	<append xpath="/items/item[@name='gunMGT1AK47Parts']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWeaponParts</append>
+	<append xpath="/items/item[@name='gunBowT1WoodenBowParts']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWeaponParts</append>
+	<append xpath="/items/item[@name='gunHandgunT1PistolParts']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWeaponParts</append>
+	<append xpath="/items/item[@name='meleeWpnBladeT3MacheteParts']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWeaponParts</append>
+	<append xpath="/items/item[@name='meleeWpnBatonT2StunBatonParts']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWeaponParts</append>
+	<append xpath="/items/item[@name='gunBotRoboticsParts']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWeaponParts</append>
+	<append xpath="/items/item[@name='gunExplosivesT3RocketLauncherParts']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWeaponParts</append>
+
+<!-- bhwEncyclopedia Edits End -->
+
+</bhwCompleteCollection>

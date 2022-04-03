@@ -1,0 +1,2123 @@
+<bhwCompleteCollection>
+
+<!-- bhwReinforcedDoors Edits Start -->	
+	<!-- Adds additional doors from default assets with larger health and higher resist values -->
+	<append xpath="/blocks">
+
+	<!-- Reinforced Entry Doors -->
+		<block name="reinforcedHouseEntryDoor1">
+			<property name="Class" value="DoorSecure"/>
+			<property name="Material" value="Msteel"/>
+			<property name="PassThroughDamage" value="true"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Tags" value="door"/>
+			<property name="BlockTag" value="Door"/>
+			<property name="Place" value="Door"/> <!-- build restriction -->
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="AllowAllRotations" value="true"/> <!-- enables the 45 degree rotations -->
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="CustomIcon" value="houseFrontDoor1_v1"/>
+			<property name="Model" value="Entities/Doors/house_frontDoor1_v1Prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DisplayType" value="blockHardenedMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="77"/>
+			<property name="Mesh-Damage-1" value="Door/Door_DMG0"/>
+			<property name="Mesh-Damage-2" value="Door/Door_DMG1"/>
+			<property name="Mesh-Damage-3" value="Door/Door_DMG2"/>
+			<property name="Mesh-Damage-4" value="Door/Door_DMG3"/>
+			<property name="Mesh-Damage-5" value="Door/Door_DMG4"/>
+			<property name="OpenSound" value="open_door_wood"/>
+			<property name="CloseSound" value="close_door_wood"/>
+			<property class="RepairItems"> <property name="resourceForgedIron" value="5"/> </property>
+			<drop event="Harvest" name="resourceScrapIron" count="96" prob="1" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="EconomicValue" value="432"/>
+			<property name="FilterTags" value="fdecor,fdoors"/>
+			<property name="SortOrder1" value="7060"/>
+			<property name="SortOrder2" value="0340"/> <!-- SortDoors -->
+		</block>
+
+		<block name="reinforcedHouseEntryDoor2">
+			<property name="Extends" value="reinforcedHouseEntryDoor1"/>
+			<property name="CustomIcon" value="houseFrontDoor2_v1"/>
+			<property name="Model" value="Entities/Doors/house_frontDoor2_v1Prefab"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="70"/>
+			<property name="SortOrder2" value="0160"/> <!-- SortDoors -->
+		</block>
+
+		<block name="reinforcedCommercialEntryDoor1">
+			<property name="Extends" value="reinforcedHouseEntryDoor1"/>
+			<property name="CustomIcon" value="commercialDoor1_v1"/>
+			<property name="Model" value="Entities/Doors/commercial_door_1_v1Prefab"/>
+			<property name="OpenSound" value="open_door_metal"/>
+			<property name="CloseSound" value="close_door_metal"/>
+			<property name="SortOrder2" value="0200"/> <!-- SortDoors -->
+		</block>
+
+		<block name="reinforcedCommercialEntryDoor2">
+			<property name="Extends" value="reinforcedCommercialEntryDoor1"/>
+			<property name="CustomIcon" value="commercialDoor2_v1"/>
+			<property name="Model" value="Entities/Doors/commercial_door_2_v1Prefab"/>
+			<property name="SortOrder2" value="0200"/> <!-- SortDoors -->
+		</block>
+
+		<block name="reinforcedCommercialEntryDoor4">
+			<property name="Extends" value="reinforcedCommercialEntryDoor1"/>
+			<property name="CustomIcon" value="commercialDoor4_v1"/>
+			<property name="Model" value="Entities/Doors/commercial_door_4_v1Prefab"/>
+			<property name="SortOrder2" value="0200"/> <!-- SortDoors -->
+		</block>
+		
+		<block name="reinforcedEntryDoorHelper">
+			<property name="Extends" value="reinforcedHouseEntryDoor1"/>
+			<property name="CustomIcon" value="houseFrontDoor1_v1"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="reinforcedHouseEntryDoor1,reinforcedHouseEntryDoor2,reinforcedCommercialEntryDoor1,reinforcedCommercialEntryDoor2,reinforcedCommercialEntryDoor4,jailDoorDynamic"/>
+		</block>
+	
+	<!-- Brown Rolling Garage Door -->
+		<block name="rollingGarageDoorBrown">
+			<property name="Extends" value="garageDoorHousePlayer"/>
+			<property name="CustomIcon" value="garageDoorHouseBrown"/>
+			<property name="Model" value="Entities/Doors/garage_house_brownPrefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="43"/>
+			<property name="DescriptionKey" value="rollingGarageDoorBrownDesc"/>
+			<property name="SortOrder2" value="0400"/> <!-- SortDoors -->
+		</block>
+
+	
+	<!-- Reinforced Garage Doors (Powered) -->
+		<!-- White Door -->
+		<block name="reinforcedGarageDoor">
+			<property name="Extends" value="garageDoorIndustrial_Powered"/>
+			<property name="CustomIcon" value="garageDoorHouse"/>
+			<property name="Model" value="Entities/Doors/garage_housePrefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="ImposterExchange" value="imposterBlock" param1="43"/>
+			<property name="DescriptionKey" value="reinforcedGarageDoorDesc"/>
+			<property name="SortOrder2" value="0400"/> <!-- SortDoors -->
+		</block>
+		<!-- Brown Door -->
+		<block name="reinforcedGarageDoorBrown">
+			<property name="Extends" value="reinforcedGarageDoor"/>
+			<property name="CustomIcon" value="garageDoorHouseBrown"/>
+			<property name="Model" value="Entities/Doors/garage_house_brownPrefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="SortOrder2" value="0400"/> <!-- SortDoors -->
+		</block>
+
+	
+	<!-- Sliding Jail Door -->
+		<block name="jailDoorDynamic">
+			<property name="Class" value="DoorSecure"/>
+			<property name="Material" value="Msteel"/>
+			<property name="CustomIcon" value="jailDoorStatic" />
+			<property name="PassThroughDamage" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+			<property name="Tag" value="door"/>
+			<property name="Place" value="Door"/>
+			<property name="PlaceEverywhere" value="true"/>
+			<property name="AllowAllRotations" value="true"/> <!-- enables the 45 degree rotations -->
+			<property name="Model" value="Entities/Doors/jail_doorPrefab"/> <property name="ModelOffset" value="0,.5,0"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="OpenSound" value="open_door_jail"/>
+			<property name="CloseSound" value="close_door_jail"/>
+			<property class="RepairItems"> <property name="resourceForgedIron" value="12"/> </property>
+			<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+			<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="FilterTags" value="fdecor,fdoors"/>
+			<property name="DescriptionKey" value="jailDoorDynamicDesc"/>
+		</block>	
+
+	<!-- Add Reinforced Windows -->
+		<block name="windowStoreCornerReinforced">
+			<property name="Group" value="Building,advBuilding"/>
+			<property name="DescriptionKey" value="windowReinforcedGroupDesc"/>
+			<property name="CustomIcon" value="windowStoreCornerFull" />
+			<property name="Material" value="MglassBulletproof"/>
+			<property name="MaxDamage" value="6000"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Entities/Buildings/window_store_corner_fullPrefab" param1="main_mesh"/> <property name="Place" value="TowardsPlacer"/>
+			<property name="ImposterExcludeAndStop" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property class="RepairItems">
+				<property name="resourceBrokenGlass" value="20"/>
+				<property name="resourceScrapIron" value="5"/>
+			</property>
+			<drop event="Harvest" name="resourceBrokenGlass" count="21" tag="allHarvest"/>
+			<property name="DowngradeBlock" value="windowStoreTwoSidedCorner"/>
+			<drop event="Destroy" count="0"/>
+			<property name="EconomicValue" value="150"/>
+			<property name="FilterTags" value="fdecor,fwindows"/>
+			<property name="SortOrder1" value="7080"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+
+		<block name="windowStoreOneSidedReinforced">
+			<property name="Extends" value="windowStoreCornerReinforced"/>
+			<property name="CustomIcon" value="windowStoreOneSidedFull" />
+			<property name="Model" value="Entities/Buildings/window_store_one_sided_fullPrefab"/>
+			<property name="DowngradeBlock" value="windowStoreOneSided"/>
+		</block>
+
+		<block name="windowStoreTwoSidedReinforced">
+			<property name="Extends" value="windowStoreCornerReinforced"/>
+			<property name="CustomIcon" value="windowStoreTwoSidedFull" />
+			<property name="Model" value="Entities/Buildings/window_store_two_sided_fullPrefab"/>
+			<property name="DowngradeBlock" value="windowStoreTwoSided"/>
+		</block>
+
+		<block name="windowStoreThreeSidedReinforced">
+			<property name="Extends" value="windowStoreCornerReinforced"/>
+			<property name="CustomIcon" value="windowStoreThreeSidedFull" />
+			<property name="Model" value="Entities/Buildings/window_store_three_sided_fullPrefab"/>
+			<property name="DowngradeBlock" value="windowStoreThreeSided"/>
+		</block>
+
+		<block name="windowStoreFourSidedReinforced">
+			<property name="Extends" value="windowStoreCornerReinforced"/>
+			<property name="CustomIcon" value="windowStoreFourSidedFull" />
+			<property name="Model" value="Entities/Buildings/window_store_four_sided_fullPrefab"/>
+			<property name="DowngradeBlock" value="windowStoreFourSided"/>
+		</block>
+
+		<block name="windowBorderlessReinforced">
+			<property name="Extends" value="windowStoreCornerReinforced"/>
+			<property name="CustomIcon" value="glassBusinessSheet" />
+			<property name="Shape" value="New"/>
+			<property name="Model" value="billboard"/>
+			<property name="LightOpacity" value="1"/>
+			<property name="Mesh" value="transparent"/>
+			<property name="Texture" value="285"/>
+			<property name="Weight" value="10"/>
+			<property name="DowngradeBlock" value="windowStoreFourSided"/>
+		</block>
+
+		<block name="window03WoodReinforced">
+			<property name="Extends" value="windowStoreCornerReinforced"/>
+			<property name="CustomIcon" value="window03Wood" />
+			<property name="Model" value="Entities/Buildings/window03WoodPrefab"/>
+			<property name="DowngradeBlock" value="window03WoodBroke1"/>
+		</block>
+
+		<!-- Adds Reinforced Windows Helper Block -->
+		<block name="windowReinforcedHelper">
+			<property name="Extends" value="windowStoreCornerReinforced"/>
+			<property name="CustomIcon" value="windowStoreCornerFull"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="windowStoreCornerReinforced,windowStoreOneSidedReinforced,windowStoreTwoSidedReinforced,windowStoreThreeSidedReinforced,windowStoreFourSidedReinforced,windowBorderlessReinforced,window03WoodReinforced"/>
+		</block>
+
+	<!-- Adds Powered Roll Up Doors -->
+		<!-- 3x3 Doors -->
+		<block name="rollUpDoor3x3WhitePowered">
+			<property name="Extends" value="rollUpDoor3x3White"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+			<property name="CustomIcon" value="rollUpDoor3x3White"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="rollUpDoor3x3BrownPowered">
+			<property name="Extends" value="rollUpDoor3x3Brown"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Red -->
+		<block name="rollUpDoor3x3RedPowered">
+			<property name="Extends" value="rollUpDoor3x3Red"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="rollUpDoor3x3OrangePowered">
+			<property name="Extends" value="rollUpDoor3x3Orange"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="rollUpDoor3x3YellowPowered">
+			<property name="Extends" value="rollUpDoor3x3Yellow"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Green -->
+		<block name="rollUpDoor3x3GreenPowered">
+			<property name="Extends" value="rollUpDoor3x3Green"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="rollUpDoor3x3BluePowered">
+			<property name="Extends" value="rollUpDoor3x3Blue"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Purple -->
+		<block name="rollUpDoor3x3PurplePowered">
+			<property name="Extends" value="rollUpDoor3x3Purple"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="rollUpDoor3x3GreyPowered">
+			<property name="Extends" value="rollUpDoor3x3Grey"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Black -->
+		<block name="rollUpDoor3x3BlackPowered">
+			<property name="Extends" value="rollUpDoor3x3Black"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Pink -->
+		<block name="rollUpDoor3x3PinkPowered">
+			<property name="Extends" value="rollUpDoor3x3Pink"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+		
+		<!-- 5x4 Doors -->
+		<block name="rollUpDoor5x4WhitePowered">
+			<property name="Extends" value="rollUpDoor5x4White"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+			<property name="CustomIcon" value="rollUpDoor5x4White"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="rollUpDoor5x4BrownPowered">
+			<property name="Extends" value="rollUpDoor5x4Brown"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Red -->
+		<block name="rollUpDoor5x4RedPowered">
+			<property name="Extends" value="rollUpDoor5x4Red"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="rollUpDoor5x4OrangePowered">
+			<property name="Extends" value="rollUpDoor5x4Orange"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="rollUpDoor5x4YellowPowered">
+			<property name="Extends" value="rollUpDoor5x4Yellow"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Green -->
+		<block name="rollUpDoor5x4GreenPowered">
+			<property name="Extends" value="rollUpDoor5x4Green"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="rollUpDoor5x4BluePowered">
+			<property name="Extends" value="rollUpDoor5x4Blue"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Purple -->
+		<block name="rollUpDoor5x4PurplePowered">
+			<property name="Extends" value="rollUpDoor5x4Purple"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="rollUpDoor5x4GreyPowered">
+			<property name="Extends" value="rollUpDoor5x4Grey"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Black -->
+		<block name="rollUpDoor5x4BlackPowered">
+			<property name="Extends" value="rollUpDoor5x4Black"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Pink -->
+		<block name="rollUpDoor5x4PinkPowered">
+			<property name="Extends" value="rollUpDoor5x4Pink"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- 7x4 Doors -->
+		<block name="rollUpDoor7x4WhitePowered">
+			<property name="Extends" value="rollUpDoor7x4White"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+			<property name="CustomIcon" value="rollUpDoor7x4White"/>
+		</block>
+
+		<!-- Brown -->
+		<block name="rollUpDoor7x4BrownPowered">
+			<property name="Extends" value="rollUpDoor7x4Brown"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Red -->
+		<block name="rollUpDoor7x4RedPowered">
+			<property name="Extends" value="rollUpDoor7x4Red"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Orange -->
+		<block name="rollUpDoor7x4OrangePowered">
+			<property name="Extends" value="rollUpDoor7x4Orange"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Yellow -->
+		<block name="rollUpDoor7x4YellowPowered">
+			<property name="Extends" value="rollUpDoor7x4Yellow"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Green -->
+		<block name="rollUpDoor7x4GreenPowered">
+			<property name="Extends" value="rollUpDoor7x4Green"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Blue -->
+		<block name="rollUpDoor7x4BluePowered">
+			<property name="Extends" value="rollUpDoor7x4Blue"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Purple -->
+		<block name="rollUpDoor7x4PurplePowered">
+			<property name="Extends" value="rollUpDoor7x4Purple"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Grey -->
+		<block name="rollUpDoor7x4GreyPowered">
+			<property name="Extends" value="rollUpDoor7x4Grey"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Black -->
+		<block name="rollUpDoor7x4BlackPowered">
+			<property name="Extends" value="rollUpDoor7x4Black"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+		<!-- Pink -->
+		<block name="rollUpDoor7x4PinkPowered">
+			<property name="Extends" value="rollUpDoor7x4Pink"/>
+			<property name="Class" value="PoweredDoor"/>
+			<property name="DescriptionKey" value="RollUpDoorPoweredDesc"/>
+		</block>
+
+
+		<!-- NOT_A_SHAPE -->
+		<block name="rollUpDoor3x3PoweredVariantHelper">
+			<property name="Extends" value="rollUpDoor3x3WhitePowered"/>
+			<property name="CustomIcon" value="rollUpDoor3x3White"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="rollUpDoor3x3BrownPowered,rollUpDoor3x3RedPowered,rollUpDoor3x3OrangePowered,rollUpDoor3x3YellowPowered,rollUpDoor3x3GreenPowered,rollUpDoor3x3BluePowered,rollUpDoor3x3PurplePowered,rollUpDoor3x3GreyPowered,rollUpDoor3x3WhitePowered,rollUpDoor3x3BlackPowered,rollUpDoor3x3PinkPowered"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+		</block>
+		
+		<!-- NOT_A_SHAPE -->
+		<block name="rollUpDoor5x4PoweredVariantHelper">
+			<property name="Extends" value="rollUpDoor5x4WhitePowered"/>
+			<property name="CustomIcon" value="rollUpDoor5x4White"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="rollUpDoor5x4BrownPowered,rollUpDoor5x4RedPowered,rollUpDoor5x4OrangePowered,rollUpDoor5x4YellowPowered,rollUpDoor5x4GreenPowered,rollUpDoor5x4BluePowered,rollUpDoor5x4PurplePowered,rollUpDoor5x4GreyPowered,rollUpDoor5x4WhitePowered,rollUpDoor5x4BlackPowered,rollUpDoor5x4PinkPowered"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+		</block>
+
+		<!-- NOT_A_SHAPE -->
+		<block name="rollUpDoor7x4PoweredVariantHelper">
+			<property name="Extends" value="rollUpDoor7x4WhitePowered"/>
+			<property name="CustomIcon" value="rollUpDoor7x4White"/>
+			<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true"/>
+			<property name="PlaceAltBlockValue" value="rollUpDoor7x4BrownPowered,rollUpDoor7x4RedPowered,rollUpDoor7x4OrangePowered,rollUpDoor7x4YellowPowered,rollUpDoor7x4GreenPowered,rollUpDoor7x4BluePowered,rollUpDoor7x4PurplePowered,rollUpDoor7x4GreyPowered,rollUpDoor7x4WhitePowered,rollUpDoor7x4BlackPowered,rollUpDoor7x4PinkPowered"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_playerHelpers"/>
+		</block>
+	<!-- Closing Append tag for all Added Blocks -->
+	</append>
+	
+<!-- bhwReinforcedDoors Edits End -->	
+
+<!-- bhwModernCooking Edits Start -->
+	<append xpath="/blocks">
+	<!-- Add Master block that all other Modern Cooking blocks are based off of -->
+		<block name="modernCookingMaster">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="cntWallOven"/>
+			<property name="Class" value="Campfire"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="750"/>
+			<property name="Texture" value="191"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="ParticleName" value="campfire"/>
+			<property name="ParticleOffset" value="0.5,.8,0.5"/>
+			<property name="HeatMapStrength" value="1"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+			<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
+			<property class="Workstation">
+				<property name="CraftingAreaRecipes" value="campfire"/>
+				<property name="Modules" value="tools,output,fuel,input"/>
+				<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			</property>
+			<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+			<property name="CraftActionName" value="lblContextActionCook"/>
+			<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+			<property name="OpenSound" value="open_mailbox"/>
+			<property name="CloseSound" value="close_mailbox"/>
+			<property name="CraftSound" value="campfire_cook_click"/>
+			<property name="CraftCompleteSound" value="campfire_complete_item"/>
+			<property name="WorkstationJournalTip" value="campfireTip"/>
+				<property class="RepairItems">
+					<property name="resourceForgedIron" value="2"/>
+					<property name="resourceElectricParts" value="2"/>
+				</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="1,2" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="1,5" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="2" prob="1"/>
+			<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+			<property name="DescriptionKey" value="moderncookingHelperBlockDesc"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+			<property name="SortOrder1" value="70i0"/>
+		</block>
+		
+		<!-- Add Helper Block that player can craft and select which cooking block they want to place -->
+		<block name="modernCookingHelper" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<property name="Extends" value="modernCookingMaster"/>
+			<property name="CustomIcon" value="cntWallOven"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="modernCookingHelperBlockDesc"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="modernCookingWallOven,modernCookingWoodStove,modernCookingCoffeeMaker,modernCookingCoffeeMakerCommercial,modernCookingCharcoalGrillClosed,modernCookingCharcoalGrillOpen,modernCookingGasGrillClosed,modernCookingGasGrillOpen,modernCookingMicrowaveVer1,modernCookingMicrowaveVer2,modernCookingToaster"/>
+		</block>
+		
+		<!-- Start new cooking blocks -->
+		<block name="modernCookingWallOven">
+			<property name="Extends" value="modernCookingMaster"/>
+			<property name="CustomIcon" value="cntWallOven"/>
+			<property name="Texture" value="346,191,341,191,191,191"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+		</block>
+		<block name="modernCookingWoodStove">
+			<property name="Extends" value="modernCookingMaster"/>
+			<property name="CustomIcon" value="cntWoodBurningStove"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Furniture/woodBurningStovePrefab"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Path" value="solid"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="ParticleName" value="torch_wall"/>
+			<property name="ParticleOffset" value="0.5,0.4,0.8"/>
+		</block>
+
+		<block name="modernCookingMicrowaveVer1">
+			<property name="Extends" value="modernCookingMaster"/>
+			<property name="CustomIcon" value="cntMicrowaveOvenVer1Closed"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#Entities/LootContainers?microwaveElectricModern_01Prefab.prefab"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Path" value="solid"/>
+			<property name="Place" value="TowardsPlacer90"/>
+			<property name="ParticleName" value="candle_flame"/>
+			<property name="ParticleOffset" value="0.5,0,0.7"/>
+		</block>
+
+		<block name="modernCookingMicrowaveVer2">
+			<property name="Extends" value="modernCookingMaster"/>
+			<property name="CustomIcon" value="cntMicrowaveOvenVer2Closed"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#Entities/LootContainers?microwaveElectricRetro_01Prefab.prefab"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Path" value="solid"/>
+			<property name="Place" value="TowardsPlacer90"/>
+			<property name="ParticleName" value="candle_flame"/>
+			<property name="ParticleOffset" value="0.5,0,0.7"/>
+		</block>
+
+		<block name="modernCookingCharcoalGrillClosed">
+			<property name="Extends" value="modernCookingMaster"/>
+			<property name="CustomIcon" value="cntCharcoalGrillClosed"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#Entities/LootContainers?Grill_Simple_ClosedPrefab.prefab"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Path" value="solid"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="ParticleName" value="torch_wall"/>
+			<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+		</block>
+
+		<block name="modernCookingCharcoalGrillOpen">
+			<property name="Extends" value="modernCookingMaster"/>
+			<property name="CustomIcon" value="cntCharcoalGrillOpen"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#Entities/LootContainers?Grill_Simple_EmptyPrefab.prefab"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Path" value="solid"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="ParticleName" value="torch_wall"/>
+			<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+
+		</block>
+
+		<block name="modernCookingGasGrillClosed">
+			<property name="Extends" value="modernCookingMaster"/>
+			<property name="CustomIcon" value="cntGasGrillClosed"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#Entities/LootContainers?GasGrill_FullPrefab.prefab"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Path" value="solid"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="ParticleName" value="torch_wall"/>
+			<property name="ParticleOffset" value="0.5,.5,0.5"/>
+		</block>
+
+		<block name="modernCookingGasGrillOpen">
+			<property name="Extends" value="modernCookingMaster"/>
+			<property name="CustomIcon" value="cntGasGrillOpen"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#Entities/LootContainers?GasGrill_EmptyPrefab.prefab"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Path" value="solid"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="ParticleName" value="torch_wall"/>
+			<property name="ParticleOffset" value="0.5,0.5,0.5"/>
+		</block>
+
+		<block name="modernCookingToaster">
+			<property name="Extends" value="modernCookingMaster"/>
+			<property name="CustomIcon" value="cntToaster"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Appliances/toasterPrefab"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Path" value="solid"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="ParticleName" value="candle_flame"/>
+			<property name="ParticleOffset" value="0.5,0,0.5"/>
+		</block>
+
+		<block name="modernCookingCoffeeMaker">
+			<property name="Extends" value="modernCookingMaster"/>
+			<property name="CustomIcon" value="cntCoffeeMaker"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Appliances/coffeeMakerPrefab"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Path" value="solid"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="ParticleName" value="candle_flame"/>
+			<property name="ParticleOffset" value="0.5,0,0.3"/>
+		</block>
+
+		<block name="modernCookingCoffeeMakerCommercial">
+			<property name="Extends" value="modernCookingMaster"/>
+			<property name="CustomIcon" value="cntCoffeeMakerCommercial"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Appliances/commercialCoffeeMakerPrefab"/>
+			<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+			<property name="Path" value="solid"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="ParticleName" value="candle_flame"/>
+			<property name="ParticleOffset" value="0.4,0,0.4"/>
+		</block>
+
+
+	<!-- Closing Append tag for all Added Blocks -->
+	</append>
+
+<!-- bhwModernCooking Edits End -->
+
+<!-- bhwPowerPlant Edits Start -->
+
+	<append xpath="/blocks">
+		<!-- Add Wireless Fuse Box -->
+		<block name="electricWirelessFuseBox">
+			<property name="Extends" value="electricwirerelay"/>
+			<property name="CustomIcon" value="fusebox"/>
+			<property name="UnlockedBy" value="perkAdvancedEngineering,generatorbankSchematic"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="1500"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="Shape" value="Ext3dModel"/>
+			<property name="Texture" value="293"/>
+			<property name="Model" value="Industrial/fusebox" param1="main_mesh"/> 
+			<property name="LightOpacity" value="0"/>
+			<property name="DescriptionKey" value="electricWirelessFuseBoxDesc"/>
+		</block>
+
+	<!-- Closing Append tag for all Added Blocks -->
+	</append>
+
+<!-- All set xpath edits below here -->
+
+		<!-- Add UnlockedBy to Solar Banks -->
+		<insertAfter xpath="/blocks/block[@name='solarbank']/property[@name='DescriptionKey']">
+			<property name="UnlockedBy" value="perkAdvancedEngineering,solarbankSchematic"/>
+		</insertAfter>
+
+	<!-- Overload Edit -->
+		<!-- change the max fuel capacity from 1k to 10k on the generator bank. -->
+		<set xpath="/blocks/block[@name='generatorbank']/property[@name='MaxFuel']/@value">10000</set> 
+		<!-- change the power output for small engines to 200. For some reason the game cuts the value in half. This applies to default game assets, not just this modlet. -->
+		<set xpath="/blocks/block[@name='generatorbank']/property[@name='OutputPerStack']/@value">400</set> 
+
+		<!-- change the power output for solar cells from 30 to 150. -->
+		<set xpath="/blocks/block[@name='solarbank']/property[@name='OutputPerStack']/@value">150</set> 
+		<!-- change the max power output for the solar bank from 180 to 900. -->
+		<set xpath="/blocks/block[@name='solarbank']/property[@name='MaxPower']/@value">900</set>	  
+
+		<!-- change the power output for batteries to 50 to 100. -->
+		<set xpath="/blocks/block[@name='batterybank']/property[@name='OutputPerStack']/@value">100</set> 
+		<!-- change the max power output for the battery bank to from 400 to 800. -->
+		<set xpath="/blocks/block[@name='batterybank']/property[@name='MaxPower']/@value">800</set>	
+		<!-- change charge per input to 2 instead of 1 to account for increased power useage and load -->
+		<set xpath="/blocks/block[@name='batterybank']/property[@name='ChargePerInput']/@value">2</set>
+
+<!-- bhwPowerPlant Edits End -->
+
+<!-- bhwDownOnTheFarm Edits Start -->
+
+	<append xpath="/blocks">
+
+		<!-- Add Composter Workstation -->
+		<block name="composter">
+			<property name="Class" value="Workstation"/>
+			<property name="CustomIcon" value="cntTrash_can01"/>
+			<property name="CustomIconTint" value="612304"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="MaxDamage" value="800"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+			<property name="Mesh" value="models"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="LootContainers/trash_can01" param1="main_mesh"/>
+			<property name="UnlockedBy" value="perkLivingOffTheLand"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="ImposterExchange" value="imposterCTREighth" param1="143"/>
+			<property name="VehicleHitScale" value="999"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="HeatMapStrength" value=".5"/>
+			<property name="HeatMapTime" value="1000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			<!--<property name="RecipeList" value="backpack, workbench"/>-->
+			<!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
+			<property name="Stacknumber" value="1"/>
+
+			<property class="Workstation">
+				<property name="Modules" value="output"/>
+				<property name="CraftingAreaRecipes" value="composter"/>
+			</property>
+			<property name="WorkstationIcon" value="ui_game_symbol_chemistry"/>
+			<property name="OpenSound" value="open_garbage"/>
+			<property name="CloseSound" value="close_garbage"/>
+
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="10"/>
+			</property>
+			<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+			<property name="TakeDelay" value="5"/>
+			<property name="DescriptionKey" value="composterDesc"/>
+			<property name="EconomicValue" value="500"/>
+			<property name="Group" value="Food/Cooking,Building,advBuilding"/>
+			<property name="FilterTags" value="fterrain,fdecor,fother,ffurniture"/>
+			<property name="SortOrder1" value="a090"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+		
+		<!-- Adds a "Chicken Coup" that uses the Dog House model and "Grows" like a plant. "Harvested" by attacking, just like any other plant. -->
+		<block name="plantedChickenCoup1">
+			<property name="Extends" value="cropsGrowingMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="UnlockedBy" value="perkLivingOffTheLand"/>
+			<property name="CustomIcon" value="decoClassicDogHouse"/>
+			<property name="CustomIconTint" value="bdbd00"/>
+			<property name="Material" value="Mwood_weak"/>
+			<property name="DescriptionKey" value="plantedChickenCoup1Desc"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/classicDogHousePrefab"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="PlantGrowing.Next" value="plantedChickenCoup2Harvest"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="Group" value="Food/Cooking"/>
+			<property class="RepairItems"> <property name="resourceWood" value="5"/> </property>
+			<drop event="Harvest" name="resourceFeather" count="3" prob="0.35" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceFeather" count="2" prob="0.6" tag="allHarvest"/>
+		</block>
+
+		<block name="plantedChickenCoup2Harvest">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="CustomIcon" value="decoClassicDogHouse"/>
+			<property name="CustomIconTint" value="7a7a01"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/classicDogHousePrefab"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+			<drop event="Harvest" name="foodEgg" count="1,4" tag="wildCropsHarvest"/>
+			<drop event="Harvest" name="resourceFeather" count="0,2" tag="wildCropsHarvest"/>
+			<property name="DowngradeBlock" value="plantedChickenCoup1"/>
+		</block>
+
+		<!-- Adds an "animal trap" for harvesting -->
+		<block name="plantedWildAnimal1Trap">
+			<property name="Extends" value="cropsGrowingMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="UnlockedBy" value="perkLivingOffTheLand"/>
+			<property name="CustomIcon" value="tripwirepost"/>
+			<property name="CustomIconTint" value="c90000"/>
+			<property name="Material" value="Mwood_weak"/>
+			<property name="DescriptionKey" value="plantedWildAnimal1TrapDesc"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Mesh" value="models"/>
+			<property name="Model" value="Entities/Electrical/trip_wirePrefab"/> <property name="HandleFace" value="Bottom"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="PlantGrowing.Next" value="plantedWildAnimal2Harvest"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="Group" value="Food/Cooking"/>
+			<property class="RepairItems"> <property name="resourceWood" value="5"/> </property>
+			<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.3" stick_chance="1"/>
+			<property name="EconomicValue" value="16"/>
+		</block>
+
+		<block name="plantedWildAnimal2Harvest">
+			<property name="DisplayInfo" value="Name"/>
+			<property name="CustomIcon" value="goreBlockAnimal"/>
+			<property name="Material" value="Morganic"/>
+			<property name="MaxDamage" value="100"/>
+			<property name="Shape" value="ModelEntity"/> <!-- A ModelEntity does NOT need a texture entry. -->
+			<property name="Model" value="Entities/Gore/animal_remainsPrefab"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="FallDamage" value=".9"/>
+			<property name="ImposterExclude" value="true"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Density" value="0.9"/>
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRawMeat" count="10,20" tag="butcherHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="2,5" tag="butcherHarvest"/>
+			<drop event="Harvest" name="resourceAnimalFat" count="1,3" tag="butcherHarvest"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="5,10"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+			<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Destroy" name="resourceBone" count="2,5" tag="butcherHarvest"/>
+			<property name="DescriptionKey" value="plantedWildAnimal2HarvestDesc"/>
+			<property name="FilterTags" value="foutdoor,fcrops"/>
+			<property name="SortOrder1" value="a090"/>
+			<property name="SortOrder2" value="0002"/>
+		</block>
+		
+		<!-- Add New Crops -->
+		<!-- Tomato -->
+		<block name="plantedTomato1">
+			<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="plantedBlueberry1"/>
+			<property name="CustomIconTint" value="bf1600"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="UnlockedBy" value="perkLivingOffTheLand,plantedPumpkin1Schematic"/>
+			<property name="Material" value="Mcorn"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Plants/pumpkinSproutPrefab"/>
+			<property name="PlantGrowing.Next" value="plantedTomato2"/>
+			<property name="Group" value="Food/Cooking"/>
+			<drop event="Destroy" name="plantedTomato1" count="1"/>
+		</block>
+
+		<block name="plantedTomato2">
+			<property name="Extends" value="plantedTomato1"/>
+			<property name="CustomIcon" value="plantedBlueberry1"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Model" value="Entities/Plants/pumpkinGrowthPrefab"/>
+			<property name="PlantGrowing.Next" value="plantedTomato3Harvest"/>
+			<drop event="Destroy" name="plantedTomato1" count="1"/>
+		</block>
+
+		<block name="plantedTomato3Harvest">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="CustomIcon" value="foodEggBoiled"/>
+			<property name="CustomIconTint" value="700000"/>
+			<property name="Material" value="Mcorn"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Plants/pumpkinHarvestPrefab"/>
+			<drop event="Harvest" name="foodCropTomato" count="1" tag="wildCropsHarvest"/>
+			<property name="DowngradeBlock" value="plantedTomato1"/>
+		</block>
+
+		<!-- Peas -->
+		<block name="plantedPea1">
+			<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon"/>
+			<property name="CustomIcon" value="plantedCorn1"/>
+			<property name="CustomIconTint" value="66e300"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="UnlockedBy" value="perkLivingOffTheLand,plantedPumpkin1Schematic"/>
+			<property name="Material" value="Mcorn"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Plants/blueberry_plant_sproutPrefab"/>
+			<property name="PlantGrowing.Next" value="plantedPea2"/>
+			<property name="Group" value="Food/Cooking"/>
+			<drop event="Destroy" name="plantedPea1" count="1"/>
+		</block>
+
+		<block name="plantedPea2">
+			<property name="Extends" value="plantedPea1"/>
+			<property name="CustomIcon" value="plantedCorn1"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Model" value="Entities/Plants/blueberry_plant_growthPrefab"/>
+			<property name="PlantGrowing.Next" value="plantedPea3Harvest"/>
+			<drop event="Destroy" name="plantedPea1" count="1"/>
+		</block>
+
+		<block name="plantedPea3Harvest">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="CustomIcon" value="foodCropYuccaFruit"/>
+			<property name="CustomIconTint" value="66e300"/>
+			<property name="Material" value="Mcorn"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Plants/blueberry_plant_harvestPrefab"/>
+			<drop event="Harvest" name="foodCropPea" count="1" tag="wildCropsHarvest"/>
+			<property name="DowngradeBlock" value="plantedPea1"/>
+		</block>
+		
+	<!-- Closing Append tag for all Added Blocks -->
+	</append>
+
+<!-- bhwDownOnTheFarm Edits End -->
+
+<!-- bhwEncyclopedia Edits Start -->
+
+	<!-- Encyclopedia Vol 1 Books -->
+			<!-- Traps -->
+	<append xpath="/blocks/block[@name='autoTurret']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneTraps</append>
+	<append xpath="/blocks/block[@name='shotgunTurret']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneTraps</append>
+	<append xpath="/blocks/block[@name='electricfencepost']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneTraps</append>
+	<append xpath="/blocks/block[@name='pressureplateLong']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneTraps</append>
+	<append xpath="/blocks/block[@name='tripwirepost']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneTraps</append>
+	<append xpath="/blocks/block[@name='dartTrap']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneTraps</append>
+	<append xpath="/blocks/block[@name='bladeTrap']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolOneTraps</append>
+
+	<!-- Encyclopedia Vol 2 Books -->
+		<!-- Seeds -->
+	<append xpath="/blocks/block[@name='plantedAloe1']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoSeeds</append>
+	<append xpath="/blocks/block[@name='plantedBlueberry1']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoSeeds</append>
+	<append xpath="/blocks/block[@name='plantedChrysanthemum1']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoSeeds</append>
+	<append xpath="/blocks/block[@name='plantedCoffee1']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoSeeds</append>
+	<append xpath="/blocks/block[@name='plantedCorn1']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoSeeds</append>
+	<append xpath="/blocks/block[@name='plantedCotton1']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoSeeds</append>
+	<append xpath="/blocks/block[@name='plantedGoldenrod1']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoSeeds</append>
+	<append xpath="/blocks/block[@name='plantedGraceCorn1']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoSeeds</append>
+	<append xpath="/blocks/block[@name='plantedHop1']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoSeeds</append>
+	<append xpath="/blocks/block[@name='plantedMushroom1']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoSeeds</append>
+	<append xpath="/blocks/block[@name='plantedPotato1']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoSeeds</append>
+	<append xpath="/blocks/block[@name='plantedYucca1']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoSeeds</append>
+	<append xpath="/blocks/block[@name='plantedPumpkin1']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoSeeds</append>
+
+	<!-- Encyclopedia Vol 3 Books -->
+		<!-- Workbenchs -->
+	<append xpath="/blocks/block[@name='workbench']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWorkstations</append>
+	<append xpath="/blocks/block[@name='forge']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWorkstations</append>
+	<append xpath="/blocks/block[@name='chemistryStation']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWorkstations</append>
+	<append xpath="/blocks/block[@name='cementMixer']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeWorkstations</append>
+		<!-- Electronics -->
+	<append xpath="/blocks/block[@name='generatorbank']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	<append xpath="/blocks/block[@name='ceilingLight01_player']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	<append xpath="/blocks/block[@name='industrialLight01_player']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	<append xpath="/blocks/block[@name='industrialLight02_player']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	<append xpath="/blocks/block[@name='ceilingLight07_player']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	<append xpath="/blocks/block[@name='electricwirerelay']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	<append xpath="/blocks/block[@name='batterybank']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	<append xpath="/blocks/block[@name='pressureplate']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	<append xpath="/blocks/block[@name='electrictimerrelay']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	<append xpath="/blocks/block[@name='motionsensor']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	<append xpath="/blocks/block[@name='garageDoorMetal_v1Powered']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	<append xpath="/blocks/block[@name='vaultDoor03_Powered']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	<append xpath="/blocks/block[@name='vaultHatch_v3_Powered']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	<append xpath="/blocks/block[@name='garageDoorHousePlayer']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	<append xpath="/blocks/block[@name='garageDoorIndustrial_Powered']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	<append xpath="/blocks/block[@name='metalReinforcedWoodDrawBridgePowered']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	<append xpath="/blocks/block[@name='speaker']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	<append xpath="/blocks/block[@name='spotlightPlayer']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	<append xpath="/blocks/block[@name='switch']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+	
+	<!-- FOR BETTER HOMES AND WORLDS COMPLETE COLLECTION ONLY -->
+	<append xpath="/blocks/block[@name='plantedTomato1']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoSeeds</append>
+	<append xpath="/blocks/block[@name='plantedPea1']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolTwoSeeds</append>
+
+	<append xpath="/blocks/block[@name='solarbank']/property[@name='UnlockedBy']/@value">,perkEncyclopediaVolThreeElectronics</append>
+
+<!-- bhwEncyclopedia Edits End -->
+
+<!-- bhwScavenger Edits Start -->
+
+	<!-- Pick up tires on the ground -->
+	<append xpath="/blocks/block[@name='decoCarTireSmallFlat']" >
+		<property name="CanPickup" value="true"/>
+	</append>
+
+	<!-- = = = = = = = = = = Workstations = = = = = = = = = = = -->
+
+	<!-- Remove drop properties for workstations -->
+	<remove xpath="/blocks/block[@name='chemistryStation']/drop"/>
+	<remove xpath="/blocks/block[@name='forge']/drop"/>
+	<remove xpath="/blocks/block[@name='workbench']/drop"/>
+	<remove xpath="/blocks/block[@name='cementMixer']/drop"/>
+
+	<!-- Add pickup option to workstations with a wrench -->
+	<append xpath="/blocks/block[@name='chemistryStation']">
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+		<drop event="Destroy" name="chemistryStation" count="1" tool_category="Disassemble" />
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='forge']">
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+		<drop event="Destroy" name="forge" count="1" tool_category="Disassemble" />
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='workbench']">
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+		<drop event="Destroy" name="workbench" count="1" tool_category="Disassemble" />
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	</append>
+
+	<append xpath="/blocks/block[@name='cementMixer']">
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+		<drop event="Destroy" name="cementMixer" count="1" tool_category="Disassemble" />
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	</append>
+
+	<!-- = = = = = = = = = = Solar Banks = = = = = = = = = = = -->
+
+	<!-- Remove drop properties -->
+	<remove xpath="/blocks/block[@name='solarbank']/drop"/>
+
+	<!-- Add pickup option with a wrench -->
+	<append xpath="/blocks/block[@name='solarbank']">
+		<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+		<drop event="Destroy" name="solarbank" count="1" tool_category="Disassemble" />
+		<drop event="Destroy" count="0"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	</append>
+
+	<!-- = = = = = = = = = = Vehicle Respawners = = = = = = = = = = = -->
+	<append xpath="/blocks">	
+		<block name="carRespawner">
+			<property name="CustomIcon" value="cntCar03SedanDamage0Master" />
+			<property name="CustomIconTint" value="14bcd2"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="#Entities/Vehicles?Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="carsRandomHelper" />
+			<property name="PlantGrowing.GrowthRate" value="720" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+			<property name="DescriptionKey" value="vehicleRespawnersShortGroupDesc"/>
+		</block>
+		<block name="busSchoolRespawner">
+			<property name="CustomIcon" value="cntBusSchool" />
+			<property name="CustomIconTint" value="14bcd2"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="#Entities/Vehicles?Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntBusSchool" />
+			<property name="PlantGrowing.GrowthRate" value="900" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+			<property name="DescriptionKey" value="vehicleRespawnersMediumGroupDesc"/>
+		</block>
+		<block name="busSchoolShortRespawner">
+			<property name="CustomIcon" value="cntBusSchoolShort" />
+			<property name="CustomIconTint" value="14bcd2"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="#Entities/Vehicles?Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntBusSchoolShort" />
+			<property name="PlantGrowing.GrowthRate" value="1020" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+			<property name="DescriptionKey" value="vehicleRespawnersLongGroupDesc"/>
+		</block>
+		<block name="busShuttleRespawner">
+			<property name="CustomIcon" value="cntBusShuttle" />
+			<property name="CustomIconTint" value="14bcd2"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="#Entities/Vehicles?Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntBusShuttle" />
+			<property name="PlantGrowing.GrowthRate" value="1020" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="DescriptionKey" value="vehicleRespawnersLongGroupDesc"/>
+			<property name="PlantGrowing.IsRandom" value="false" />
+		</block>
+		<block name="busCityRespawner">
+			<property name="CustomIcon" value="cntBusCity" />
+			<property name="CustomIconTint" value="14bcd2"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="#Entities/Vehicles?Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntBusCity" />
+			<property name="PlantGrowing.GrowthRate" value="900" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+			<property name="DescriptionKey" value="vehicleRespawnersMediumGroupDesc"/>
+		</block>
+		<block name="armyTruckClosedRespawner">
+			<property name="CustomIcon" value="cntArmyTruckClosed" />
+			<property name="CustomIconTint" value="14bcd2"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="#Entities/Vehicles?Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntArmyTruckClosed" />
+			<property name="PlantGrowing.GrowthRate" value="1440" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+			<property name="DescriptionKey" value="vehicleRespawnersVeryLongGroupDesc"/>
+		</block>
+		<block name="ambulanceTruck01Respawner">
+			<property name="CustomIcon" value="cntAmbulanceTruck01" />
+			<property name="CustomIconTint" value="14bcd2"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="#Entities/Vehicles?Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntAmbulanceTruck01" />
+			<property name="PlantGrowing.GrowthRate" value="900" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+			<property name="DescriptionKey" value="vehicleRespawnersMediumGroupDesc"/>
+		</block>
+		<block name="serviceTruckMoPowerRespawner">
+			<property name="CustomIcon" value="cntServiceTruckMoPower" />
+			<property name="CustomIconTint" value="14bcd2"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="#Entities/Vehicles?Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntServiceTruckMoPower" />
+			<property name="PlantGrowing.GrowthRate" value="1020" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+			<property name="DescriptionKey" value="vehicleRespawnersLongGroupDesc"/>
+		</block>
+		<block name="serviceTruckWorkingStiffToolsRespawner">
+			<property name="CustomIcon" value="cntServiceTruckWorkingStiffTools" />
+			<property name="CustomIconTint" value="14bcd2"/>
+			<property name="Extends" value="decoEntityPolymerMaster"/>			
+			<property name="IsDeveloper" value="true" />
+			<property name="Class" value="PlantGrowing" />
+			<property name="Material" value="Mmetal"/>			
+			<property name="StabilitySupport" value="false"/>
+			<property name="Texture" value="282"/>
+			<property name="Model" value="#Entities/Vehicles?Car/car_wheelPrefab.prefab"/>		
+			<property name="Collide" value="melee"/>
+			<property name="CanMobsSpawnOn" value="false" />
+			<drop event="Destroy" name="resourceScrapPolymers" count="3,7" tag="oreWoodHarvest"/>	
+			<property name="IsTerrainDecoration" value="true" />
+			<property name="PlantGrowing.Next" value="cntServiceTruckWorkingStiffTools" />
+			<property name="PlantGrowing.GrowthRate" value="1020" /><!-- amount of days for respawn 60 equals 1 day (Assumes default day length. This is really in real minutes.) -->
+			<property name="PlantGrowing.FertileLevel" value="0" />
+			<property name="PlantGrowing.IsRandom" value="false" />
+			<property name="DescriptionKey" value="vehicleRespawnersLongGroupDesc"/>
+		</block>
+
+	</append>
+
+	<!-- Add Downgrade to Respawner vehicles -->
+	<append xpath="/blocks/block[@name='cntCar03SedanDamage2Master']"> 
+		<property name="DowngradeBlock" value="carRespawner"/>
+	</append> 
+	<append xpath="/blocks/block[@name='cntBusSchool']"> 
+		<property name="DowngradeBlock" value="busSchoolRespawner"/>
+	</append> 
+	<append xpath="/blocks/block[@name='cntBusSchoolShort']"> 
+		<property name="DowngradeBlock" value="busSchoolShortRespawner"/>
+	</append> 
+	<append xpath="/blocks/block[@name='cntBusShuttle']"> 
+		<property name="DowngradeBlock" value="busShuttleRespawner"/>
+	</append> 
+	<append xpath="/blocks/block[@name='cntBusCity']"> 
+		<property name="DowngradeBlock" value="busCityRespawner"/>
+	</append> 
+	<append xpath="/blocks/block[@name='cntArmyTruckClosed']"> 
+		<property name="DowngradeBlock" value="armyTruckClosedRespawner"/>
+	</append> 	
+	<append xpath="/blocks/block[@name='cntAmbulanceTruck01']"> 
+		<property name="DowngradeBlock" value="ambulanceTruck01Respawner"/>
+	</append> 	
+	<append xpath="/blocks/block[@name='cntServiceTruckMoPower']"> 
+		<property name="DowngradeBlock" value="serviceTruckMoPowerRespawner"/>
+	</append> 	
+	<append xpath="/blocks/block[@name='cntServiceTruckWorkingStiffTools']"> 
+		<property name="DowngradeBlock" value="serviceTruckWorkingStiffToolsRespawner"/>
+	</append> 	
+
+<!-- bhwScavenger Edits End -->
+
+<!-- bhwInteriorDesign Edits Start -->
+
+	<append xpath="/blocks">
+
+	<!-- = = = = = = = = = = Lights = = = = = = = = = = = -->
+
+	<!-- Add New Player Lights -->
+		<block name="porchLight01_player">
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="porchLight01"/>
+			<property name="Model" value="Entities/Lighting/porchLight01Prefab"/>
+		</block>
+		<block name="porchLight04_player">
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="porchLight04"/>
+			<property name="Model" value="Entities/Lighting/porchLight04Prefab"/> 
+		</block>
+		<block name="porchLight04Brass_player">
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="porchLight04Brass"/>
+			<property name="Model" value="Entities/Lighting/porchLight04Prefab"/> 
+			<drop event="Destroy" name="resourceScrapBrass" count="10,30"/>
+		</block>
+		<block name="ceilingLight02_player">
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="ceilingLight02"/>
+			<property name="Model" value="Entities/Lighting/ceilingLight02Prefab"/> <property name="HandleFace" value="Top"/>
+		</block>
+		<block name="ceilingLight02Brass_player">
+			<property name="Extends" value="porchLight04Brass_player"/>
+			<property name="CustomIcon" value="ceilingLight02Brass"/>
+			<property name="Model" value="Entities/Lighting/ceilingLight02BrassPrefab"/> <property name="HandleFace" value="Top"/>
+		</block>
+		<block name="ceilingLight04_player">
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="ceilingLight04"/>
+			<property name="Model" value="Entities/Lighting/ceilingLight04Prefab"/> <property name="HandleFace" value="Top"/>
+		</block>
+		<block name="ceilingLight05_player">
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="ceilingLight05"/>
+			<property name="Model" value="Entities/Lighting/ceilingLight05Prefab"/> <property name="HandleFace" value="Top"/>
+		</block>
+		<block name="ceilingLight05Brass_player">
+			<property name="Extends" value="porchLight04Brass_player"/>
+			<property name="CustomIcon" value="ceilingLight05Brass"/>
+			<property name="Model" value="Entities/Lighting/ceilingLight05BrassPrefab"/> <property name="HandleFace" value="Top"/>
+		</block>
+		<block name="recessedLight_player">
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="recessedLight"/>
+			<property name="Model" value="Entities/Lighting/recessedLightPrefab"/> <property name="HandleFace" value="Top"/>
+		</block>
+		<block name="wallLight01_player">
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="wallLight01"/>
+			<property name="Model" value="Entities/Lighting/wall_light01Prefab"/> <property name="HandleFace" value="South"/>
+		</block>
+		<block name="fluorescentLight_player">
+			<property name="Extends" value="ceilingLight07_player" param1="HandleFace"/>
+			<property name="CustomIcon" value="fluorescentLight"/>
+			<property name="Model" value="Entities/Lighting/fluorescentLightPrefab"/>
+			<property name="MultiBlockDim" value="1,1,2"/><property name="DisplayType" value="blockMulti"/>
+			<property name="OnlySimpleRotations" value="true"/>
+		</block>
+		<block name="fluorescentLightBayIntact_player">
+			<property name="Extends" value="ceilingLight07_player" param1="HandleFace"/>
+			<property name="CustomIcon" value="fluorescentLightBayIntact"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Lighting/fluorescentLightBayIntactPrefab"/>
+			<property name="MultiBlockDim" value="1,1,2"/>
+			<property name="ModelOffset" value="0,0.5,0.5"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="OnlySimpleRotations" value="true"/>
+		</block>
+		<block name="trackLight_player">
+			<property name="Extends" value="ceilingLight07_player"/>
+			<property name="CustomIcon" value="trackLight"/>
+			<property name="Model" value="Entities/Lighting/trackLightPrefab"/>
+			<property name="MultiBlockDim" value="1,1,3"/><property name="DisplayType" value="blockMulti"/>
+		</block>
+		<block name="sconce1Light_player">
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="sconce1Light"/>
+			<property name="Model" value="Entities/Lighting/sconce_1_Prefab"/> 
+		</block>	
+		<block name="industrialLight02Red_player">
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="industrialLight02Red"/>
+			<property name="Model" value="Entities/Lighting/industrial_light_02_redPrefab"/> <property name="HandleFace" value="Top"/>
+		</block>
+		<block name="ceilingFanLight_player">
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="ceilingFanLight"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="Entities/Lighting/ceiling_fanPrefab"/> <property name="HandleFace" value="Top"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="1"/>
+				<property name="resourceElectricParts" value="3"/>
+				<property name="resourceMechanicalParts" value="2"/>
+			</property>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMechanicalParts" count="1,2" tag="salvageHarvest"/>
+		</block>
+		<block name="chandelierLight_player">
+			<property name="Class" value="PoweredLight"/>
+			<property name="CustomIcon" value="chandelierLight"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="ImposterExchange" value="streetLightImposter"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Model" value="Entities/Lighting/chandelierPrefab"/>
+			<property name="MultiBlockDim" value="3,2,3"/><property name="DisplayType" value="blockMulti"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Path" value="solid"/>
+			<property name="ActivationDistance" value="6"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceElectricParts" count="4,8" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceForgedSteel" count="1,2" tag="salvageHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="Group" value="Science,Decor/Miscellaneous"/>
+		</block>
+		<block name="endTableLamp_player">
+			<property name="Extends" value="ceilingLight01_player" param1="HandleFace"/>
+			<property name="CustomIcon" value="endTableLamp"/>
+			<property name="Path" value="solid"/>
+			<property name="Model" value="Entities/Lighting/end_table_lightPrefab"/> 
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		</block>
+		<block name="signExitLight_player">
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="signExitLight"/>
+			<property name="Model" value="Entities/Lighting/exit_signPrefab"/> <property name="HandleFace" value="South"/>
+		</block>
+		<block name="roadBarricadeLight_player">
+			<property name="Extends" value="ceilingLight01_player" param1="HandleFace"/>
+			<property name="CustomIcon" value="roadBarricadeLight"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="3,2,1"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="Model" value="Entities/Signs/barricadePrefab"/> 
+			<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
+			<drop event="Destroy" name="resourceScrapIron" count="3,12"/>
+		</block>
+		<block name="deskLampLight_player">
+			<property name="Extends" value="porchLight04Brass_player" param1="HandleFace"/>
+			<property name="CustomIcon" value="deskLampLight"/>
+			<property name="Model" value="Entities/Lighting/desk_lampPrefab"/> 
+		</block>
+		<block name="tableLampLight_player">
+			<property name="Extends" value="ceilingLight01_player" param1="HandleFace"/>
+			<property name="CustomIcon" value="tableLampLight"/>
+			<property name="Model" value="Entities/Lighting/table_lampPrefab"/> 
+		</block>
+		<block name="tableLampTippedOverLight_player">
+			<property name="Extends" value="ceilingLight01_player" param1="HandleFace"/>
+			<property name="CustomIcon" value="tableLampTippedOverLight"/>
+			<property name="Model" value="Entities/Lighting/table_lamp_tipped_overPrefab"/> 
+		</block>
+		<block name="workLight_player">
+			<property name="Extends" value="ceilingLight01_player" param1="HandleFace"/>
+			<property name="CustomIcon" value="workLightPOI"/>
+			<property name="Model" value="Entities/Lighting/work_lightPrefab"/> 
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,2,1"/>
+			<property name="Collide" value="melee,bullet,arrow,rocket,movement"/>
+		</block>
+		<block name="streetLight01_player">
+			<property name="Class" value="PoweredLight"/>
+			<property name="Extends" value="streetLight01"/>
+			<property name="CustomIcon" value="streetLight01"/>
+		</block>
+		<block name="streetLightClassic_player">
+			<property name="Class" value="PoweredLight" param1="HandleFace"/>
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="streetLightClassic"/>
+			<property name="Model" value="Entities/Lighting/streetLamp_ClassicPrefab"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="ImposterExchange" value="streetLightImposter"/>
+		</block>
+		<block name="xRayDisplayLight1_player">
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="xRayDisplayLight1"/>
+			<property name="Model" value="Entities/Lighting/xray_displayPrefab"/> <property name="HandleFace" value="South"/>
+		</block>
+		<block name="xRayDisplayLight2_player">
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="xRayDisplayLight2"/>
+			<property name="Model" value="Entities/Lighting/xray_display_2Prefab"/> <property name="HandleFace" value="South"/>
+		</block>
+		<block name="signShopOpen_player">
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="signShopOpenSwitch"/>
+			<property name="Model" value="Entities/Signs/sign_open_Prefab"/> <property name="HandleFace" value="South"/>
+		</block>
+		<block name="streetLight02_player">
+			<property name="Extends" value="streetLight01_player"/>
+			<property name="CustomIcon" value="streetLight02"/>
+			<property name="Model" value="Entities/Lighting/lightStreetLamp02Prefab"/>
+		</block>
+		<block name="streetLight03_player">
+			<property name="Extends" value="streetLight01_player"/>
+			<property name="CustomIcon" value="streetLight03"/>
+			<property name="Model" value="Entities/Lighting/lightStreetLamp03Prefab"/>
+		</block>
+		<block name="streetLight04_player">
+			<property name="Extends" value="streetLight01_player"/>
+			<property name="CustomIcon" value="streetLight04"/>
+			<property name="Model" value="Entities/Lighting/lightStreetLamp04Prefab"/>
+		</block>
+		<block name="signTrafficLight_player">
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="signTrafficLight"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/StreetSigns/trafficLightPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="HandleFace" value="Bottom"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="VehicleHitScale" value="8"/>
+		</block>
+		<block name="signTrafficLightOffset_player">
+			<property name="Extends" value="signTrafficLight_player"/>
+			<property name="CustomIcon" value="signTrafficLightOffset"/>
+			<property name="Model" value="Entities/StreetSigns/trafficLightPrefab"/>
+			<property name="ModelOffset" value="0,0,-0.4"/>
+		</block>
+		<block name="signCrosswalk_player">
+			<property name="Extends" value="signTrafficLight_player"/>
+			<property name="CustomIcon" value="signCrosswalk"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/StreetSigns/signCrosswalkPrefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+		<property name="HandleFace" value="South"/>
+		</block>
+
+	<!-- = = = = = = = = = = = = = = Add New Deco Blocks = = = = = = = = = = = = = = = = -->
+	<!-- Add new "Visual Storage" deco containers that look like single use loot containers -->
+		<!-- Business Shoes -->
+		<block name="decoCntShoesPileBusinessShoes">
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="cntShoesPileBusinessShoes"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Commercial/shoeBusinessPairLeatherPrefab"/><property name="Place" value="TowardsPlacerInverted"/>
+			<property name="DescriptionKey" value="decoCntGroupDesc"/>
+			<property name="Tags" value="door"/>
+			<property name="Class" value="SecureLoot"/>
+			<property name="LootList" value="playerStorage"/>
+			<property name="Material" value="MwoodReinforced"/> <property name="MaxDamage" value="400"/>
+			<property name="Texture" value="572"/>
+			<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
+			<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+			<property name="DowngradeBlock" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<drop event="Destroy" count="0"/>
+			<property name="EconomicValue" value="6"/>
+			<property name="Group" value="Decor/Miscellaneous"/>
+			<property name="FilterTags" value="fdecor,fother"/>
+		</block>
+
+		<block name="decoCntShoesPileBusinessShoesInsecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="cntShoesPileBusinessShoes"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/Commercial/shoeBusinessPairLeatherPrefab"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="playerStorage"/>
+			<property name="Material" value="MwoodReinforced"/> <property name="MaxDamage" value="400"/>
+			<property name="Texture" value="572"/>
+			<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
+			<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+			<drop event="Destroy" count="0"/>
+			<property name="FilterTags" value="fdecor,fother"/>
+		</block>
+		
+		<!-- Commerical Pile of Shoes 1 -->
+		<block name="decoCntShoesPileCommercial01">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntShoesPileCommercial01"/>
+			<property name="Model" value="Entities/Commercial/shoeCommercialPile01Prefab"/>
+			<property name="DowngradeBlock" value="decoCntShoesPileCommercial01Insecure"/>
+		</block>
+
+		<block name="decoCntShoesPileCommercial01Insecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntShoesPileCommercial01"/>
+			<property name="Model" value="Entities/Commercial/shoeCommercialPile01Prefab"/>
+		</block>
+
+		<!-- Commerical Pile of Shoes 2 -->
+		<block name="decoCntShoesPileCommercial02">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntShoesPileCommercial02"/>
+			<property name="Model" value="Entities/Commercial/shoeCommercialPile02Prefab"/>
+			<property name="DowngradeBlock" value="decoCntShoesPileCommercial02Insecure"/>
+		</block>
+
+		<block name="decoCntShoesPileCommercial02Insecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntShoesPileCommercial02"/>
+			<property name="Model" value="Entities/Commercial/shoeCommercialPile02Prefab"/>
+		</block>
+
+		<!-- Boots -->
+		<block name="decoCntShoesPileLeatherBoots">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntShoesPileLeatherBoots"/>
+			<property name="Model" value="Entities/Commercial/shoeBootPairLeatherPrefab"/>
+			<property name="DowngradeBlock" value="decoCntShoesPileLeatherBootsInsecure"/>
+		</block>
+
+		<block name="decoCntShoesPileLeatherBootsInsecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntShoesPileLeatherBoots"/>
+			<property name="Model" value="Entities/Commercial/shoeBootPairLeatherPrefab"/>
+		</block>
+
+		<!-- Flip Flops -->
+		<block name="decoCntShoesPileSandals">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntShoesPileSandals"/>
+			<property name="Model" value="Entities/Commercial/shoeSandalPairPrefab"/>
+			<property name="DowngradeBlock" value="decoCntShoesPileSandalsInsecure"/>
+		</block>
+
+		<block name="decoCntShoesPileSandalsInsecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntShoesPileSandals"/>
+			<property name="Model" value="Entities/Commercial/shoeSandalPairPrefab"/>
+		</block>
+
+		<!-- Sneakers -->
+		<block name="decoCntShoesPileSneakers">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntShoesPileSneakers"/>
+			<property name="Model" value="Entities/Commercial/shoeSneakerPairPrefab"/>
+			<property name="DowngradeBlock" value="decoCntShoesPileSneakersInsecure"/>
+		</block>
+
+		<block name="decoCntShoesPileSneakersInsecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntShoesPileSneakers"/>
+			<property name="Model" value="Entities/Commercial/shoeSneakerPairPrefab"/>
+		</block>
+
+		<!-- High Heels -->
+		<block name="decoCntShoesPileWomensHeels">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntShoesPileWomensHeels"/>
+			<property name="Model" value="Entities/Commercial/shoeWomanHeelPairPrefab"/>
+			<property name="DowngradeBlock" value="decoCntShoesPileWomensHeelsInsecure"/>
+		</block>
+
+		<block name="decoCntShoesPileWomensHeelsInsecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntShoesPileWomensHeels"/>
+			<property name="Model" value="Entities/Commercial/shoeWomanHeelPairPrefab"/>
+		</block>
+
+		<!-- Small Ammo Pile -->
+		<block name="decoCntAmmoPileSmall">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntAmmoPileSmall"/>
+			<property name="Model" value="#Entities/LootContainers?AmmoPiles_SmallPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="decoCntAmmoPileSmallInsecure"/>
+		</block>
+
+		<block name="decoCntAmmoPileSmallInsecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntAmmoPileSmall"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Model" value="#Entities/LootContainers?AmmoPiles_SmallPrefab.prefab"/>
+		</block>
+
+		<!-- Medium Ammo Pile -->
+		<block name="decoCntAmmoPileMedium">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntAmmoPileMedium"/>
+			<property name="Model" value="#Entities/LootContainers?AmmoPiles_MediumPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="decoCntAmmoPileMediumInsecure"/>
+		</block>
+
+		<block name="decoCntAmmoPileMediumInsecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntAmmoPileMedium"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Model" value="#Entities/LootContainers?AmmoPiles_MediumPrefab.prefab"/>
+		</block>
+
+		<!-- Large Ammo Pile -->
+		<block name="decoCntAmmoPileLarge">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntAmmoPileLarge"/>
+			<property name="Model" value="#Entities/LootContainers?AmmoPiles_LargePrefab.prefab"/>
+			<property name="MultiBlockDim" value="2,1,1"/><property name="DisplayType" value="blockMulti"/>
+			<property name="ModelOffset" value="0.5,0,0"/>
+			<property name="DowngradeBlock" value="decoCntAmmoPileLargeInsecure"/>
+		</block>
+
+		<block name="decoCntAmmoPileLargeInsecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntAmmoPileLarge"/>
+			<property name="Model" value="#Entities/LootContainers?AmmoPiles_LargePrefab.prefab"/>
+			<property name="MultiBlockDim" value="2,1,1"/><property name="DisplayType" value="blockMulti"/>
+			<property name="ModelOffset" value="0.5,0,0"/>
+		</block>
+
+		<!-- Small Food Pile -->
+		<block name="decoCntFoodPileSmall">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntFoodPileSmall"/>
+			<property name="Model" value="#Entities/LootContainers?foodClutterPileSmallPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="decoCntFoodPileSmallInsecure"/>
+		</block>
+
+		<block name="decoCntFoodPileSmallInsecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntFoodPileSmall"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Model" value="#Entities/LootContainers?foodClutterPileSmallPrefab.prefab"/>
+		</block>
+
+		<!-- Medium Food Pile -->
+		<block name="decoCntFoodPileMedium">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntFoodPileMedium"/>
+			<property name="Model" value="#Entities/LootContainers?foodClutterPileMediumPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="decoCntFoodPileMediumInsecure"/>
+		</block>
+
+		<block name="decoCntFoodPileMediumInsecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntFoodPileMedium"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Model" value="#Entities/LootContainers?foodClutterPileMediumPrefab.prefab"/>
+		</block>
+
+		<!-- Large Food Pile -->
+		<block name="decoCntFoodPileLarge">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntFoodPileLarge"/>
+			<property name="Model" value="#Entities/LootContainers?foodClutterPileLargePrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="decoCntFoodPileLargeInsecure"/>
+		</block>
+
+		<block name="decoCntFoodPileLargeInsecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntFoodPileLarge"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Model" value="#Entities/LootContainers?foodClutterPileLargePrefab.prefab"/>
+		</block>
+
+		<!-- Small Medical Pile -->
+		<block name="decoCntChemPileSmall">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntChemPileSmall"/>
+			<property name="Model" value="Entities/Crafting/ChemSetBPrefab"/>
+			<property name="DowngradeBlock" value="decoCntChemPileSmallInsecure"/>
+		</block>
+
+		<block name="decoCntChemPileSmallInsecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntChemPileSmall"/>
+			<property name="Model" value="Entities/Crafting/ChemSetBPrefab"/>
+		</block>
+
+		<!-- Medium Medical Pile -->
+		<block name="decoCntChemPileMedium">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntChemPileMedium"/>
+			<property name="Model" value="Entities/Crafting/ChemSetCPrefab"/>
+			<property name="DowngradeBlock" value="decoCntChemPileMediumInsecure"/>
+		</block>
+
+		<block name="decoCntChemPileMediumInsecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntChemPileMedium"/>
+			<property name="Model" value="Entities/Crafting/ChemSetCPrefab"/>
+		</block>
+
+		<!-- Large Medical Pile -->
+		<block name="decoCntChemPileLarge">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntChemPileLarge"/>
+			<property name="Model" value="Entities/Crafting/ChemSetDPrefab"/>
+			<property name="DowngradeBlock" value="decoCntChemPileLargeInsecure"/>
+		</block>
+
+		<block name="decoCntChemPileLargeInsecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntChemPileLarge"/>
+			<property name="Model" value="Entities/Crafting/ChemSetDPrefab"/>
+		</block>
+
+		<!-- Small Pill Pile -->
+		<block name="decoCntMedicLootPileA">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntMedicLootPileA"/>
+			<property name="Model" value="#Entities/LootContainers?medic_loot_pile_APrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="decoCntMedicLootPileAInsecure"/>
+		</block>
+
+		<block name="decoCntMedicLootPileAInsecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntMedicLootPileA"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Model" value="#Entities/LootContainers?medic_loot_pile_APrefab.prefab"/>
+		</block>
+
+		<!-- Pile of Medic Supplies -->
+		<block name="decoCntMedicLootPileB">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntMedicLootPileB"/>
+			<property name="Model" value="#Entities/LootContainers?medic_loot_pile_BPrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="decoCntMedicLootPileBInsecure"/>
+		</block>
+
+		<block name="decoCntMedicLootPileBInsecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntMedicLootPileB"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Model" value="#Entities/LootContainers?medic_loot_pile_BPrefab.prefab"/>
+		</block>
+
+		<!-- Pile of Clothes -->
+		<block name="decoCntClothesPileFloor01">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntClothesPileFloor01"/>
+			<property name="Model" value="Entities/Commercial/ClothsFloor01Prefab"/>
+			<property name="DowngradeBlock" value="decoCntClothesPileFloor01Insecure"/>
+		</block>
+
+		<block name="decoCntClothesPileFloor01Insecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntClothesPileFloor01"/>
+			<property name="Model" value="Entities/Commercial/ClothsFloor01Prefab"/>
+		</block>
+
+		<!-- Garment Bag -->
+		<block name="decoCntModularClosetClosed">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntModularClosetClosed"/>
+			<property name="Model" value="#Entities/LootContainers?modularClosetClosedPrefab.prefab"/>
+			<property name="DowngradeBlock" value="decoCntModularClosetClosedInsecure"/>
+		</block>
+
+		<block name="decoCntModularClosetClosedInsecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntModularClosetClosed"/>
+			<property name="Model" value="#Entities/LootContainers?modularClosetClosedPrefab.prefab"/>
+		</block>
+
+		<!-- Stack of Books -->
+		<block name="decoCntBookPile01">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntBookPile01"/>
+			<property name="Model" value="Entities/Commercial/bookPile1Prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="decoCntBookPile01Insecure"/>
+		</block>
+
+		<block name="decoCntBookPile01Insecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntBookPile01"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Model" value="Entities/Commercial/bookPile1Prefab"/>
+		</block>
+
+		<!-- Litter of Books -->
+		<block name="decoCntBookPile02">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntBookPile02"/>
+			<property name="Model" value="Entities/Commercial/bookPile2Prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="decoCntBookPile02Insecure"/>
+		</block>
+
+		<block name="decoCntBookPile02Insecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntBookPile02"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Model" value="Entities/Commercial/bookPile2Prefab"/>
+		</block>
+
+		<!-- Scattered Books -->
+		<block name="decoCntBookPile03">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntBookPile03"/>
+			<property name="Model" value="Entities/Commercial/bookPile3Prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="decoCntBookPile03Insecure"/>
+		</block>
+
+		<block name="decoCntBookPile03Insecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntBookPile03"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Model" value="Entities/Commercial/bookPile3Prefab"/>
+		</block>
+
+		<!-- Small Pile of Books -->
+		<block name="decoCntBookPile04">
+			<property name="Extends" value="decoCntShoesPileBusinessShoes"/>
+			<property name="CustomIcon" value="cntBookPile04"/>
+			<property name="Model" value="Entities/Commercial/bookPile4Prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="decoCntBookPile04Insecure"/>
+		</block>
+
+		<block name="decoCntBookPile04Insecure">
+			<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="decoCntShoesPileBusinessShoesInsecure"/>
+			<property name="CustomIcon" value="cntBookPile04"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Model" value="Entities/Commercial/bookPile4Prefab"/>
+		</block>
+
+
+	
+	<!-- = = = = = = = = = = = = = = New Helper Blocks = = = = = = = = = = = = = = = = -->
+		<!-- Helper block for the new lights -->
+		<block name="lightPlayerHelper">
+			<property name="Extends" value="ceilingLight01_player"/>
+			<property name="CustomIcon" value="porchLight01"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="PlaceAltBlockValue" value="porchLight01_player,porchLight04_player,porchLight04Brass_player,ceilingLight01_player,ceilingLight02_player,ceilingLight02Brass_player,ceilingLight04_player,ceilingLight05_player,ceilingLight05Brass_player,recessedLight_player,wallLight01_player,ceilingLight07_player,fluorescentLight_player,trackLight_player,industrialLight01_player,sconce1Light_player,industrialLight02_player,industrialLight02Red_player,ceilingFanLight_player,chandelierLight_player,endTableLamp_player,signExitLight_player,roadBarricadeLight_player,deskLampLight_player,tableLampLight_player,tableLampTippedOverLight_player,workLight_player,streetLight01_player,streetLightClassic_player,spotlightPlayer,xRayDisplayLight1_player,xRayDisplayLight2_player,signShopOpen_player,streetLight02_player,streetLight03_player,streetLight04_player,signTrafficLight_player,signTrafficLightOffset_player,signCrosswalk_player"/>
+		</block>
+		<!-- Helper Block that contains all road signs -->
+		<block name="signRoadHelper">
+			<property name="Extends" value="signRoadStop"/>
+			<property name="CustomIcon" value="signRoadStop"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="DescriptionKey" value="signRoadHelperDesc"/>
+			<property name="PlaceAltBlockValue" value="signRoadStop,signRoadStop4way,signCrossWalkYellow,signDoNotEnter,signHandicapParking,signNoParking,signTowAway,signRoadSpeed25,signRoadSpeed35,signRoadSpeed45,signRoadSpeed55,signRoadSpeed65,signSchoolZone,signRoadSpeed25noTrucks,signNoHazardousWaste,signRoadWork,signRoadRoughSurface,signRoadSlow,signYardSign01,signRoadCourtlandBell,signRoadCourtlandHuenink,signRoadCourtlandMaple,signRoadCourtlandTran,signRoadDavis,signRoadEssig,signRoadLangTran,signRoadTran,signRoadMaple,signRoadPrivate,signRoadBellLake,signRoadCoronado,signRoadCoronadoCourtland,signRoadCourtlandApache,signRoadAZ260eastSpeed65,signRoadAZ260west,signRoadAZ260westSpeed65,signRoadAZ73north,signRoadAZ73northSpeed65,signRoadAZ73south,signRoadAZ73southSpeed65,signRoadCourtlandAZ260Left,signRoadCourtlandAZ260Right,signRoadApacheAZ260,signRoadArrowheadApache,signRoadDestinationsEast,signRoadDestinationsWest,signCamping,signSpillwayLake,signAnselAdamsRiver,signCampFish,signInfoCenter"/>
+		</block>
+		<!-- Helper Block that contains all shop signs that are lit up and shine at night -->
+		<block name="signShopLitHelper">
+			<property name="Extends" value="signShopGasLit"/>
+			<property name="CustomIcon" value="signShopGas"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="DescriptionKey" value="signShopLitHelperDesc"/>
+			<property name="PlaceAltBlockValue" value="signShopGasLit,signShopGasWallLit,signShopGasLargeLit,signShopGasLargeWallLit,signShopGunStoreLit,signShopGunStoreWallLit,signShopGunStoreLargeLit,signShopGunStoreLargeWallLit,signShopBookStoreLit,signShopBookStoreWallLit,signShopBookStoreLargeLit,signShopBookStoreLargeWallLit,signShopPharmacyLit,signShopPharmacyWallLit,signShopPharmacyLargeLit,signShopPharmacyLargeWallLit,signShopToolStoreLit,signShopToolStoreWallLit,signShopToolStoreLargeLit,signShopToolStoreLargeWallLit,signShopGroceryLit,signShopGroceryWallLit,signShopGroceryLargeLit,signShopGroceryLargeWallLit,signShopSavageCountryLit,signShopSavageCountryWallLit,signShopSavageCountryLargeLit,signShopSavageCountryLargeWallLit,signShopMoPowerElectronicsLit,signShopMoPowerElectronicsWallLit,signShopMoPowerElectronicsLargeLit,signShopMoPowerElectronicsLargeWallLit,signShopPostOfficeSignLit,signShopPostOfficeSignWallLit,signShopPostOfficeSignLargeLit,signShopPostOfficeSignLargeWallLit"/>
+		</block>
+		<!-- Helper Block that contains all shop signs that are NOT lit up and are dark at night -->
+		<block name="signShopDarkHelper">
+			<property name="Extends" value="signShopGas"/>
+			<property name="CustomIcon" value="signShopBookStore"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="DescriptionKey" value="signShopDarkHelperDesc"/>
+			<property name="PlaceAltBlockValue" value="signShopBookStore,signShopBookStoreWall,signShopBookStoreLarge,signShopBookStoreLargeWall,signShopGas,signShopGasWall,signShopGasLarge,signShopGasLargeWall,signShopGunStore,signShopGunStoreWall,signShopGunStoreLarge,signShopGunStoreLargeWall,signShopPharmacy,signShopPharmacyWall,signShopPharmacyLarge,signShopPharmacyLargeWall,signShopToolStore,signShopToolStoreWall,signShopToolStoreLarge,signShopToolStoreLargeWall,signShopGrocery,signShopGroceryWall,signShopGroceryLarge,signShopGroceryLargeWall,signShopSavageCountry,signShopSavageCountryWall,signShopSavageCountryLarge,signShopSavageCountryLargeWall,signShopMoPowerElectronics,signShopMoPowerElectronicsWall,signShopMoPowerElectronicsLarge,signShopMoPowerElectronicsLargeWall,signShopPostOfficeSign,signShopPostOfficeSignWall,signShopPostOfficeSignLarge,signShopPostOfficeSignLargeWall"/>
+		</block>
+		<!-- Add Helper Block for Paper Deco blocks -->
+		<block name="decoPaperHelper">
+			<property name="Extends" value="decoEntityClothMaster"/>
+			<property name="CustomIcon" value="signPosterWantedMissing01"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="DescriptionKey" value="decoPaperHelperDesc"/>
+			<property name="PlaceAltBlockValue" value="signPosterWantedMissing01,signPosterWantedMissing02,signPosterWantedMissing03,signBulletinBoard01,signBulletinBoard02,signBookSaleAd,signBread01,signBread02,signCigaretteAd,signDinersMenu,signLaborDaySaleAd,signMegaCrushAd,signNotice01,signNotice02,signNotice03,signNotice04,signSafetyWorkProtection,signSale01,signSale02,signShamwaySale,signPosterMovie2159,signPosterMovieLoneWolf,signPosterMovieMammasJustice,signPosterMovieSexualTension,signPosterMovieTheater2159,signPosterMovieTheaterLoneWolf,signPosterMovieTheaterMammasJustice,signPosterMovieTheaterSexualTension,palletCompressedCardboard,signDinersMenu2m,signDinersMenu2mCentered"/>
+		</block>
+		<!-- Add Helper Block for Cloth Deco blocks -->
+		<block name="decoClothHelper">
+			<property name="Extends" value="decoEntityClothMaster"/>
+			<property name="CustomIcon" value="cntPurse01"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="DescriptionKey" value="decoClothHelperDesc"/>
+			<property name="PlaceAltBlockValue" value="cntPurse01,cntBackpack01,cntBackpack03,cntWeaponsBagSmall,cntWeaponsBagLarge,cntDuffle01,officeChair01,miniblindTopSheet,miniblindBottomSheet,curtain_top1Sheet3,curtain_bottom1Sheet3,mattressFlatThin,modularRopeTopTied,modularRopeTiled,modularRopeNoose"/>
+		</block>
+		<!-- Add Helper Block for Stone Deco blocks -->
+		<block name="decoStoneHelper">
+			<property name="Extends" value="birdBathPlanter"/>
+			<property name="CustomIcon" value="birdBathPlanter"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="DescriptionKey" value="decoStoneHelperDesc"/>
+			<property name="PlaceAltBlockValue" value="birdBathPlanter,planter,graveStone01,graveStone02,graveStone03,graveStone04,graveStone05,graveStone06,graveStone07,graveStone08,sidewalkCurb,sidewalkCNRCurb,decoConcreteBollard,decoConcreteBollardDestroyed01,decoConcreteBollardDestroyed02,decoConcreteBollardDestroyed03,concreteBarrier1,concreteBarrier2,concreteBarrier3,parkingBlockWhite,parkingBlockCrooked1White,parkingBlockCrooked2White,parkingBlockBrokenWhite,parkingBlockYellow,parkingBlockCrooked1Yellow,parkingBlockCrooked2Yellow,parkingBlockBrokenYellow,parkingBlockBlue,parkingBlockCrooked1Blue,parkingBlockCrooked2Blue,parkingBlockBrokenBlue,palletBricksBase,palletBricksTile,palletBricksPartial1,palletBricksPartial2,palletBricksTop,palletBricksLoose,bricksStack,dryWallStack,palletBlueTarpTile,palletBlueTarpBase,palletWhiteBagsBase,palletWhiteBagsTile,palletWhiteBagsPartial1,palletWhiteBagsPartial2,palletWhiteBagsTop,palletWhiteBagsLoose"/>
+		</block>
+		<!-- Add Helper Block for Polymer Deco blocks -->
+		<block name="decoPolymerHelper">
+			<property name="Extends" value="decoEntityPolymerMaster"/>
+			<property name="CustomIcon" value="decoMannequinMale"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="DescriptionKey" value="decoPolymerHelperDesc"/>
+			<property name="PlaceAltBlockValue" value="decoMannequinMale,decoMannequinFemale,decoMannequinMaleBroken,decoMannequinFemaleBroken,cntBruteStyleTrashCanFull,cntCoolerClosed,cntJanitorCartFull,cntLaundryBasketVer2Full,cntLuggageBigClosed,cntLuggageMediumClosed,cntLuggagePileAClosed,cntLuggagePileBClosed,cntSuitcase,cntSportsBag01,cntSportsBag02,cntTiltTruckFull,cntTiltTruckFullFlies,cntWaterCoolerBottle,cntWaterCoolerFull,commercialBlindsTop,commercialBlindsBottom,decoLargePetCage,decoCarTireFlat,decoCarTirePile,decoCarTireStack,decoCarSeatUpright,decoCarSeatFlipped,decoCarBackBumperFlipped,decoCarBackBumperUpright,decoCarFenderFlat,decoCarFenderFlipped,decoCarFrontBumperFlat,decoCarFrontBumperFlipped,decoCarHoodFlat,decoCarHoodFlipped,decoCarTrunkLidFlat,decoCarTrunkLidFlipped,palletBrownBoxesBase,palletBrownBoxesTile,palletBrownBoxesLoose,palletBrownBoxesTop"/>
+		</block>
+		<!-- Add Helper Block for Electronic Deco blocks -->
+		<block name="decoTechnologyHelper">
+			<property name="Extends" value="decoEntityMetalMaster"/>
+			<property name="CustomIcon" value="decoComputerMonitorKeyboardMousePC"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="DescriptionKey" value="decoTechnologyHelperDesc"/>
+			<property name="PlaceAltBlockValue" value="decoComputerMonitorKeyboardMousePC,decoComputerMonitorKeyboardMouse,decoComputerMonitor,decoComputerDeskTopPC,decoLaptop,tv,cntStoreElectronicsBookShelfSpeaker,projectorCeiling,projectorTableTop,satelliteDish,satelliteDishSmall,cntFridgeStainlessSteel,cntRetroFridgeVer1Closed,cntWallOven,cntTrashCompactor,cntWasherIndustrialClosed,cntWasherClosed,cntDryerClosed,cntMicrowaveOvenVer1Closed,cntMicrowaveOvenVer2Closed,cntCoffeeMaker,cntCoffeeMakerCommercial,cntToaster,cntSodaFountain,wallClock,wallClockBroken,fusebox,cntGasPumpFull,cntIceMachine,cntVendingMachine2Broken,cntBeerCooler,cntFreezerBeveragesStandaloneFullClosed,cntFreezerBeveragesMiddleFullClosed,cntFreezerGroceriesMiddleFullClosed,cntFreezerGroceriesMiddleFullClosed2,cntFreezerBeveragesStandaloneFullClosedBroken,cntFreezerBeveragesMiddleFullClosedBroken,cntFreezerGroceriesMiddleFullClosedBroken,cntFreezerGroceriesMiddleFullClosedBroken2,cntCashRegister,cashRegisterScanner,cashRegisterConveyorStraight,cashRegisterConveyorMiddle,cashRegisterConveyorCorner,airConditioner,airConditionVentFan,airConditionVentFanDouble,conduit01,conduit01Corner,conduit01Curve,conduit01End,breakerBoxClosed,breakerBoxOpen,breakerBoxBroken,breakerBoxWallClosed,breakerBoxWallOpen,residentialSingleMeterDisconnect,commercialDistributionBox,commercialSingleMeterDisconnect,commercialSingleMeter,commercialDualMeter,commercialTripleMeter,commercialQuadMeter,utilityElectricalBox_01,utilityElectricalBox_02,utilityInsulator,utilityTransformer,utilityTransformerHanging,powerSwitch01,powerSwitch02,pushButtonSwitch01,pushButtonSwitch02,cntATMSecure,parkingMeter,cntStoreElectronicsPalletTvFallen,cntStoreElectronicsPalletTvStanding,escalatorBottom,escalatorFiller,escalatorMiddle,escalatorPreTop,escalatorTop,factoryConveyorBelt,factoryConveyorCap,factoryConveyorBridge,factoryConveyorTee,factoryConveyorCorner,factoryConveyorCorner2,factoryConveyorRamp,factoryConveyorWedgeRamp"/>
+		</block>
+		<!-- Add Helper Block for Gore Deco blocks -->
+		<block name="decoGoreHelper">
+			<property name="Extends" value="bodyBagBlack"/>
+			<property name="CustomIcon" value="bodyBagBlack"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="DescriptionKey" value="decoGoreHelperDesc"/>
+			<property name="PlaceAltBlockValue" value="bodyBagBlack,bodyBagYellow,bodyBagBlackFlies,bodyBagYellowFlies,bodyBagPair,bodyBagPairMixed,bodyBagPairYellow,bodyBagPile,bodyBagPileMix,decoCowSkull,goreBlockAnimal,goreBlockHumanBones,goreBlockHumanCorpse,goreBlockHumanCorpse1,goreBlockHumanCorpse2,goreBlockHumanCorpse3,goreHumanSkull"/>
+		</block>
+		<!-- Add Helper Block for Bed blocks -->
+		<block name="bedHelper">
+			<property name="Extends" value="bunkBedMade"/>
+			<property name="CustomIcon" value="bunkBedMade"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="ItemTypeIcon" value="all_blocks"/>
+			<property name="SelectAlternates" value="true" />
+			<property name="DescriptionKey" value="bedHelperDesc"/>
+			<property name="PlaceAltBlockValue" value="bunkBedMade,bunkBedMessy,bunkBedMattress,bed02"/>
+		</block>
+
+
+	<!-- Closing Append tag for all Added Blocks -->
+	</append>
+
+<!-- All set xpath edits below here -->
+
+
+	<!-- Set Player Lantern to pick up as Player Lantern -->
+	<setattribute xpath="/blocks/block[@name='lanternLight_player']/property[@name='CanPickup']" name="param1">lanternLight_player</setattribute>
+
+	<!-- Add pickup option to lights that convert to Player Lights-->
+	<append xpath="/blocks/block[@name='porchLight01']">
+		<property name="Class" value=""/>
+		<property name="CanPickup" value="true" param1="lightPlayerHelper"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+	<append xpath="/blocks/block[@name='industrialLight01']">
+		<property name="Class" value=""/>
+		<property name="CanPickup" value="true" param1="lightPlayerHelper"/>
+		<property name="TakeDelay" value="2"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='chandelierLight']">
+		<property name="Class" value=""/>
+		<property name="CanPickup" value="true" param1="lightPlayerHelper"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+	<append xpath="/blocks/block[@name='streetLight01']">
+		<property name="Class" value=""/>
+		<property name="CanPickup" value="true" param1="lightPlayerHelper"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+	<append xpath="/blocks/block[@name='spotlightNailedDownPOI']">
+		<property name="Class" value=""/>
+		<property name="CanPickup" value="true" param1="lightPlayerHelper"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+	
+	<!-- Add pickup option to flashlights and lanterns that convert to Player Lanterns-->
+	<append xpath="/blocks/block[@name='lanternDecorLight']">
+		<property name="Class" value=""/>
+		<property name="CanPickup" value="true" param1="lanternLight_player"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+	<append xpath="/blocks/block[@name='flashlightDecor']">
+		<property name="Class" value=""/>
+		<property name="CanPickup" value="true" param1="lanternLight_player"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+
+	<!-- = = = = = = = = = = = = = = Add Blocks to Helpers = = = = = = = = = = = = = = = = -->
+	<!-- Add Trader Joel signs to Wood Sign Helper -->
+	<append xpath="/blocks/block[@name='woodSignBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,signShopTraderJoel2x5Wall,signShopTraderJoel1x3Wall</append>
+	<!-- Add to Wooden Storage / Furnature Helper -->
+	<append xpath="/blocks/block[@name='cntWoodFurnitureBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,decoCntShoesPileBusinessShoes,decoCntShoesPileCommercial01,decoCntShoesPileCommercial02,decoCntShoesPileLeatherBoots,decoCntShoesPileSandals,decoCntShoesPileSneakers,decoCntShoesPileWomensHeels,decoCntClothesPileFloor01,cntModularClosetEnd,cntModularClosetOpen,decoCntModularClosetClosed,cntClothesShelfHalfJeans01,cntClothesShelfHalfJeans02,cntClothesShelfHalfShirts01,cntClothesShelfHalfShirts02,cntClothesShelfHalfSweaters01,cntClothesShelfStackJeans01,cntClothesShelfStackJeans02,cntClothesShelfStackShirts01,cntClothesShelfStackShirts02,decoCntAmmoPileSmall,decoCntAmmoPileMedium,decoCntAmmoPileLarge,decoCntFoodPileSmall,decoCntFoodPileMedium,decoCntFoodPileLarge,decoCntChemPileSmall,decoCntChemPileMedium,decoCntChemPileLarge,decoCntMedicLootPileA,decoCntMedicLootPileB,cntPillCaseClosed,cntMedicineCabinetClosed,cntMedicineCabinetFaucetClosed,decoCntBookPile01,decoCntBookPile02,decoCntBookPile03,decoCntBookPile04,cntBookShelfDoubleBottomFull01,cntBookShelfDoubleBottomFull02,cntBookShelfDoubleTopFull01,cntBookShelfDoubleTopFull02,cntBookShelfSingleBottomFull01,cntBookShelfSingleBottomFull02,cntBookShelfSingleTopFull01,cntBookShelfSingleTopFull02,cntBookShelfSingleCapBottomFull01,cntBookShelfSingleCapBottomFull02,cntBookShelfSingleCapTopFull01,cntBookShelfSingleCapTopFull02,paintingBen,paintingDerek,paintingDuke,paintingKen,paintingLorien,paintingNoah,houseFrontDoor1_v1,houseFrontDoor2_v1,decoBasketBallHoop,decoPoolTable,decoReptileTerrarium,driftwood,driftwood2,decoWildWestWagon,modularFireWoodStackA,modularFireWoodStackB,modularFireWoodStackC,palletEmptyStack,shootingRangeTarget,emberPileDeco1,emberPileDeco2,emberPileDeco3,emberPileDeco4,cntBookcaseFull,decoWineBottle,decoWineBottleCorner,decoWineBottleShelfRow,decoWineBottlePile01,decoWineBottlePile02,fastFoodBooth,fastFoodBoothEndClosed,fastFoodBoothEndOpen,fastFoodBoothMiddle,fastFoodBoothBrown,fastFoodBoothEndClosedBrown,fastFoodBoothEndOpenBrown,fastFoodBoothMiddleBrown,fastFoodBoothRed,fastFoodBoothEndClosedRed,fastFoodBoothEndOpenRed,fastFoodBoothMiddleRed,fastFoodBoothOrange,fastFoodBoothEndClosedOrange,fastFoodBoothEndOpenOrange,fastFoodBoothMiddleOrange,fastFoodBoothYellow,fastFoodBoothEndClosedYellow,fastFoodBoothEndOpenYellow,fastFoodBoothMiddleYellow,fastFoodBoothGreen,fastFoodBoothEndClosedGreen,fastFoodBoothEndOpenGreen,fastFoodBoothMiddleGreen,fastFoodBoothPurple,fastFoodBoothEndClosedPurple,fastFoodBoothEndOpenPurple,fastFoodBoothMiddlePurple,fastFoodBoothGrey,fastFoodBoothEndClosedGrey,fastFoodBoothEndOpenGrey,fastFoodBoothMiddleGrey,fastFoodBoothWhite,fastFoodBoothEndClosedWhite,fastFoodBoothEndOpenWhite,fastFoodBoothMiddleWhite,fastFoodBoothBlack,fastFoodBoothEndClosedBlack,fastFoodBoothEndOpenBlack,fastFoodBoothMiddleBlack,restaurantTableEnd,restaurantTableMiddle,restaurantBooth,restaurantBoothCorner,keyRackWood01,signNationalPark,mirror,wallMirror,woodPlanksStack</append>
+	<!-- Add Deco Items to Metal Furnature Helper -->
+	<append xpath="/blocks/block[@name='metalFurnitureBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,faucetBrass02,faucetBrass04,signBathroomSignUnisexWallMount,signBathroomSignUnisexCeilingMount,signBathroomSignWomenWallMount,signBathroomSignWomenCeilingMount,signBathroomSignMenWallMount,signBathroomSignMenCeilingMount,cntShoppingCart,cntStoreShelfDoubleBottomFood01,cntStoreShelfDoubleBottomFood02,cntStoreShelfDoubleTopFood01,cntStoreShelfSingleBottomFood01,cntStoreShelfSingleBottomFood02,cntStoreShelfSingleTopFood01,cntRollingToolBoxClosed,cntToolBoxClosed,cntStoreShelfDoubleBottomHardware01,cntStoreShelfDoubleBottomHardware02,cntStoreShelfDoubleBottomHardware03Rags,cntStoreShelfDoubleTopHardware01,cntStoreShelfDoubleTopHardware02Rags,cntStoreShelfSingleBottomHardware01,cntStoreShelfSingleBottomHardware02,cntStoreShelfSingleTopHardware01,cntStoreShelfSingleTopHardware02,cntGunRackLargeGuns01,cntGunRackLargeGuns02,cntGunRackSmallArmor,cntGunRackSmallMagazines,cntDisplayCaseAmmoLeftBroken,cntDisplayCaseAmmoMiddleBroken01,cntDisplayCaseAmmoMiddleBroken02,cntDisplayCaseAmmoRightBroken,cntClothesRackRectanglePants,cntClothesRackRectangleShirts,cntClothesRackRoundPants,cntClothesRackRoundShirts,cntStoreShelfDoubleBottomShoesFull,cntStoreShelfDoubleTopShoesFull,cntStoreShelfSingleBottomShoesFull,cntStoreShelfSingleTopShoesFull,cntClothesRackWallLongSleeve,cntClothesRackWallPants,cntClothesRackWallSweater,cntClothesRackWallTShirts,cntStoreShelfElectronicsDoubleBottomGoods01,cntStoreShelfElectronicsDoubleBottomGoods02,cntStoreShelfElectronicsDoubleBottomGoods03,cntStoreShelfElectronicsDoubleBottomGoods04,cntStoreShelfElectronicsSingleBottomElectronicsMonitor,cntStoreShelfElectronicsSingleBottomGoodsMisc,cntStoreShelfElectronicsSingleBottomHeadphones,cntStoreShelfElectronicsSingleBottomKeyboard,cntStoreShelfElectronicsSingleBottomLaptopClosed,cntStoreShelfElectronicsSingleBottomLaptopOpen,cntStoreShelfElectronicsSingleBottomPC,cntStoreShelfElectronicsSingleBottomSpeaker,signPillsLogoSmall,signPillsLogo,cntStoreShelfDoubleBottomPharmaGoods01,cntStoreShelfDoubleBottomPharmaGoods02,cntStoreShelfSingleBottomPharmaGoods01,cntStoreShelfSingleBottomPharmaGoods02,cntCharcoalGrillClosed,cntCharcoalGrillOpen,cntGasGrillClosed,cntGasGrillOpen,cntDumpster,cntDumpsterFlies,cntFancyGarbageCan,cntFileCabinetShortClosed,cntFileCabinetTallClosed,cntHardenedChestSecure,cntHardenedChestSecureT5,cntMunitionsBoxArmy,cntMunitionsBoxRed,cntMunitionsBoxGreen,cntMunitionsBoxBlue,cntMunitionsBoxOrange,cntUtilityCartFull,furnaceDrawer,morticianDrawer,decoTableRound,decoBenchPress,decoWeightBar,decoStationaryBike,decoTreadmill,decoMetalSlide,decoSwingSet,flagPoleAmerican,flagPoleWhiteRiver,cntPostMailbox,cntNewsDispenseFreeGreen,cntNewsDispenseFreeOrange,cntNewspaperDispenserStandBlue,cntNewspaperDispenserStandYellow,fireHydrant,fireHydrantYellow,jailBars,jailDoorStatic,commercialDoor1_v1,commercialDoor2_v1,commercialDoor4_v1,decoMetalBollard,decoMetalBollardDestroyed01,decoHandTruck,decoHoistChain,decoHoistHook,decoHoistMagnet,decoHoistSpreader,decoHoistTopMount,heatVentIndustrial,cntWoodBurningStove,crushedCars,decoCarBackDoorFlat,decoCarBackDoorFlipped,decoCarFrontDoorFlat,decoCarFrontDoorFlipped,decoCarPartsRamp,decoCarRadiatorFlat,decoCarRadiatorFlipped,gurneyBed,hospitalBed,barracksChair,churchBell,churchBellHanging,churchBell1x2x1,churchBellHanging1x2x1,keyRackBoxMetal01,palletCans,apartmentMailboxClosedRed,apartmentMailboxClosedYellow,apartmentMailboxClosedGreen,apartmentMailboxClosedBlue,apartmentMailboxClosedGrey,apartmentMailboxClosedWhite,apartmentMailboxOpenRed,apartmentMailboxOpenYellow,apartmentMailboxOpenGreen,apartmentMailboxOpenBlue,apartmentMailboxOpenGrey,apartmentMailboxOpenWhite,barStool,barStoolBrown,barStoolGreen,barStoolBlue,barStoolGrey,barStoolWhite,barStoolBlack,barStoolPink,schoolDesk,bathroomStallWall,bathroomStallSupport,bathroomStallSupportRight,bathroomStallSupportLeft,bathroomStallDoor,bathroomStallSCTRBeam,bathroomStallCTRBeam,bleachersTopMiddle,bleachersTopSupport,bleachersUnderneathMiddle,bleachersUnderneathSupport,bleachersBottomMiddle,bleachersBottomSupport,bleachersSupport</append>
+	<!-- Add Store Windows to Glass Helper -->
+	<append xpath="/blocks/block[@name='glassBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,windowStoreFourSidedFull,windowStoreThreeSidedFull,windowStoreTwoSidedFull,windowStoreOneSidedFull,windowStoreCornerFull,mirror,window02,stainedGlassPlate,stainedGlassCTRPlate</append>
+	<!-- Add Bulletproof Store Windows to Bulletproof Glass Helper -->
+	<append xpath="/blocks/block[@name='glassBulletproofBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,windowStoreCornerBulletproof,windowStoreFourSidedBulletproof,windowStoreThreeSidedBulletproof,windowStoreTwoSidedBulletproof,windowStoreOneSidedBulletproof</append>
+	<!-- Add Tubs to Sink and Toilet Helper -->
+	<append xpath="/blocks/block[@name='sinksToiletsBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,counterSinkCommercialTile,decoClawFootBathTub,cntBathTubEmpty,cntBathTubGore</append>
+	
+<!-- bhwInteriorDesign Edits End -->
+
+</bhwCompleteCollection>

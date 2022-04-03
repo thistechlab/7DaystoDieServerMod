@@ -1,0 +1,402 @@
+<configs>
+	<append xpath="/blocks">
+	
+	<block name="DBFencesMaster">
+		<property name="CustomIcon" value="DBFence" /> 
+		<property name="AllowAllRotations" value="true"/>
+		<property name="ItemTypeIcon" value="all_blocks"/> 
+        <property name="Material" value="Mmetal"/>
+        <property name="IsTerrainDecoration" value="true"/>
+        <property name="Collide" value="movement,melee,rocket,vehicle"/>
+        <property name="CreativeMode" value="Player"/>
+        <property name="Stacknumber" value="500"/>
+        <property name="Group" value="Building,Building2"/>
+        <property name="EconomicValue" value="1"/>
+        <property name="FilterTags" value="fdecor"/>
+        <property name="SortOrder2" value="0050"/>
+        <property name="MaxDamage" value="1500"/>
+		<property class="RepairItems">
+			<property name="resourceForgedIron" value="5"/> 
+		</property>
+		<property name="Place" value="TowardsPlacerInverted"/>
+		<drop event="Destroy" name="resourceScrapIron" count="0" />
+		<property name="SelectAlternates" value="true"/>
+		<property name="PlaceAltBlockValue" value="DBFence,DBFenceSingle,DBFenceBarbSingle,DBFenceBarb"/>
+	<property name="DescriptionKey" value="IronGatesMasterDesc"/>
+	</block>
+		<block name="DBFenceGateMaster">
+			<property name="CustomIcon" value="DBGate" /> 
+			<property name="AllowAllRotations" value="true"/>
+			<property name="ItemTypeIcon" value="all_blocks"/> 
+			<property name="Material" value="Mmetal"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Collide" value="movement,melee,rocket"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="Group" value="Building,Building2"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="FilterTags" value="fdecor"/>
+			<property name="SortOrder2" value="0050"/>
+			<property name="MaxDamage" value="1500"/>
+			<property class="RepairItems">
+				<property name="resourceForgedIron" value="5"/> 
+			</property>
+			<property name="Place" value="TowardsPlacerInverted"/>
+		<drop event="Destroy" count="0"/>
+		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+		<property name="SelectAlternates" value="true"/>
+		<property name="PlaceAltBlockValue" value="DBGate,DBGateBarb,DBRightStockGate,DBLeftStockGate"/>
+	</block>
+			
+		<block name="DBGate">
+				<property name="CustomIcon" value="DBGate" /> 
+				<property name="Class" value="DoorSecure"/>
+				<property name="Tags" value="door"/>
+				<property name="BlockTag" value="Door"/>
+				<property name="Place" value="TowardsPlacerInverted"/> <!-- build restriction -->
+				<property name="PlaceEverywhere" value="true"/>
+				<property name="AllowAllRotations" value="true"/>
+				<property name="OpenSound" value="open_garage_door"/>
+				<property name="CloseSound" value="close_garage_door"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="DisplayType" value="blockMulti"/>
+				<property name="Material" value="Mmetal"/><property name="Weight" value="50"/><property name="MaxDamage" value="350" />
+				<property name="LightOpacity" value="0"/>
+				<property name="Shape" value="ModelEntity"/>	
+				<property name="Model" value="#@modfolder:Resources/DBFences.unity3d?FenceGatePrefab"/>
+				<property name="MultiBlockDim" value="1,2,1"/>
+				<property name="ImposterDontBlock" value="true"/>
+				<property name="Collide" value="movement,melee,rocket,vehicle"/>
+				<property name="IsTerrainDecoration" value="true"/>
+				<property name="HarvestOverdamage" value="false"/>
+				<drop event="Destroy" name="resourceScrapIron" count="10" />
+				<property class="RepairItems">
+				<property name="resourceScrapIron" value="5"/>
+			</property>
+		</block>
+		<block name="DBFence">
+			<property name="CustomIcon" value="DBFence" /> 
+			<property name="AllowAllRotations" value="true"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/DBFences.unity3d?FencePrefab"/>				
+			<property name="Collide" value="movement,melee,rocket,vehicle"/>
+			<property name="MultiBlockDim" value="2,2,1" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="Group" value="Building,Building2"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="FilterTags" value="fdecor"/>
+			<property name="SortOrder2" value="0050"/>
+			<property name="MaxDamage" value="350"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="CanPickup" value="false"/>
+			<drop event="Destroy" name="resourceScrapIron" count="20" />
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="10"/>
+			</property>
+		</block>
+		<block name="DBFenceSingle">
+			<property name="CustomIcon" value="DBFenceSingle" /> 
+			<property name="AllowAllRotations" value="true"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/DBFences.unity3d?FenceSinglePrefab"/>				
+			<property name="Collide" value="movement,melee,rocket,vehicle"/>
+			<property name="MultiBlockDim" value="1,2,1" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="Group" value="Building,Building2"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="FilterTags" value="fdecor"/>
+			<property name="SortOrder2" value="0050"/>
+			<property name="MaxDamage" value="350"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="CanPickup" value="false"/>
+			<drop event="Destroy" name="resourceScrapIron" count="10" />
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="5"/>
+			</property>
+		</block>
+		<block name="DBGateBarb">
+				<property name="CustomIcon" value="DBBarbGate" /> 
+				<property name="Class" value="DoorSecure"/>
+				<property name="Tags" value="door"/>
+				<property name="BlockTag" value="Door"/>
+				<property name="Place" value="TowardsPlacerInverted"/> <!-- build restriction -->
+				<property name="PlaceEverywhere" value="true"/>
+				<property name="AllowAllRotations" value="true"/>
+				<property name="OpenSound" value="open_garage_door"/>
+				<property name="CloseSound" value="close_garage_door"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="DisplayType" value="blockMulti"/>
+				<property name="Material" value="Mmetal"/><property name="Weight" value="50"/><property name="MaxDamage" value="350" />
+				<property name="LightOpacity" value="0"/>
+				<property name="Shape" value="ModelEntity"/>	
+				<property name="Model" value="#@modfolder:Resources/DBFences.unity3d?FenceGateBarbPrefab"/>
+				<property name="MultiBlockDim" value="1,3,1"/>
+				<property name="ImposterDontBlock" value="true"/>
+				<property name="Collide" value="melee,movement,rocket,vehicle"/>
+				<property name="IsTerrainDecoration" value="true"/>
+				<property name="HarvestOverdamage" value="false"/>
+				<drop event="Destroy" name="resourceScrapIron" count="10" />
+				<drop event="Destroy" name="barbedWireSheet" count="1" />
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="5"/>
+			</property>
+		</block>
+		<block name="DBFenceBarbSingle">
+			<property name="CustomIcon" value="DBBarbSingle" /> 
+			<property name="AllowAllRotations" value="true"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/DBFences.unity3d?FenceBarbSinglePrefab"/>				
+			<property name="Collide" value="movement,melee,rocket,vehicle"/>
+			<property name="MultiBlockDim" value="1,3,1" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="Group" value="Building,Building2"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="FilterTags" value="fdecor"/>
+			<property name="SortOrder2" value="0050"/>
+			<property name="MaxDamage" value="350"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="CanPickup" value="false"/>
+			<drop event="Destroy" name="resourceScrapIron" count="10" />
+			<drop event="Destroy" name="barbedWireSheet" count="1" />
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="5"/>
+			</property>
+		</block>
+		<block name="DBFenceBarb">
+			<property name="CustomIcon" value="DBBarb" /> 
+			<property name="AllowAllRotations" value="true"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/DBFences.unity3d?FenceBarbPrefab"/>				
+			<property name="Collide" value="movement,melee,rocket,vehicle"/>
+			<property name="MultiBlockDim" value="2,3,1" />
+			<property name="CreativeMode" value="Player"/>
+			<property name="Stacknumber" value="500"/>
+			<property name="Group" value="Building,Building2"/>
+			<property name="EconomicValue" value="1"/>
+			<property name="FilterTags" value="fdecor"/>
+			<property name="SortOrder2" value="0050"/>
+			<property name="MaxDamage" value="350"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="CanPickup" value="false"/>
+			<drop event="Destroy" name="resourceScrapIron" count="20" />
+			<drop event="Destroy" name="barbedWireSheet" count="2" />
+			<property class="RepairItems">
+				<property name="resourceScrapIron" value="10"/>
+			</property>
+		</block>
+		<block name="DBRightStockGate">
+				<property name="CustomIcon" value="GateRight" /> 
+				<property name="Class" value="DoorSecure"/>
+				<property name="Tags" value="door"/>
+				<property name="BlockTag" value="Door"/>
+				<property name="Place" value="TowardsPlacerInverted"/> <!-- build restriction -->
+				<property name="PlaceEverywhere" value="true"/>
+				<property name="AllowAllRotations" value="true"/>
+				<property name="OpenSound" value="open_garage_door"/>
+				<property name="CloseSound" value="close_garage_door"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="DisplayType" value="blockMulti"/>
+				<property name="Material" value="Mmetal"/><property name="Weight" value="50"/><property name="MaxDamage" value="350" />
+				<property name="LightOpacity" value="0"/>
+				<property name="Shape" value="ModelEntity"/>	
+				<property name="Model" value="#@modfolder:Resources/DBFences.unity3d?DBchainlinkFenceDoorPrefab"/>
+				<property name="MultiBlockDim" value="1,2,1"/>
+				<property name="ImposterDontBlock" value="true"/>
+				<property name="Collide" value="movement,melee,rocket,vehicle"/>
+				<property name="IsTerrainDecoration" value="true"/>
+				<property name="HarvestOverdamage" value="false"/>
+				<drop event="Destroy" name="resourceScrapIron" count="10" />
+				<property class="RepairItems">
+				<property name="resourceScrapIron" value="5"/>
+			</property>
+		</block>
+		<block name="DBLeftStockGate">
+				<property name="CustomIcon" value="GateLeft" /> 
+				<property name="Class" value="DoorSecure"/>
+				<property name="Tags" value="door"/>
+				<property name="BlockTag" value="Door"/>
+				<property name="Place" value="TowardsPlacerInverted"/> <!-- build restriction -->
+				<property name="PlaceEverywhere" value="true"/>
+				<property name="AllowAllRotations" value="true"/>
+				<property name="OpenSound" value="open_garage_door"/>
+				<property name="CloseSound" value="close_garage_door"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="DisplayType" value="blockMulti"/>
+				<property name="Material" value="Mmetal"/><property name="Weight" value="50"/><property name="MaxDamage" value="350" />
+				<property name="LightOpacity" value="0"/>
+				<property name="Shape" value="ModelEntity"/>	
+				<property name="Model" value="#@modfolder:Resources/DBFences.unity3d?DBLeftStockGate"/>
+				<property name="MultiBlockDim" value="1,2,1"/>
+				<property name="ImposterDontBlock" value="true"/>
+				<property name="Collide" value="movement,melee,rocket,vehicle"/>
+				<property name="IsTerrainDecoration" value="true"/>
+				<property name="HarvestOverdamage" value="false"/>
+				<drop event="Destroy" name="resourceScrapIron" count="10" />
+				<property class="RepairItems">
+				<property name="resourceScrapIron" value="5"/>
+			</property>
+		</block>
+
+		<block name="DBWoodBarGate">
+				<property name="CustomIcon" value="bargate" /> 
+				<property name="Class" value="DoorSecure"/>
+				<property name="Tags" value="door"/>
+				<property name="BlockTag" value="Door"/>
+				<property name="Place" value="TowardsPlacerInverted"/> <!-- build restriction -->
+				<property name="PlaceEverywhere" value="true"/>
+				<property name="AllowAllRotations" value="true"/>
+				<property name="OpenSound" value="door_wood_roughcut_open"/>
+				<property name="CloseSound" value="door_wood_roughcut_close"/>
+				<property name="CreativeMode" value="Player"/>
+				<property name="DisplayType" value="blockMulti"/>
+				<property name="Material" value="Mwood"/><property name="Weight" value="50"/><property name="MaxDamage" value="500" />
+				<property name="LightOpacity" value="0"/>
+				<property name="Shape" value="ModelEntity"/>	
+				<property name="Model" value="#@modfolder:Resources/BarGatePrefabs.unity3d?WoodBarGatePrefab"/>
+				<property name="MultiBlockDim" value="1,2,1"/>
+				<property name="ImposterDontBlock" value="true"/>
+				<property name="Collide" value="movement,melee,rocket,vehicle"/>
+				<property name="IsTerrainDecoration" value="true"/>
+				<property name="HarvestOverdamage" value="false"/>
+				<drop event="Destroy" name="resourceScrapIron" count="0" />
+				<property class="RepairItems">
+					<property name="resourceWood" value="20"/>
+				</property>
+				<property class="UpgradeBlock">
+					<property name="ToBlock" value="DBCobbleBarGate"/>
+					<property name="Item" value="resourceCobblestones"/>
+					<property name="ItemCount" value="50"/>
+					<property name="UpgradeHitCount" value="6"/>
+				</property>
+		</block>
+				<block name="DBCobbleBarGate">
+				<property name="Class" value="DoorSecure"/>
+				<property name="Tags" value="door"/>
+				<property name="BlockTag" value="Door"/>
+				<property name="Place" value="TowardsPlacerInverted"/> <!-- build restriction -->
+				<property name="PlaceEverywhere" value="true"/>
+				<property name="AllowAllRotations" value="true"/>
+				<property name="OpenSound" value="open_garage_door"/>
+				<property name="CloseSound" value="close_garage_door"/>
+				<property name="CreativeMode" value="None"/>
+				<property name="DisplayType" value="blockMulti"/>
+				<property name="Material" value="Mstone"/><property name="Weight" value="50"/><property name="MaxDamage" value="1500" />
+				<property name="LightOpacity" value="0"/>
+				<property name="Shape" value="ModelEntity"/>	
+				<property name="Model" value="#@modfolder:Resources/BarGatePrefabs.unity3d?CobbleBarGatePrefab"/>
+				<property name="MultiBlockDim" value="1,2,1"/>
+				<property name="ImposterDontBlock" value="true"/>
+				<property name="Collide" value="movement,melee,rocket,vehicle"/>
+				<property name="IsTerrainDecoration" value="true"/>
+				<property name="HarvestOverdamage" value="false"/>
+				<drop event="Destroy" name="resourceScrapIron" count="0" />
+				<property class="RepairItems">
+					<property name="resourceCobblestones" value="20"/>
+				</property>
+				<property class="UpgradeBlock">
+					<property name="ToBlock" value="DBConcreteBarGate"/>
+					<property name="Item" value="resourceConcreteMix"/>
+					<property name="ItemCount" value="50"/>
+					<property name="UpgradeHitCount" value="6"/>
+				</property>
+		</block>				
+		<block name="DBConcreteBarGate">
+				<property name="Class" value="DoorSecure"/>
+				<property name="Tags" value="door"/>
+				<property name="BlockTag" value="Door"/>
+				<property name="Place" value="TowardsPlacerInverted"/> <!-- build restriction -->
+				<property name="PlaceEverywhere" value="true"/>
+				<property name="AllowAllRotations" value="true"/>
+				<property name="OpenSound" value="open_garage_door"/>
+				<property name="CloseSound" value="close_garage_door"/>
+				<property name="CreativeMode" value="None"/>
+				<property name="DisplayType" value="blockMulti"/>
+				<property name="Material" value="Mstone"/><property name="Weight" value="50"/><property name="MaxDamage" value="5000" />
+				<property name="LightOpacity" value="0"/>
+				<property name="Shape" value="ModelEntity"/>	
+				<property name="Model" value="#@modfolder:Resources/BarGatePrefabs.unity3d?ConcreteBarGatePrefab"/>
+				<property name="MultiBlockDim" value="1,2,1"/>
+				<property name="ImposterDontBlock" value="true"/>
+				<property name="Collide" value="movement,melee,rocket,vehicle"/>
+				<property name="IsTerrainDecoration" value="true"/>
+				<property name="HarvestOverdamage" value="false"/>
+				<drop event="Destroy" name="resourceScrapIron" count="0" />
+				<property class="RepairItems">
+					<property name="resourceConcreteMix" value="20"/>
+				</property>						
+				<property class="UpgradeBlock">
+					<property name="ToBlock" value="DBIronBarGate"/>
+					<property name="Item" value="resourceForgedIron"/>
+					<property name="ItemCount" value="50"/>
+					<property name="UpgradeHitCount" value="6"/>
+				</property>
+		</block>
+		<block name="DBIronBarGate">
+				<property name="Class" value="DoorSecure"/>
+				<property name="Tags" value="door"/>
+				<property name="BlockTag" value="Door"/>
+				<property name="Place" value="TowardsPlacerInverted"/> <!-- build restriction -->
+				<property name="PlaceEverywhere" value="true"/>
+				<property name="AllowAllRotations" value="true"/>
+				<property name="OpenSound" value="open_garage_door"/>
+				<property name="CloseSound" value="close_garage_door"/>
+				<property name="CreativeMode" value="None"/>
+				<property name="DisplayType" value="blockMulti"/>
+				<property name="Material" value="Mmetal"/><property name="Weight" value="50"/><property name="MaxDamage" value="10000" />
+				<property name="LightOpacity" value="0"/>
+				<property name="Shape" value="ModelEntity"/>	
+				<property name="Model" value="#@modfolder:Resources/BarGatePrefabs.unity3d?IronBarGatePrefab 1"/>
+				<property name="MultiBlockDim" value="1,2,1"/>
+				<property name="ImposterDontBlock" value="true"/>
+				<property name="Collide" value="movement,melee,rocket,vehicle"/>
+				<property name="IsTerrainDecoration" value="true"/>
+				<property name="HarvestOverdamage" value="false"/>
+				<drop event="Destroy" name="resourceScrapIron" count="0" />
+				<property class="RepairItems">
+					<property name="resourceForgedIron" value="20"/>
+				</property>
+				<property class="UpgradeBlock">
+					<property name="ToBlock" value="DBSteelBarGate"/>
+					<property name="Item" value="resourceForgedSteel"/>
+					<property name="ItemCount" value="50"/>
+					<property name="UpgradeHitCount" value="6"/>
+				</property>
+		</block>
+		<block name="DBSteelBarGate">
+				<property name="Class" value="DoorSecure"/>
+				<property name="Tags" value="door"/>
+				<property name="BlockTag" value="Door"/>
+				<property name="Place" value="TowardsPlacerInverted"/> <!-- build restriction -->
+				<property name="PlaceEverywhere" value="true"/>
+				<property name="AllowAllRotations" value="true"/>
+				<property name="OpenSound" value="open_garage_door"/>
+				<property name="CloseSound" value="close_garage_door"/>
+				<property name="CreativeMode" value="None"/>
+				<property name="DisplayType" value="blockMulti"/>
+				<property name="Material" value="Mmetal"/><property name="Weight" value="50"/><property name="MaxDamage" value="20000" />
+				<property name="LightOpacity" value="0"/>
+				<property name="Shape" value="ModelEntity"/>	
+				<property name="Model" value="#@modfolder:Resources/BarGatePrefabs.unity3d?SteelBarGatePrefab"/>
+				<property name="MultiBlockDim" value="1,2,1"/>
+				<property name="IsTerrainDecoration" value="true"/>
+				<property name="Collide" value="movement,melee,rocket,vehicle"/>
+				<property name="HarvestOverdamage" value="false"/>
+				<drop event="Destroy" name="resourceScrapIron" count="0" />
+				<property class="RepairItems">
+					<property name="resourceForgedSteel" value="20"/>
+				</property>
+		</block>
+		
+	</append>
+</configs> 

@@ -1,0 +1,284 @@
+<bhwCompleteCollection>
+
+<!-- bhwFashionista Edits Start -->
+	
+	<!-- Add Clothing Recipe Unlocks to Needle and Thread - Vol. 1 -->
+		<append xpath="/progression/perks/perk[@name='perkNeedleAndThreadWinterWear']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,apparelHoodySweatshirt,apparelLongShirt,apparelSuitJacket,apparelSkiGoggles</append>
+	<!-- Add Clothing Recipe Unlocks to Needle and Thread - Vol. 2 -->
+		<append xpath="/progression/perks/perk[@name='perkNeedleAndThreadLegwear']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,apparelGothPants,apparelSuitPants</append>
+	<!-- Add Clothing Recipe Unlocks to Needle and Thread - Vol. 3 -->
+		<append xpath="/progression/perks/perk[@name='perkNeedleAndThreadFootwear']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,apparelGothBoots,apparelRunningShoesHP</append>
+	<!-- Add Clothing Recipe Unlocks to Needle and Thread - Vol. 4 -->
+		<append xpath="/progression/perks/perk[@name='perkNeedleAndThreadDesertWear']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,apparelPressboyCap,apparelTShirtZU,apparelShades,apparelToughGuySunglasses,apparelNerdGlasses</append>
+	<!-- Add Clothing Recipe Unlocks to Needle and Thread - Vol. 6 -->
+		<append xpath="/progression/perks/perk[@name='perkNeedleAndThreadPufferCoats']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,apparelCoatJacketGeneric</append>
+	<!-- Add Clothing Recipe Unlocks to Needle and Thread - Complete Collection -->
+		<append xpath="/progression/perks/perk[@name='perkNeedleAndThreadComplete']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,apparelHazmatBoots,apparelHazmatPants,apparelHazmatJacket,apparelHazmatGloves,apparelHazmatMask</append>
+	<!-- Add Night Vision Goggles Unlock to Art of Mining - Vol. 7 -->
+		<append xpath="/progression/perks/perk[@name='perkArtOfMiningLantern']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,apparelNightvisionGoggles</append>
+	<!-- Add Lucky Goggles Unlock to Lucky Looter Perk - Level 1 -->
+		<insertAfter xpath="/progression/perks/perk[@name='perkLuckyLooter']/effect_group/passive_effect[@name='ScavengingTime']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="apparelAviatorGoggles"/>
+		</insertAfter>
+		
+<!-- bhwFashionista Edits End -->
+
+<!-- bhwNutsAndBolts Edits Start -->
+
+		<append xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@level='1,5']/@tags">,meleeToolAxeT3ChainsawParts,meleeToolAllSteelParts</append>
+
+<!-- bhwNutsAndBolts Edits End -->
+
+<!-- bhwPowerPlant Edits Start -->
+	<!-- Add Solar Banks and Solar Cells Unlock to Adv. Eng. Perk -->
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='5']/@tags">,solarbank,solarCell,</append>
+
+	<!-- Add Engine Unlock to Grease Monkey Perk -->
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@level='3,5']/@tags">,smallEngine</append>
+
+	<!-- Add Engine Unlock to Grease Monkey Perk -->
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@level='3,5']/@tags">,electricWirelessFuseBox</append>
+
+<!-- bhwPowerPlant Edits End -->
+
+<!-- bhwDownOnTheFarm Edits Start -->
+
+		<!-- Add Unlocks to Master Chef Perk -->
+		<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='2,5']/@tags">,foodCanBeef,foodCanLamb,foodCanPeas,foodTomatoSauce</append>
+		<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='3,5']/@tags">,foodCanPasta,foodCanChili,foodCanStock</append>
+			
+		<!-- Add Unlocks to Living of the Land Perk -->
+		<append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group/passive_effect[@level='1,3']/@tags">,composter,resourceCompost</append>
+		<append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group/passive_effect[@level='2,3']/@tags">,plantedChickenCoup1,plantedWildAnimal1Trap,plantedTomato1,plantedPea1</append>
+
+		<!-- Add Crop Harvester to Miner 69er Perk -->
+		<append xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,meleeToolBladeT1CropHarvester</append>
+
+<!-- bhwDownOnTheFarm Edits End -->
+
+<!-- bhwArmySurplus Edits Start -->
+	
+	<!-- Add Weapon Parts to Perks -->
+	
+	<!-- Add Rifle Parts Unlock to Dead Eye Perk -->
+		<insertAfter xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@tags='gunRifleT1HuntingRifle']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunRifleT1HuntingRifleParts"/>
+		</insertAfter>
+			
+		<!-- Add Steel Spear Parts Unlock to Javelin Master Perk -->
+		<insertAfter xpath="/progression/perks/perk[@name='perkJavelinMaster']/effect_group/passive_effect[@tags='meleeWpnSpearT1IronSpear']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="meleeWpnSpearT3SteelSpearParts"/>
+		</insertAfter>
+			
+		<!-- Add Shotgun Parts Unlock to Boomstick Perk -->
+		<insertAfter xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@tags='gunShotgunT1DoubleBarrel']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunShotgunT1DoubleBarrelParts"/>
+		</insertAfter>
+			
+		<!-- Add Steel Club Parts Unlock to Pummel Pete Perk -->
+		<insertAfter xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group/passive_effect[@tags='meleeWpnClubT1BaseballBat']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="meleeWpnClubT3SteelClubParts"/>
+		</insertAfter>
+			
+		<!-- Add Steel Sledgehammer Parts Unlock to Skull Crusher Perk -->
+		<insertAfter xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group/passive_effect[@tags='meleeWpnSledgeT1IronSledgehammer']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="meleeWpnSledgeT3SteelSledgehammerParts"/>
+		</insertAfter>
+			
+		<!-- Add Steel Knuckles Parts Unlock to Brawler Perk -->
+		<insertAfter xpath="/progression/perks/perk[@name='perkBrawler']/effect_group/passive_effect[@tags='meleeWpnKnucklesT1IronKnuckles']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="meleeWpnKnucklesT3SteelKnucklesParts"/>
+		</insertAfter>
+			
+		<!-- Add Machine Gun Parts Unlock to Machine Gunner Perk -->
+		<insertAfter xpath="/progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@tags='gunMGT1AK47']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunMGT1AK47Parts"/>
+		</insertAfter>
+			
+		<!-- Add Bow Parts Unlock to Archery Perk -->
+		<insertAfter xpath="/progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@tags='gunBowT1WoodenBow,gunBowT1IronCrossbow']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunBowT1WoodenBowParts"/>
+		</insertAfter>
+			
+		<!-- Add Hand Gun Parts Unlock to Gunslinger Perk -->
+		<insertAfter xpath="/progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@tags='gunHandgunT1Pistol']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunHandgunT1PistolParts"/>
+		</insertAfter>
+			
+		<!-- Add Machete Parts Unlock to Deep Cuts Perk -->
+		<insertAfter xpath="/progression/perks/perk[@name='perkDeepCuts']/effect_group/passive_effect[@tags='meleeWpnBladeT1HuntingKnife']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="meleeWpnBladeT3MacheteParts"/>
+		</insertAfter>
+			
+		<!-- Add Baton Parts Unlock to Electrocutioner Perk -->
+		<insertAfter xpath="/progression/perks/perk[@name='perkElectrocutioner']/effect_group/passive_effect[@tags='meleeWpnBatonT2StunBaton']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="meleeWpnBatonT2StunBatonParts"/>
+		</insertAfter>
+			
+		<!-- Add Robtic Parts Unlock to Turrets Perk -->
+		<insertAfter xpath="/progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@tags='gunBotT1JunkSledge']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="gunBotRoboticsParts"/>
+		</insertAfter>
+		
+		<!-- Add Rocket Launcher Parts Unlock to Demolitions Expert Perk -->
+		<append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@tags='thrownGrenade,resourceGunPowderBundle']/@tags">,gunExplosivesT3RocketLauncherParts</append>
+		
+	<!-- Add Armor Parts to Perks -->
+
+		<!-- Add Steel Armor Parts Unlock to Heavy Armor Perk -->
+		<insertAfter xpath="/progression/perks/perk[@name='perkHeavyArmor']/effect_group/passive_effect[@tags='armorIronHelmet,armorIronChest,armorIronGloves,armorIronLegs,armorIronBoots']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="armorSteelSetParts"/>
+		</insertAfter>
+			
+		<!-- Add Military Armor Parts Unlock to Light Armor Perk -->
+		<insertAfter xpath="/progression/perks/perk[@name='perkLightArmor']/effect_group/passive_effect[@tags='armorLeatherHood,armorLeatherChest,armorLeatherGloves,armorLeatherPants,armorLeatherBoots']">
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="armorMilitarySetParts"/>
+		</insertAfter>
+
+<!-- bhwArmySurplus Edits End -->
+
+<!-- bhwEncyclopedia Edits Start -->
+
+	<append xpath="/progression/skills">
+		<skill name="skillEncyclopediaVolOne" parent="attBooks" name_key="perkEncyclopediaVolOne0Name" desc_key="perkEncyclopediaVolOne0Desc" icon="ui_game_symbol_marksmanship"><effect_group/></skill>
+		<skill name="skillEncyclopediaVolTwo" parent="attBooks" name_key="perkEncyclopediaVolTwo0Name" desc_key="perkEncyclopediaVolTwo0Desc" icon="ui_game_symbol_spatula"><effect_group/></skill>
+		<skill name="skillEncyclopediaVolThree" parent="attBooks" name_key="perkEncyclopediaVolThree0Name" desc_key="perkEncyclopediaVolThree0Desc" icon="ui_game_symbol_hand"><effect_group/></skill>
+	</append>
+
+
+	<append xpath="/progression/perks">
+
+	<!-- = = = = = = = = = = = = = = = = Encyclopedia Vol 1 = = = = = = = = = = = = = = = = = = = = -->
+		<perk name="perkEncyclopediaVolOneMelee" parent="skillEncyclopediaVolOne" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolOneMelee" desc_key="perkEncyclopediaVolOneMeleeDesc" long_desc_key="perkEncyclopediaVolOneMeleeLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeWpnKnucklesT1IronKnuckles,meleeWpnClubT1BaseballBat,meleeWpnSledgeT1IronSledgehammer,meleeWpnSpearT1IronSpear,meleeWpnBladeT3Machete,meleeWpnKnucklesT3SteelKnuckles,meleeWpnSledgeT3SteelSledgehammer,meleeWpnBatonT2StunBaton"/>
+			</effect_group>
+		</perk>
+		<perk name="perkEncyclopediaVolOneGuns" parent="skillEncyclopediaVolOne" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolOneGuns" desc_key="perkEncyclopediaVolOneGunsDesc" long_desc_key="perkEncyclopediaVolOneGunsLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunBowT1WoodenBow,gunBowT1IronCrossbow,gunBowT3CompoundBow,gunBowT3CompoundCrossbow,gunHandgunT1Pistol,gunHandgunT3DesertVulture,gunHandgunT2Magnum44,gunShotgunT2PumpShotgun,gunShotgunT1DoubleBarrel,gunShotgunT3AutoShotgun,gunRifleT1HuntingRifle,gunRifleT2LeverActionRifle,gunMGT2TacticalAR,gunRifleT3SniperRifle,gunHandgunT3SMG5,gunMGT1AK47,gunMGT3M60"/>
+			</effect_group>
+		</perk>
+		<perk name="perkEncyclopediaVolOneWeaponMods" parent="skillEncyclopediaVolOne" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolOneWeaponMods" desc_key="perkEncyclopediaVolOneWeaponModsDesc" long_desc_key="perkEncyclopediaVolOneWeaponModsLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modGunMeleeTheHunter,modGunBowPolymerString,modGunTriggerGroupSemi,modGunTriggerGroupBurst3,modGunTriggerGroupAutomatic,modMeleeSerratedBlade,modMeleeTemperedBlade,modGunChoke,modGunDuckbill,modShotgunSawedOffBarrel,modGunBarrelExtender,modGunSoundSuppressorSilencer,modGunMuzzleBrake,modGunForegrip,modGunRetractingStock,modGunBipod,modMeleeClubBurningShaft,modMeleeClubBarbedWire,modGunMagazineExtender,modGunBowArrowRest,modGunReflexSight,modGunScopeSmall,modGunScopeMedium,modGunScopeLarge,modGunFlashlight,modGunLaserSight,modGunCrippleEm,modGunMeleeRadRemover,modMeleeClubMetalSpikes"/>
+			</effect_group>
+		</perk>
+		<perk name="perkEncyclopediaVolOneExplosives" parent="skillEncyclopediaVolOne" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolOneExplosives" desc_key="perkEncyclopediaVolOneExplosivesDesc" long_desc_key="perkEncyclopediaVolOneExplosivesLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunExplosivesT3RocketLauncher,ammoRocketHE,ammoRocketFrag,resourceRocketTip,resourceRocketCasing,thrownDynamite,thrownGrenade,thrownGrenadeContact,thrownAmmoPipeBomb"/>
+			</effect_group>
+		</perk>
+		<perk name="perkEncyclopediaVolOneArmor" parent="skillEncyclopediaVolOne" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolOneArmor" desc_key="perkEncyclopediaVolOneArmorDesc" long_desc_key="perkEncyclopediaVolOneArmorLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="armorLeatherHood,armorLeatherChest,armorLeatherGloves,armorLeatherPants,armorLeatherBoots,armorIronHelmet,armorIronChest,armorIronGloves,armorIronLegs,armorIronBoots,armorSteelHelmet,armorSteelChest,armorSteelGloves,armorSteelLegs,armorSteelBoots,armorMilitaryHelmet,armorMilitaryVest,armorMilitaryGloves,armorMilitaryLegs,armorMilitaryBoots,resourceMilitaryFiber"/>
+			</effect_group>
+		</perk>
+		<perk name="perkEncyclopediaVolOneArmorMods" parent="skillEncyclopediaVolOne" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolOneArmorMods" desc_key="perkEncyclopediaVolOneArmorModsDesc" long_desc_key="perkEncyclopediaVolOneArmorModsLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modArmorCustomizedFittings,modArmorImprovedFittings,modArmorMuffledConnectors,modArmorAdvancedMuffledConnectors,modArmorCoolingMesh,modArmorInsulatedLiner,modArmorImpactBracing,modArmorBandolier,modArmorStoragePocket,modArmorDoubleStoragePocket,modArmorTripleStoragePocket,modArmorPlatingBasic,modArmorPlatingReinforced,modArmorHelmetLight,modArmorWaterPurifier"/>
+			</effect_group>
+		</perk>
+		<perk name="perkEncyclopediaVolOneTraps" parent="skillEncyclopediaVolOne" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolOneTraps" desc_key="perkEncyclopediaVolOneTrapsDesc" long_desc_key="perkEncyclopediaVolOneTrapsLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunBotT2JunkTurret,gunBotT1JunkSledge,autoTurret,shotgunTurret,electricfencepost,dartTrap,bladeTrap"/>
+			</effect_group>
+		</perk>
+		<perk name="perkEncyclopediaVolOneComplete" parent="skillEncyclopediaVolOne" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolOneComplete" desc_key="perkEncyclopediaVolOneCompleteDesc" long_desc_key="perkEncyclopediaCompleteLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags=""/>
+			</effect_group>
+		</perk>
+
+
+	<!-- = = = = = = = = = = = = = = = = Encyclopedia Vol 2 = = = = = = = = = = = = = = = = = = = = -->
+		<perk name="perkEncyclopediaVolTwoSeeds" parent="skillEncyclopediaVolTwo" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolTwoSeeds" desc_key="perkEncyclopediaVolTwoSeedsDesc" long_desc_key="perkEncyclopediaVolTwoSeedsLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="plantedAloe1,plantedBlueberry1,plantedChrysanthemum1,plantedCoffee1,plantedCorn1,plantedCotton1,plantedGoldenrod1,plantedGraceCorn1,plantedHop1,plantedMushroom1,plantedPotato1,plantedYucca1,plantedPumpkin1"/>
+			</effect_group>
+		</perk>
+		<perk name="perkEncyclopediaVolTwoFood" parent="skillEncyclopediaVolTwo" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolTwoFood" desc_key="perkEncyclopediaVolTwoFoodDesc" long_desc_key="perkEncyclopediaVolTwoFoodLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="foodCanSham,foodBaconAndEggs,foodBakedPotato,foodBlueberryPie,foodPumpkinPie,foodPumpkinCheesecake,foodPumpkinBread,foodGumboStew,foodShepardsPie,foodSpaghetti,foodTunaFishGravyToast,foodBoiledMeat,foodChiliDog,foodCornBread,foodCornOnTheCob,foodFishTacos,foodGrilledMeat,foodHoboStew,foodMeatStew,foodShamChowder,foodSteakAndPotato,foodVegetableStew"/>
+			</effect_group>
+		</perk>
+		<perk name="perkEncyclopediaVolTwoDrinks" parent="skillEncyclopediaVolTwo" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolTwoDrinks" desc_key="perkEncyclopediaVolTwoDrinksDesc" long_desc_key="perkEncyclopediaVolTwoDrinksLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drinkJarBeer,drinkJarCoffee,drinkJarGoldenRodTea,drinkYuccaJuiceSmoothie,drinkJarRedTea,drinkJarGrandpasAwesomeSauce,drinkJarGrandpasLearningElixir,drinkJarGrandpasMoonshine"/>
+			</effect_group>
+		</perk>
+		<perk name="perkEncyclopediaVolTwoCarMods" parent="skillEncyclopediaVolTwo" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolTwoCarMods" desc_key="perkEncyclopediaVolTwoCarModsDesc" long_desc_key="perkEncyclopediaVolTwoCarModsLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modVehicleFuelSaver,modVehicleOffRoadHeadlights,modVehicleSuperCharger,modVehicleExpandedSeat,modVehicleReserveFuelTank"/>
+			</effect_group>
+		</perk>
+		<perk name="perkEncyclopediaVolTwoDroneMods" parent="skillEncyclopediaVolTwo" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolTwoDroneMods" desc_key="perkEncyclopediaVolTwoDroneModsDesc" long_desc_key="perkEncyclopediaVolTwoDroneModsLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunBotT3JunkDrone,modRoboticDroneCargoMod,modRoboticDroneMedicMod,modRoboticDroneHeadlampMod,modRoboticDroneArmorPlatingMod,modRoboticDroneMoraleBoosterMod"/>
+			</effect_group>
+		</perk>
+		<perk name="perkEncyclopediaVolTwoComplete" parent="skillEncyclopediaVolTwo" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolTwoComplete" desc_key="perkEncyclopediaVolTwoCompleteDesc" long_desc_key="perkEncyclopediaCompleteLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags=""/>
+			</effect_group>
+		</perk>
+
+
+	<!-- = = = = = = = = = = = = = = = = Encyclopedia Vol 3 = = = = = = = = = = = = = = = = = = = = -->
+		<perk name="perkEncyclopediaVolThreeWorkstations" parent="skillEncyclopediaVolThree" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolThreeWorkstations" desc_key="perkEncyclopediaVolThreeWorkstationsDesc" long_desc_key="perkEncyclopediaVolThreeWorkstationsLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="workbench,forge,chemistryStation,cementMixer,toolBellows,toolAnvil,toolForgeCrucible"/>
+			</effect_group>
+		</perk>
+		<perk name="perkEncyclopediaVolThreeTools" parent="skillEncyclopediaVolThree" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolThreeTools" desc_key="perkEncyclopediaVolThreeToolsDesc" long_desc_key="perkEncyclopediaVolThreeToolsLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="meleeToolRepairT1ClawHammer,meleeToolAxeT1IronFireaxe,meleeToolPickT1IronPickaxe,meleeToolShovelT1IronShovel,meleeToolAxeT2SteelAxe,meleeToolPickT2SteelPickaxe,meleeToolShovelT2SteelShovel,meleeToolSalvageT1Wrench,meleeToolRepairT3Nailgun,meleeToolSalvageT2Ratchet,meleeToolSalvageT3ImpactDriver,meleeToolPickT3Auger,meleeToolAxeT3Chainsaw,meleeWpnBladeT1HuntingKnife"/>
+			</effect_group>
+		</perk>
+		<perk name="perkEncyclopediaVolThreeToolMods" parent="skillEncyclopediaVolThree" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolThreeToolMods" desc_key="perkEncyclopediaVolThreeToolModsDesc" long_desc_key="perkEncyclopediaVolThreeToolModsLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="modMeleeBunkerBuster,modMeleeErgonomicGrip,modMeleeFortifyingGrip,modMeleeGraveDigger,modMeleeIronBreaker,modMeleeStructuralBrace,modMeleeWeightedHead,modMeleeWoodSplitter,modFuelTankSmall,modFuelTankLarge"/>
+			</effect_group>
+		</perk>
+		<perk name="perkEncyclopediaVolThreeMedical" parent="skillEncyclopediaVolThree" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolThreeMedical" desc_key="perkEncyclopediaVolThreeMedicalDesc" long_desc_key="perkEncyclopediaVolThreeMedicalLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="medicalFirstAidBandage,medicalFirstAidKit,medicalPlasterCast,drugAntibiotics,drugHerbalAntibiotics"/>
+			</effect_group>
+		</perk>
+		<perk name="perkEncyclopediaVolThreeElectronics" parent="skillEncyclopediaVolThree" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolThreeElectronics" desc_key="perkEncyclopediaVolThreeElectronicsDesc" long_desc_key="perkEncyclopediaVolThreeElectronicsLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="generatorbank,ceilingLight01_player,industrialLight01_player,industrialLight02_player,ceilingLight07_player,electricwirerelay,batterybank,pressureplate,pressureplateLong,tripwirepost,electrictimerrelay,motionsensor,garageDoorMetal_v1Powered,vaultDoor03_Powered,vaultHatch_v3_Powered,garageDoorHousePlayer_Powered,garageDoorIndustrial_Powered,metalReinforcedWoodDrawBridgePowered,speaker,spotlightPlayer,switch"/>
+			</effect_group>
+		</perk>
+		<perk name="perkEncyclopediaVolThreeCars" parent="skillEncyclopediaVolThree" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolThreeCars" desc_key="perkEncyclopediaVolThreeCarsDesc" long_desc_key="perkEncyclopediaVolThreeCarsLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="vehicleBicycleChassis,vehicleBicycleHandlebars,vehicleMinibikeChassis,vehicleMinibikeHandlebars,vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,vehicle4x4TruckChassis,vehicle4x4TruckAccessories,vehicleGyroCopterChassis,vehicleGyroCopterAccessories,vehicleWheels,carBattery,resourceOil,ammoGasCan,modVehicleFuelSaver,modVehicleOffRoadHeadlights,modVehicleSuperCharger,modVehicleExpandedSeat,modVehicleReserveFuelTank"/>
+			</effect_group>
+		</perk>
+		<!-- FOR BETTER HOMES AND WORLDS COMPLETE COLLECTION ONLY -->
+		<perk name="perkEncyclopediaVolThreeWeaponParts" parent="skillEncyclopediaVolThree" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolThreeWeaponParts" desc_key="perkEncyclopediaVolThreeWeaponPartsDesc" long_desc_key="perkEncyclopediaVolThreeWeaponPartsLongDesc">
+			<effect_group>
+				<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="gunRifleT1HuntingRifleParts,meleeWpnSpearT3SteelSpearParts,gunShotgunT1DoubleBarrelParts,meleeWpnClubT3SteelClubParts,meleeWpnSledgeT3SteelSledgehammerParts,meleeWpnKnucklesT3SteelKnucklesParts,gunMGT1AK47Parts,gunBowT1WoodenBowParts,gunHandgunT1PistolParts,meleeWpnBladeT3MacheteParts,meleeWpnBatonT2StunBatonParts,gunBotRoboticsParts,gunExplosivesT3RocketLauncherParts"/>
+			</effect_group>
+		</perk>
+		<perk name="perkEncyclopediaVolThreeComplete" parent="skillEncyclopediaVolThree" max_level="1" base_skill_point_cost="0" name_key="bookEncyclopediaVolThreeComplete" desc_key="perkEncyclopediaVolThreeCompleteDesc" long_desc_key="perkEncyclopediaCompleteLongDesc">
+			<effect_group>
+				<!-- Placeholder so you know that schematic has been read -->
+			</effect_group>
+		</perk>
+
+	</append>
+
+
+	<!-- FOR BETTER HOMES AND WORLDS COMPLETE COLLECTION ONLY -->
+		<append xpath="/progression/perks/perk[@name='perkEncyclopediaVolOneArmor']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,armorSteelSetParts,armorMilitarySetParts</append>
+
+		<append xpath="/progression/perks/perk[@name='perkEncyclopediaVolTwoSeeds']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,plantedTomato1,plantedPea1</append>
+		<append xpath="/progression/perks/perk[@name='perkEncyclopediaVolTwoFood']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,foodTomatoSauce</append>
+
+		<append xpath="/progression/perks/perk[@name='perkEncyclopediaVolThreeElectronics']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,solarCell,solarbank</append>
+		<append xpath="/progression/perks/perk[@name='perkEncyclopediaVolThreeCars']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,smallEngine</append>
+
+<!-- bhwEncyclopedia Edits End -->
+
+</bhwCompleteCollection>

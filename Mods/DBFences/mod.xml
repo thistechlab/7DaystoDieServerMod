@@ -1,0 +1,16 @@
+<mod>
+	<info>
+		<!-- Information about the Mod, the author and version information -->
+		<!-- These are displayed in the SDX Launcher -->
+		<author>DBock</author>
+		<name>DBFences and Gates</name>
+		<description>DBock's Fences and Gates</description>
+		<mod_version>1.2</mod_version>
+		<game_version>A20</game_version>
+		<launcher_version>0.0.0</launcher_version>
+	</info>
+	
+	<!-- This references any config files that SDX needs to merge into your files -->
+
+	
+</mod>

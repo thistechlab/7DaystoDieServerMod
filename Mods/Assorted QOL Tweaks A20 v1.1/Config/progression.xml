@@ -1,0 +1,8 @@
+<configs>
+
+	<!-- Perks Motherlode and Advanded Engineering are a way too weak for the progression you need. This fixes that to be much more satisfying to earn. -->
+
+	<set xpath="/progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='HarvestCount']/@value">2,10</set>
+	<set xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='CraftingTime']/@value">-0.75</set>
+
+</configs>

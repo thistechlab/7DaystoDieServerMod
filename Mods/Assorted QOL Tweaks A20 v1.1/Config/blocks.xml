@@ -1,0 +1,79 @@
+<configs>
+
+	<!-- This makes crops drop guaranteed seeds, the 50% chance in base game often did not give you seeds, making it too difficult to farm
+		This also adds in varied seed drops too! -->
+		
+	<!-- Feel Free to use this coding for your own farming modifactions!
+	
+	<set xpath="/blocks/block[@name='3HarvestPlayer']/drop[@event='Destroy'][@name='1']/@count">1,3</set>
+	<set xpath="/blocks/block[@name='3HarvestPlayer']/drop[@event='Destroy'][@name='1']/@prob">1</set>
+	
+	-->
+	
+	<!-- Normal Corn -->
+	
+	<set xpath="/blocks/block[@name='plantedCorn3HarvestPlayer']/drop[@event='Destroy'][@name='plantedCorn1']/@count">1,3</set>
+	<set xpath="/blocks/block[@name='plantedCorn3HarvestPlayer']/drop[@event='Destroy'][@name='plantedCorn1']/@prob">1</set>
+	
+	<!-- Grace Corn -->
+	
+	<set xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']/drop[@event='Destroy'][@name='plantedGraceCorn1']/@count">1,3</set>
+	<set xpath="/blocks/block[@name='plantedGraceCorn3HarvestPlayer']/drop[@event='Destroy'][@name='plantedGraceCorn1']/@prob">1</set>
+	
+	<!-- Hops -->
+	
+	<set xpath="/blocks/block[@name='plantedHop3HarvestPlayer']/drop[@event='Destroy'][@name='plantedHop1']/@count">1,3</set>
+	<set xpath="/blocks/block[@name='plantedHop3HarvestPlayer']/drop[@event='Destroy'][@name='plantedHop1']/@prob">1</set>
+	
+	<!-- Pumpkin -->
+	
+	<set xpath="/blocks/block[@name='plantedPumpkin3HarvestPlayer']/drop[@event='Destroy'][@name='plantedPumpkin1']/@count">1,3</set>
+	<set xpath="/blocks/block[@name='plantedPumpkin3HarvestPlayer']/drop[@event='Destroy'][@name='plantedPumpkin1']/@prob">1</set>
+	
+	<!-- Chrysanthemum -->
+	<set xpath="/blocks/block[@name='plantedChrysanthemum3HarvestPlayer']/drop[@event='Destroy'][@name='plantedChrysanthemum1']/@count">1,3</set>
+	<set xpath="/blocks/block[@name='plantedChrysanthemum3HarvestPlayer']/drop[@event='Destroy'][@name='plantedChrysanthemum1']/@prob">1</set>
+	
+	<!-- Potato -->
+	<set xpath="/blocks/block[@name='plantedPotato3HarvestPlayer']/drop[@event='Destroy'][@name='plantedPotato1']/@count">1,3</set>
+	<set xpath="/blocks/block[@name='plantedPotato3HarvestPlayer']/drop[@event='Destroy'][@name='plantedPotato1']/@prob">1</set>
+	
+	<!-- Blueberry -->
+	
+	<set xpath="/blocks/block[@name='plantedBlueberry3HarvestPlayer']/drop[@event='Destroy'][@name='plantedBlueberry1']/@count">1,3</set>
+	<set xpath="/blocks/block[@name='plantedBlueberry3HarvestPlayer']/drop[@event='Destroy'][@name='plantedBlueberry1']/@prob">1</set>
+	
+	<!-- Aloe -->
+	
+	<set xpath="/blocks/block[@name='plantedAloe3HarvestPlayer']/drop[@event='Destroy'][@name='plantedAloe1']/@count">1,3</set>
+	<set xpath="/blocks/block[@name='plantedAloe3HarvestPlayer']/drop[@event='Destroy'][@name='plantedAloe1']/@prob">1</set>
+	
+	<!-- Goldenrod -->
+	
+	<set xpath="/blocks/block[@name='plantedGoldenrod3HarvestPlayer']/drop[@event='Destroy'][@name='plantedGoldenrod1']/@count">1,3</set>
+	<set xpath="/blocks/block[@name='plantedGoldenrod3HarvestPlayer']/drop[@event='Destroy'][@name='plantedGoldenrod1']/@prob">1</set>
+	
+	<!-- Coffee Beans -->
+	
+	<set xpath="/blocks/block[@name='plantedCoffee3HarvestPlayer']/drop[@event='Destroy'][@name='plantedCoffee1']/@count">1,3</set>
+	<set xpath="/blocks/block[@name='plantedCoffee3HarvestPlayer']/drop[@event='Destroy'][@name='plantedCoffee1']/@prob">1</set>
+	
+	<!-- Cotton -->
+	
+	<set xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']/drop[@event='Destroy'][@name='plantedCotton1']/@count">1,3</set>
+	<set xpath="/blocks/block[@name='plantedCotton3HarvestPlayer']/drop[@event='Destroy'][@name='plantedCotton1']/@prob">1</set>
+	
+	<!-- Yucca Fruit -->
+	
+	<set xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']/drop[@event='Destroy'][@name='plantedYucca1']/@count">1,3</set>
+	<set xpath="/blocks/block[@name='plantedYucca3HarvestPlayer']/drop[@event='Destroy'][@name='plantedYucca1']/@prob">1</set>
+	
+	<!-- Mushroom -->
+	
+	<set xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']/drop[@event='Destroy'][@name='plantedMushroom1']/@count">1,3</set>
+	<set xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']/drop[@event='Destroy'][@name='plantedMushroom1']/@prob">1</set>
+	
+	<!-- End of Planted Crops Modifiers -->
+	
+</configs>
+	
