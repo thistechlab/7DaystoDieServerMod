@@ -1,8 +1,0 @@
-<config>
-
-	<!-- This speeds up crafting and smelting time buffs given by the Bellows and Anvil -->
-	
-	<set xpath="/items/item[@name='toolBellows']/effect_group/passive_effect[@name='CraftingSmeltTime']/@value">-.95</set>
-	<set xpath="/items/item[@name='toolAnvil']/effect_group/passive_effect[@name='CraftingTime']/@value">-.95</set>
-	
-</config>
