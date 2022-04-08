@@ -58,5 +58,6 @@ Craft Jail Door & Bars - https://7daystodiemods.com/craft-jail-door-bars/ </br>
 DBock’s Fences and Gates - https://7daystodiemods.com/dbocks-fences-and-gates/</br>
 Better Homes and Worlds - Complete Collection - https://www.nexusmods.com/7daystodie/mods/703 </br>
 DW420 - Dyes Expanded - https://www.nexusmods.com/7daystodie/mods/1471 </br>
-1to1 Meat - Recipes only require 1 meat instead of 5
+1to1 Meat - Recipes only require 1 meat instead of 5 </br>
 Expanded Ammo Types - https://7daystodiemods.com/expanded-ammo-types/ </br>
+Noble's Katana (swords) - https://www.nexusmods.com/7daystodie/mods/925 </br>
