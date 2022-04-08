@@ -1,0 +1,6 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+{my_key},{xml_file},{type_of_object},{true/false/null},{true/false/null},"{Localized_Name_Eng}"
+sword,item,tool,,,"Katana"
+swordDesc,item,tool,,,"A devastating close quarters melee weapon.	Affected by deepcuts perk and furry of blows."
+sword1,item,tool,,,"Short Sword"
+sword1Desc,item,tool,,,"a short range, very sharp sword. Affected by deepcuts perk and furry of blows."

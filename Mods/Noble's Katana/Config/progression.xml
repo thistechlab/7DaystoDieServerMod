@@ -1,0 +1,22 @@
+<configs>
+
+<insertAfter xpath="/progression/perks/perk[@name='perkDeepCuts']/effect_group/passive_effect">
+
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="sword"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="sword1"/>
+
+
+</insertAfter>
+
+
+
+
+
+
+
+
+
+
+
+
+</configs>

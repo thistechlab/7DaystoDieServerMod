@@ -1,0 +1,13 @@
+<configs>
+
+<insertAfter xpath="/lootcontainers/lootgroup[@name='groupToolsT2']/item[@name='meleeToolSalvageT2Ratchet']">
+<item name="sword"/>
+<item name="sword1"/>
+
+
+
+
+</insertAfter>
+
+
+</configs>
