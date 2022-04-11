@@ -62,4 +62,4 @@ DW420 - Dyes Expanded - https://www.nexusmods.com/7daystodie/mods/1471 </br>
 Noble's Katana (swords) - https://www.nexusmods.com/7daystodie/mods/925 </br>
 FRK Beehive - https://7daystodiemods.com/beehive/ </br>
 Ammo Disassembly - https://7daystodiemods.com/ammo-disassembly/</br>
-Exceptioanl Sauce (Improved Awesome Sauce) <\br>
+Exceptional Sauce (Improved Awesome Sauce) <\br>
