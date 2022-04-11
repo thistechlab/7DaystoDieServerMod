@@ -1,0 +1,34 @@
+<configs>
+	<append xpath="/items">
+		<item name="questRewardexceptionalammo9mm_10">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleRevolver"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="DescriptionKey" value="questRewardRangedWeaponBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="10,10,10"/>
+			</property>
+			
+		<item name="questRewardexceptionalammo44_10">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleRevolver"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="DescriptionKey" value="questRewardRangedWeaponBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="10,20,10"/>
+			</property>
+		</item>
+		</item>
+	</append>
+</configs>
+
+
+

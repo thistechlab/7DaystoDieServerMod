@@ -1,0 +1,14 @@
+<configs>
+<append xpath="/recipes">
+	<recipe name="questRewardexceptionalammo9mm_10" count="1">
+		<ingredient name="ammo9mmBulletBall" count="10"/>
+	</recipe>
+	
+	<recipe name="questRewardexceptionalammo44_10" count="1">
+		<ingredient name="ammo44MagnumBulletBall" count="10"/>
+	</recipe>
+</append>
+</configs>
+
+
+ammo44MagnumBulletBall
