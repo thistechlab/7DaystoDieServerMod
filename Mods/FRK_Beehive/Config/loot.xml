@@ -1,6 +1,6 @@
 <FRK>
 <append xpath="/lootcontainers" >
-		<lootcontainer id="193" size="1,1" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" destroy_on_close="true" loot_quality_template="qualPlus1Template">
+		<lootcontainer id="193" name="frkbeehive" size="1,1" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" destroy_on_close="true" loot_quality_template="qualPlus1Template">
 			<item name="foodHoney" count="5,20" prob="1"/>
 		</lootcontainer>
 </append>
