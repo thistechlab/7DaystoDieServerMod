@@ -1,0 +1,8 @@
+<configs>
+<append xpath="/recipes">
+	<recipe name="exceptionalSauce" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+		<ingredient name="drinkJarGrandpasAwesomeSauce" count="1"/>
+		<ingredient name="exceptionalMegaCrush" count="1"/>
+	</recipe>
+</append>
+</configs>

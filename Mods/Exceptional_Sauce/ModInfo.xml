@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Exceptional_Sauce" />
+		<Description value="Adds a recipe for a custom Awesome Sauce"/>
+		<Author value="victorious512" />
+		<Version value="1.0" />
+		<Website value="" />
+	</ModInfo>
+</xml>
