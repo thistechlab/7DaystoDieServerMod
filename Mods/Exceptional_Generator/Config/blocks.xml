@@ -1,0 +1,7 @@
+<configs>
+	<set xpath="/blocks/block[@name='generatorbank']/property[@name='MaxFuel']/@value">30000</set>
+	<set xpath="/blocks/block[@name='generatorbank']/property[@name='OutputPerFuel']/@value">850000</set>
+	<set xpath="/blocks/block[@name='generatorbank']/property[@name='MaxPower']/@value">60000</set>
+	<set xpath="/blocks/block[@name='generatorbank']/property[@name='OutputPerStack']/@value">20000</set>
+
+</configs>

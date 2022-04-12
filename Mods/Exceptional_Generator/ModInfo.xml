@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Exceptional Generator" />
+        <Description value="Sets the generator so it lasts a long time." />
+        <Author value="victorious512" />
+        <Version value="A20" />
+    </ModInfo>
+</xml>

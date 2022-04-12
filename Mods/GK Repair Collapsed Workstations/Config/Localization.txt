@@ -1,3 +1,0 @@
-﻿Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
-resourceWorkstationRepairKit,items,item,,,Repair Kit Workstations
-WorkstationRepairKitDesc,items,item,,,A standard repair kit to repair all workstations.

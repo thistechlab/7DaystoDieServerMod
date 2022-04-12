@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<xml>
-	<ModInfo>
-		<Name value="GK Repair Collapsed Workstations"/>
-		<Description value="Add a repair kit to repair all workstations"/>
-		<Author value="Gouki"/>
-		<Version value="1.1" />
-	</ModInfo>
-</xml>
