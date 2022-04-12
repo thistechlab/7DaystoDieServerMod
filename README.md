@@ -23,7 +23,6 @@ Exceptional_Pick<br/>
 Exceptional_Chickens</br>
 Exceptional_Windows_Recipe<br/>
 Faster_Bellows_Anvil - https://github.com/XelaNull/7DTD-Bag_Bellows_Headshot/tree/master/Faster_Bellows (modified to include anvil speeds)<br/>
-GK Repair Collapsed Workstations - https://7daystodiemods.com/gk-repair-collapsed-workstations/<br/>
 3 Slot Forge - https://7daystodiemods.com/3-slot-forge/<br/>
 12 Slot Crafting Queue - https://7daystodiemods.com/12-slot-crafting-queue/<br/>
 Bigger Backpack Mod (60 Slot) - https://7daystodiemods.com/bigger-backpack-mod-60-96-slot-with-without-food-water-bar-on-hud/<br/>
@@ -61,5 +60,7 @@ DW420 - Dyes Expanded - https://www.nexusmods.com/7daystodie/mods/1471 </br>
 1to1 Meat - Recipes only require 1 meat instead of 5 </br>
 Noble's Katana (swords) - https://www.nexusmods.com/7daystodie/mods/925 </br>
 FRK Beehive - https://7daystodiemods.com/beehive/ </br>
-Ammo Disassembly - https://7daystodiemods.com/ammo-disassembly/</br>
 Exceptional Sauce (Improved Awesome Sauce) <\br>
+Exceptional Honey <\br>
+Exceptional Generator <\br>
+Silent Generator <\br>
