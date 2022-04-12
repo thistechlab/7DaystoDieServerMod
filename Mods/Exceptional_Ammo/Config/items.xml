@@ -1,32 +1,259 @@
 <configs>
 	<append xpath="/items">
+	<!-- start regular 9mm bullets -->
 		<item name="questRewardexceptionalammo9mm_10">
 			<property name="Extends" value="noteTestersDelightAdmin"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="bundleRevolver"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
 			<property name="CustomIconTint" value="ffa0a0"/>
 			<property name="ItemTypeIcon" value="bundle"/>
 			<property name="Stacknumber" value="50"/>
-			<property name="DescriptionKey" value="questRewardRangedWeaponBundleDesc"/>
+			<property name="DescriptionKey" value="questRewardAmmoCraftingBundleDesc"/>
 			<property class="Action0">
 				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
 				<property name="Create_item_count" value="10,10,10"/>
 			</property>
-			
-		<item name="questRewardexceptionalammo44_10">
+		</item>
+		<item name="questRewardexceptionalammo9mm_50">
 			<property name="Extends" value="noteTestersDelightAdmin"/>
 			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="bundleRevolver"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
 			<property name="CustomIconTint" value="ffa0a0"/>
 			<property name="ItemTypeIcon" value="bundle"/>
 			<property name="Stacknumber" value="50"/>
-			<property name="DescriptionKey" value="questRewardRangedWeaponBundleDesc"/>
+			<property name="DescriptionKey" value="questRewardAmmoCraftingBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="50,50,50"/>
+			</property>
+		</item>
+		<item name="questRewardexceptionalammo9mm_100">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="DescriptionKey" value="questRewardAmmoCraftingBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="100,100,100"/>
+			</property>
+		</item>
+		
+	<!-- end regular 9mm bullets -->
+
+	<!-- start 9mm HP bullets -->
+				<item name="questRewardexceptionalammo9mmhp_10">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="DescriptionKey" value="questRewardAmmoCraftingBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="20,10,10"/>
+			</property>
+		</item>
+		<item name="questRewardexceptionalammo9mmhp_50">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="DescriptionKey" value="questRewardAmmoCraftingBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="100,50,50"/>
+			</property>
+		</item>
+		<item name="questRewardexceptionalammo9mmhp_100">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="DescriptionKey" value="questRewardAmmoCraftingBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="200,100,100"/>
+			</property>
+		</item>
+	<!-- end 9mm HP bullets -->
+	
+	<!-- start 9mm AP bullets -->
+		<item name="questRewardexceptionalammo9mmhp_10">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="DescriptionKey" value="questRewardAmmoCraftingBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="20,20,10"/>
+			</property>
+		</item>
+		<item name="questRewardexceptionalammo9mmhp_50">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="DescriptionKey" value="questRewardAmmoCraftingBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="100,100,50"/>
+			</property>
+		</item>
+		<item name="questRewardexceptionalammo9mmhp_100">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="DescriptionKey" value="questRewardAmmoCraftingBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="200,200,100"/>
+			</property>
+		</item>
+	<!-- end 9mm AP bullets -->
+			
+	<!-- start regular 44 bullets -->	
+		<item name="questRewardexceptionalammo44_10">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="DescriptionKey" value="questRewardAmmoCraftingBundleDesc"/>
 			<property class="Action0">
 				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
 				<property name="Create_item_count" value="10,20,10"/>
 			</property>
 		</item>
+		<item name="questRewardexceptionalammo44_50">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="DescriptionKey" value="questRewardAmmoCraftingBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="50,100,50"/>
+			</property>
 		</item>
+		<item name="questRewardexceptionalammo44_100">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="DescriptionKey" value="questRewardAmmoCraftingBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="100,200,100"/>
+			</property>
+		</item>
+		<!-- end regular 44 bullets -->
+
+		<!-- start 44 HP bullets -->	
+		<item name="questRewardexceptionalammo44_10">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="DescriptionKey" value="questRewardAmmoCraftingBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="20,20,10"/>
+			</property>
+		</item>
+		<item name="questRewardexceptionalammo44_50">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="DescriptionKey" value="questRewardAmmoCraftingBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="100,100,50"/>
+			</property>
+		</item>
+		<item name="questRewardexceptionalammo44_100">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="DescriptionKey" value="questRewardAmmoCraftingBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="200,200,100"/>
+			</property>
+		</item>
+		<!-- end 44 HP bullets -->
+		
+		<!-- start 44 AP bullets -->	
+		<item name="questRewardexceptionalammo44_10">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="DescriptionKey" value="questRewardAmmoCraftingBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="20,30,10"/>
+			</property>
+		</item>
+		<item name="questRewardexceptionalammo44_50">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="DescriptionKey" value="questRewardAmmoCraftingBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="100,150,50"/>
+			</property>
+		</item>
+		<item name="questRewardexceptionalammo44_100">
+			<property name="Extends" value="noteTestersDelightAdmin"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="bundleAmmo"/>
+			<property name="CustomIconTint" value="ffa0a0"/>
+			<property name="ItemTypeIcon" value="bundle"/>
+			<property name="Stacknumber" value="50"/>
+			<property name="DescriptionKey" value="questRewardAmmoCraftingBundleDesc"/>
+			<property class="Action0">
+				<property name="Create_item" value="resourceBulletTip,resourceGunPowder,resourceBulletCasing"/>
+				<property name="Create_item_count" value="200,300,100"/>
+			</property>
+		</item>
+		<!-- end 44 AP bullets -->
+		
+		
 	</append>
 </configs>
 

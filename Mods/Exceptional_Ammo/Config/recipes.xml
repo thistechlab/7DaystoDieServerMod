@@ -1,14 +1,76 @@
 <configs>
 <append xpath="/recipes">
+<!-- start regular 9mm bullets -->
 	<recipe name="questRewardexceptionalammo9mm_10" count="1">
 		<ingredient name="ammo9mmBulletBall" count="10"/>
 	</recipe>
-	
+	<recipe name="questRewardexceptionalammo9mm_50" count="1">
+		<ingredient name="ammo9mmBulletBall" count="50"/>
+	</recipe>
+	<recipe name="questRewardexceptionalammo9mm_100" count="1">
+		<ingredient name="ammo9mmBulletBall" count="100"/>
+	</recipe>
+<!-- end regular 9mm bullets -->
+
+<!-- start 9mm HP bullets -->
+	<recipe name="questRewardexceptionalammo9mm_10" count="1">
+		<ingredient name="ammo9mmBulletHP" count="10"/>
+	</recipe>
+	<recipe name="questRewardexceptionalammo9mm_50" count="1">
+		<ingredient name="ammo9mmBulletHP" count="50"/>
+	</recipe>
+	<recipe name="questRewardexceptionalammo9mm_100" count="1">
+		<ingredient name="ammo9mmBulletHP" count="100"/>
+	</recipe>
+<!-- end 9mm HP bullets -->
+
+<!-- start 9mm AP bullets -->
+	<recipe name="questRewardexceptionalammo9mm_10" count="1">
+		<ingredient name="ammo9mmBulletAP" count="10"/>
+	</recipe>
+	<recipe name="questRewardexceptionalammo9mm_50" count="1">
+		<ingredient name="ammo9mmBulletAP" count="50"/>
+	</recipe>
+	<recipe name="questRewardexceptionalammo9mm_100" count="1">
+		<ingredient name="ammo9mmBulletAP" count="100"/>
+	</recipe>
+<!-- end 9mm AP bullets -->
+
+<!-- start regular 44 bullets -->
 	<recipe name="questRewardexceptionalammo44_10" count="1">
 		<ingredient name="ammo44MagnumBulletBall" count="10"/>
+	</recipe>	
+	<recipe name="questRewardexceptionalammo44_10" count="1">
+		<ingredient name="ammo44MagnumBulletBall" count="50"/>
+	</recipe>	
+	<recipe name="questRewardexceptionalammo44_10" count="1">
+		<ingredient name="ammo44MagnumBulletBall" count="100"/>
 	</recipe>
+<!-- start regular 44 bullets -->
+
+<!-- start 44 HP bullets -->
+	<recipe name="questRewardexceptionalammo44_10" count="1">
+		<ingredient name="ammo44MagnumBulletHP" count="10"/>
+	</recipe>	
+	<recipe name="questRewardexceptionalammo44_10" count="1">
+		<ingredient name="ammo44MagnumBulletHP" count="50"/>
+	</recipe>	
+	<recipe name="questRewardexceptionalammo44_10" count="1">
+		<ingredient name="ammo44MagnumBulletHP" count="100"/>
+	</recipe>
+<!-- start 44 HP bullets -->
+
+<!-- start 44 AP bullets -->
+	<recipe name="questRewardexceptionalammo44_10" count="1">
+		<ingredient name="ammo44MagnumBulletAP" count="10"/>
+	</recipe>	
+	<recipe name="questRewardexceptionalammo44_10" count="1">
+		<ingredient name="ammo44MagnumBulletAP" count="50"/>
+	</recipe>	
+	<recipe name="questRewardexceptionalammo44_10" count="1">
+		<ingredient name="ammo44MagnumBulletAP" count="100"/>
+	</recipe>
+<!-- start 44 AP bullets -->
+	
 </append>
 </configs>
-
-
-ammo44MagnumBulletBall
