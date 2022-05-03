@@ -1,0 +1,53 @@
+<configs>
+<append xpath="/recipes">
+	<recipe name="exceptionalPick" count="1" tags="learnable,perkMiner69r">
+		<ingredient name="resourceScrapIron" count="20"/>
+		<ingredient name="resourceWood" count="10"/>
+		<ingredient name="resourceLeather" count="2"/>
+		<ingredient name="resourceDuctTape" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,4.5" tags="resourceScrapIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
+	<recipe name="ExceptionalHarvestMod" count="1" craft_area="workbench">
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,4.5" tags="resourceScrapIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
+	<recipe name="ExceptionalImpactMod" count="1" craft_area="workbench">
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,4.5" tags="resourceScrapIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
+	<recipe name="ExceptionalXPMod" count="1" craft_area="workbench">
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,4.5" tags="resourceScrapIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
+	<recipe name="ExceptionalRangeMod" count="1" craft_area="workbench">
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,4.5" tags="resourceScrapIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
+	<recipe name="ExceptionalAttackMod" count="1" craft_area="workbench">
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,4.5" tags="resourceScrapIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
+</append>
+</configs>

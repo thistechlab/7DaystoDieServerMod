@@ -1,0 +1,111 @@
+<config>
+<append xpath="/item_modifiers">
+	<item_modifier name="ExceptionalHarvestMod" installable_tags="exceptional" modifier_tags="damageStone" type="attachment">
+		<property name="Stacknumber" value="1"/>
+		<property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="CustomIcon" value="modMeleeBunkerBuster"/>
+		<property name="EconomicValue" value="10"/>
+		<property name="CustomIconTint" value="ffa0a0"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".25" tags="stone"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value=".25" tags="earth"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value=".25" tags="metal"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value=".25" tags="wood"/>
+			<passive_effect name="DamageModifier" operation="perc_add" value=".25" tags="terrGravel"/>
+			<passive_effect name="HarvestCount" operation="base_add" value="2"/>
+		</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	</item_modifier>
+	<item_modifier name="ExceptionalImpactMod" installable_tags="exceptional" modifier_tags="falldamage" type="attachment">
+		<property name="Material" value="Msteel"/>
+		<property name="Stacknumber" value="1"/>
+		<property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="CustomIcon" value="modArmorImpactBracing"/>
+		<property name="EconomicValue" value="10"/>
+		<property name="CustomIconTint" value="ffa0a0"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffImpactBracing"/>
+			<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffImpactBracing"/>
+		</effect_group>
+	</item_modifier>
+	<item_modifier name="ExceptionalXPMod" installable_tags="exceptional" modifier_tags="misc" type="attachment">
+		<property name="Stacknumber" value="1"/>
+		<property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="CustomIcon" value="schematicMaster"/>
+		<property name="EconomicValue" value="10"/>
+		<property name="CustomIconTint" value="ffa0a0"/>
+		<effect_group tiered="false">
+			<passive_effect name="PlayerExpGain" operation="perc_add" value=".5"/>
+		</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	</item_modifier>
+	<item_modifier name="ExceptionalStaminaMod" installable_tags="exceptional" modifier_tags="carryweight" type="attachment">
+		<property name="Stacknumber" value="1"/>
+		<property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="CustomIcon" value="drinkCanMegaCrush"/>
+		<property name="EconomicValue" value="10"/>
+		<property name="CustomIconTint" value="ffa0a0"/>
+		<effect_group tiered="false">
+			<passive_effect name="StaminaLoss" operation="perc_add" value="-.01" tags="primary,secondary"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="2" tags="walking"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="2" tags="running"/>
+		</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	</item_modifier>
+	<item_modifier name="ExceptionalRangeMod" installable_tags="exceptional" modifier_tags="damage" type="attachment">
+		<property name="Stacknumber" value="1"/>
+		<property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="CustomIcon" value="modMeleeStructuralBrace"/>
+		<property name="EconomicValue" value="10"/>
+		<property name="CustomIconTint" value="ffa0a0"/>
+		<effect_group tiered="false">
+			<passive_effect name="MaxRange" operation="perc_add" value="2"/>
+			<passive_effect name="BlockRange" operation="perc_add" value="2"/>
+		</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	</item_modifier>
+	<item_modifier name="ExceptionalAttackMod" installable_tags="exceptional" modifier_tags="fuel" type="attachment">
+		<property name="Stacknumber" value="1"/>
+		<property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="CustomIcon" value="modArmorAdvancedMuffledConnectors"/>
+		<property name="EconomicValue" value="10"/>
+		<property name="CustomIconTint" value="ffa0a0"/>
+		<effect_group tiered="false">
+			<passive_effect name="AttacksPerMinute" operation="perc_add" value="2"/>
+		</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	</item_modifier>
+		<item_modifier name="ExceptionalRadiationMod" installable_tags="exceptional" modifier_tags="specialDamage" type="attachment">
+		<property name="Stacknumber" value="1"/>
+		<property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="CustomIcon" value="modGunMeleeRadRemover"/>
+		<property name="EconomicValue" value="10"/>
+		<property name="CustomIconTint" value="ffa0a0"/>
+		<effect_group tiered="false">
+			<requirement name="EntityTagCompare" target="other" tags="radiated"/>
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffRadiatedRegenBlock"/>
+		</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	</item_modifier>
+
+	<item_modifier name="ExceptionalSpeedMod" installable_tags="exceptional" modifier_tags="movement" type="attachment">
+		<property name="Stacknumber" value="1"/>
+		<property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="CustomIcon" value="apparelRunningShoesRegular"/>
+		<property name="EconomicValue" value="10"/>
+		<property name="CustomIconTint" value="ffa0a0"/>
+		<effect_group tiered="false">
+			<passive_effect name="RunSpeed" operation="base_add" value="0.75"/>
+		</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	</item_modifier>
+</append>
+</config>

@@ -1,8 +1,0 @@
-<configs>
-  <append xpath="/recipes" craft_area="forge" craft_time="5" craft_exp_gain="10">
-    <recipe name="barbedWireSheet" count="1">
-      <ingredient name="resourceScrapIron" count="10"/>
-      <ingredient name="resourceClayLump" count="2"/>
-    </recipe>
-  </append>
-</configs>

@@ -1,0 +1,53 @@
+<configs>
+<append xpath="/recipes">
+<recipe name="exceptionalMilitaryBoots" count="1" craft_area="workbench" tags="perkLightArmor">
+	<ingredient name="armorMilitarySetParts" count="4"/>
+	<ingredient name="resourceLeather" count="5"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+	<ingredient name="resourceSewingKit" count="2"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceMilitaryFiber,resourceLeather,resourceDuctTape"/>
+	</effect_group>
+</recipe>
+
+<recipe name="exceptionalMilitaryGloves" count="1" craft_area="workbench" tags="perkLightArmor">
+	<ingredient name="armorMilitarySetParts" count="4"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+	<ingredient name="resourceSewingKit" count="2"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="armorMilitarySetParts,resourceMilitaryFiber,resourceLeather,resourceDuctTape"/>
+	</effect_group>
+</recipe>
+
+<recipe name="exceptionalMilitaryHelmet" count="1" craft_area="workbench" tags="perkLightArmor">
+	<ingredient name="armorMilitarySetParts" count="4"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+	<ingredient name="resourceSewingKit" count="2"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="armorMilitarySetParts,resourceMilitaryFiber,resourceLeather,resourceDuctTape"/>
+	</effect_group>
+</recipe>
+
+<recipe name="exceptionalMilitaryLegs" count="1" craft_area="workbench" tags="perkLightArmor">
+	<ingredient name="armorMilitarySetParts" count="4"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+	<ingredient name="resourceSewingKit" count="2"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="armorMilitarySetParts,resourceMilitaryFiber,resourceLeather,resourceDuctTape"/>
+	</effect_group>
+</recipe>
+
+<recipe name="exceptionalMilitaryVest" count="1" craft_area="workbench" tags="perkLightArmor">
+	<ingredient name="armorMilitarySetParts" count="4"/>
+	<ingredient name="resourceScrapPolymers" count="2"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+	<ingredient name="resourceSewingKit" count="2"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="armorMilitarySetParts,resourceMilitaryFiber,resourceLeather,resourceDuctTape"/>
+	</effect_group>
+</recipe>
+</append>
+</configs>

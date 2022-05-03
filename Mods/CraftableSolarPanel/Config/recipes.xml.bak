@@ -1,0 +1,13 @@
+<append xpath="/recipes" >
+<recipe name="solarbank" count="1">
+	<ingredient name="resourceDuctTape" count="5"/>
+	<ingredient name="resourceForgedIron" count="50"/>
+	<ingredient name="resourceElectricParts" count="10"/>
+</recipe>
+
+<recipe name="solarCell" count="1">
+	<ingredient name="resourceDuctTape" count="5"/>
+	<ingredient name="resourceForgedIron" count="20"/>
+	<ingredient name="resourceElectricParts" count="40"/>
+</recipe>
+</append>

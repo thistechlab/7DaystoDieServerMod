@@ -49,5 +49,22 @@
 			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,4.5" tags="resourceScrapIron,resourceWood,resourceLeather,resourceDuctTape"/>
 		</effect_group>
 	</recipe>
+		<recipe name="ExceptionalSpeedMod" count="1" craft_area="workbench">
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,4.5" tags="resourceScrapIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
+
+	<recipe name="ExceptionalRadiationMod" count="1" craft_area="workbench">
+	<ingredient name="resourceScrapIron" count="5"/>
+	<ingredient name="resourceDuctTape" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="1"/>
+		<effect_group>
+			<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,4.5" tags="resourceScrapIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		</effect_group>
+	</recipe>
 </append>
 </configs>
