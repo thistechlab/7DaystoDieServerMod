@@ -1,8 +1,7 @@
 # 7DaystoDieServerMod
  Mod pack for current 7 Days to Die Server.
- <br/>
+<br/>
 Instant Crafting 6.0 - https://www.nexusmods.com/7daystodie/mods/326<br/>
-Server Side Vehicles - https://github.com/arramus/A20-ServerSideVehicles-2022Jan20<br/>
 Additional Intellect Perk - Scrap Machine - https://www.nexusmods.com/7daystodie/mods/1744<br/>
 Skillbook Skillpoints - https://7daystodiemods.com/skillbook-skillpoints/<br/>
 Allocs Server Fixes - https://7dtd.illy.bz/wiki/Server%20fixes<br/>
@@ -54,13 +53,10 @@ Better Dyes - https://7daystodiemods.com/better-dyes/</br>
 Combine Window - https://7daystodiemods.com/combine-window/</br>
 Fast Nailgun A20 - https://www.nexusmods.com/7daystodie/mods/1135 </br>
 Craft Jail Door & Bars - https://7daystodiemods.com/craft-jail-door-bars/ </br>
-DBock’s Fences and Gates - https://7daystodiemods.com/dbocks-fences-and-gates/</br>
 Better Homes and Worlds - Complete Collection - https://www.nexusmods.com/7daystodie/mods/703 </br>
 DW420 - Dyes Expanded - https://www.nexusmods.com/7daystodie/mods/1471 </br>
-1to1 Meat - Recipes only require 1 meat instead of 5 </br>
 Noble's Katana (swords) - https://www.nexusmods.com/7daystodie/mods/925 </br>
-FRK Beehive - https://7daystodiemods.com/beehive/ </br>
-Exceptional Sauce (Improved Awesome Sauce) <\br>
-Exceptional Honey <\br>
-Exceptional Generator <\br>
-Silent Generator <\br>
+Exceptional Sauce (Improved Awesome Sauce) </br>
+Exceptional Honey </br>
+Exceptional Generator </br>
+Silent Generator </br>
